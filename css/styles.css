@@ -14,6 +14,7 @@ blue: #8d94ba
   top: 0;
   left: 0;
   right: 0;
+  z-index: 4;
 }
 .nav__logo {
   max-width: 35px;
@@ -50,5 +51,95 @@ blue: #8d94ba
   background-repeat: repeat;
   background-size: 400px;
   background-position: top left;
-  height: 600px;
+  height: 520px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.header__title {
+  display: inline-block;
+  width: 474px;
+  background-color: #fff;
+  padding: 0 10px;
+  color: #ff789e;
+  font-size: 3em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  top: 2em;
+  left: -50%;
+  transition: 1s all ease-in;
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+.header__subtitle {
+  display: inline-block;
+  width: 340px;
+  background-color: #8d94ba;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 1.8em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 6em;
+  right: -50%;
+  transition: 1s all ease-in;
+  animation-name: slideInRight;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+}
+.header__bottom {
+  width: 70%;
+  height: 45px;
+  background-color: #382266;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.header__mouse {
+  width: 34px;
+  height: auto;
+  position: absolute;
+  bottom: 1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+.header__mouse__roll {
+  width: 34px;
+  height: auto;
+  position: absolute;
+  bottom: 1.7em;
+  left: calc(50% - 17.5px);
+  z-index: 3;
+  animation-name: roll;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.header__mouse__text {
+  color: #fff;
+  font-size: 0.6em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: -0.9em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
 }

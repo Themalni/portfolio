@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="71.815mm"
+   height="110.37mm"
+   version="1.1"
+   viewBox="0 0 71.815475 110.36906"
+   id="svg6688"
+   sodipodi:docname="mouse2.svg"
+   inkscape:version="0.92.0 r15299">
+  <defs
+     id="defs6692" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="693"
+     id="namedview6690"
+     showgrid="false"
+     inkscape:zoom="0.56574853"
+     inkscape:cx="135.71339"
+     inkscape:cy="208.57323"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6688" />
+  <metadata
+     id="metadata6682">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-68.792 -49.048)"
+     id="g6686"
+     style="fill:#ffffff">
+    <path
+       transform="matrix(.26458 0 0 .26458 68.792 49.048)"
+       d="m135.71 0c-75.186-1.8948e-14 -135.71 60.529-135.71 135.71v145.71c0 75.186 60.529 135.71 135.71 135.71 75.186 0 135.71-60.529 135.71-135.71v-145.71c0-75.186-60.527-135.71-135.71-135.71zm0 68.572c10.289 0 18.57 8.4274 18.57 18.896v62.205c0 10.469-8.2818 18.898-18.57 18.898s-18.572-8.4294-18.572-18.898v-62.205c0-10.469 8.2837-18.896 18.572-18.896z"
+       fill="#271414"
+       id="path6684"
+       style="fill:#ffffff" />
+  </g>
+</svg>
