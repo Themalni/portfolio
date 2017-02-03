@@ -14,9 +14,10 @@
   <link rel="icon" href="images/.ico" type="image/x-icon"/><!-- Favicon -->
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css"/><!-- reset for browsers -->
+  <link rel="stylesheet" media="screen" href="css/font-awesome.min.css"/><!-- mobile stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/styles.css"/><!-- custom stylesheet -->
   <link rel="stylesheet" media="screen" href="css/media.css"/><!-- mobile stylesheet -->
-  <link rel="stylesheet" media="screen" href="css/animations.css"/><!-- mobile stylesheet -->
+  <link rel="stylesheet" media="screen" href="css/animations.css"/><!-- animations stylesheet -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 
 </head>
@@ -24,11 +25,43 @@
   <nav class="nav">
     <img class="nav__logo" src="images/logo.svg" alt="logo">
     <div class="nav__hamburger">
-      <img class="nav__hamburger-line" src="images/menu_line.svg" alt="menu">
-      <img class="nav__hamburger-line" src="images/menu_line.svg" alt="menu">
-      <img class="nav__hamburger-line" src="images/menu_line.svg" alt="menu">
+      <img class="nav__hamburger-line" src="images/menu_line.svg" alt="menu line">
+      <img class="nav__hamburger-line" src="images/menu_line.svg" alt="menu line">
+      <img class="nav__hamburger-line" src="images/menu_line.svg" alt="menu line">
     </div>
   </nav>
+  <div class="nav-menu">
+    <div class="nav-menu__cross">
+      <img class="nav-menu__line" src="images/menu_line.svg" alt="cross line">
+      <img class="nav-menu__line" src="images/menu_line.svg" alt="cross line">
+    </div>
+    <ul class="nav-menu__list">
+      <li class="nav-menu__list-item">
+        <a href="#nav" class="nav-menu__link">Home</a>
+      </li>
+      <li class="nav-menu__list-item">
+        <a href="#about" class="nav-menu__link">About</a>
+      </li>
+      <li class="nav-menu__list-item">
+        <a href="#portfolio" class="nav-menu__link">Portfolio</a>
+      </li>
+      <li class="nav-menu__list-item">
+        <a href="#contact" class="nav-menu__link">Contact</a>
+      </li>
+    </ul>
+    <hr class="nav-menu__separator">
+    <p class="nav-menu__text">Dina Blaszczak is a front-end developer and designer based in Poland.</p>
+    <p class="nav-menu__text">
+      <a href="mailto:info@dinablaszczak.com" class="nav-menu__link--email">info@dinablaszczak.com</a>
+    </p>
+    <div class="nav-menu__social-btn">
+      <a href="https://twitter.com/TheMalni" target="_blank"><span class="fa fa-twitter fa-2x"></span></a>
+      <a href="https://codepen.io/themalni" target="_blank"><span class="fa fa-codepen fa-2x"></span></a>
+      <a href="https://github.com/Themalni" target="_blank"><span class="fa fa-github fa-2x"></span></a>
+      <a href="https://github.com/Themalni" target="_blank"><span class="fa fa-youtube fa-2x"></span></a>
+      <a href="https://github.com/Themalni" target="_blank"><span class="fa fa-linkedin-square fa-2x"></span></a>
+    </div>
+  </div>
   <div class="header">
     <h1 class="header__title">Dina Blaszczak</h1>
     <h3 class="header__subtitle">Front-End Developer</h3>
