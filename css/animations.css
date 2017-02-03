@@ -1,3 +1,33 @@
+.nav-menu__items__animation {
+  animation: slideInMenuItems 0.5s 1 forwards ease-in;
+}
+.nav-menu__list-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.nav-menu__list-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.nav-menu__list-item:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.nav-menu__separator {
+  animation-delay: 0.8s;
+}
+.nav-menu__text {
+  animation-delay: 1s;
+}
+.nav-menu__email {
+  animation-delay: 1.2s;
+}
+.nav-menu__social-btn {
+  animation-delay: 1.4s;
+}
+.nav-menu__cross {
+  animation: fadeIn 3s 1 forwards linear;
+  animation-delay: 2s;
+}
+/********** Animations ************/
+
 /*  .header__nav  */
 @keyframes slideInNav {
   0% {
@@ -30,12 +60,12 @@
 @keyframes slideInSubtitle {
   0% {
     transform: translateX(-50%) scale3d(1, 1, 0.5);
-    top: 8em;
+    top: 7em;
     opacity: 0;
   }
   100% {
     transform: translateX(-50%) scale3d(1, 1, 1);
-    top: 6.5em;
+    top: 6em;
     opacity: 1;
   }
 }
@@ -44,12 +74,12 @@
 @keyframes slideInBtn {
   0% {
     transform: translateX(-50%) scale3d(1, 1, 0.5);
-    bottom: 4em;
+    bottom: 6em;
     opacity: 0;
   }
   100% {
     transform: translateX(-50%) scale3d(1, 1, 1);
-    bottom: 6em;
+    bottom: 7em;
     opacity: 1;
   }
 }
