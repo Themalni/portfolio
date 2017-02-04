@@ -10,18 +10,19 @@
 
   <title>Dina Blaszczak | Front-End Developer Portfolio</title>
 
-  <link rel="shortcut icon" href="images/.ico" type="image/x-icon"/><!-- Favicon -->
-  <link rel="icon" href="images/.ico" type="image/x-icon"/><!-- Favicon -->
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon"/><!-- Favicon -->
+  <link rel="icon" href="images/icon.ico" type="image/x-icon"/><!-- Favicon -->
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css"/><!-- reset for browsers -->
   <link rel="stylesheet" media="screen" href="css/font-awesome.min.css"/><!-- mobile stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/styles.css"/><!-- custom stylesheet -->
   <link rel="stylesheet" media="screen" href="css/media.css"/><!-- mobile stylesheet -->
   <link rel="stylesheet" media="screen" href="css/animations.css"/><!-- animations stylesheet -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
 
 </head>
 <body>
+  <!-- Navigation -->
   <nav class="nav">
     <img class="nav__logo" src="images/logo.svg" alt="logo">
     <div class="nav__hamburger">
@@ -37,7 +38,7 @@
     </div>
     <ul class="nav-menu__list">
       <li class="nav-menu__list-item">
-        <a href="#nav" class="nav-menu__link">Home</a>
+        <a href="#header" class="nav-menu__link">Home</a>
       </li>
       <li class="nav-menu__list-item">
         <a href="#about" class="nav-menu__link">About</a>
@@ -62,7 +63,8 @@
       <a href="https://github.com/Themalni" target="_blank"><span class="fa fa-linkedin-square fa-2x"></span></a>
     </div>
   </div>
-  <div class="header">
+  <!-- Header -->
+  <header id="header" class="header">
     <h1 class="header__title">Dina Blaszczak</h1>
     <h3 class="header__subtitle">Front-End Developer</h3>
     <button class="header__btn">View portfolio</button>
@@ -71,7 +73,26 @@
       <img class="header__mouse__roll" src="images/mouse_roll.svg" alt="mouse">
       <h4 class="header__mouse__text">scroll</h4>
     </div>
-  </div>
+  </header>
+  <!-- Main content -->
+  <main class="main-container">
+    <!-- About -->
+    <section id="about" class="about">
+      <h1 class="about__title">Get to know me<span class="about__title__dot"></span></h1>
+      <div class="about__text">
+        <p class="about__text__description">Hello, my name is Dina. I am a self-taughed Front-End Developer located in Poland.</p>
+        <p class="about__text__description">I design and develop website and web applications using HTML5, CSS3 and JavaScript. When dealing with a project I pay attention to the smallest details addressing problems with patience. Web design and development help me to free my creative mind and allow me satisfy my desire towards learning.</p>
+        <button class="about__btn">Learn more</button>
+      </div>
+      <img src="images/dina2.jpg" class="about__img" alt="autor portrait">
+    </section>
+      <section id="portfolio" class="portfolio">
+        <h1 class="portfolio__title">Portfolio<span class="portfolio__title__dot"></span></h1>
+      </section>
+    <!-- Portfolio -->
+    <!-- Contact -->
+    <!-- Footer -->
+  </main>
   <script type="text/javascript" src="js/scripts.js"></script><!-- Custom jQuery -->
 
 </body>
