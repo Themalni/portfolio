@@ -59,3 +59,13 @@ function hideMenu(){
   navMenu.style.width = "0px";
   toggleAnimation();
 }
+
+/* Scroll to a section */
+$(document).ready(function($){
+  $("a").click(function(){
+    $("html, body").animate({
+      scrollTop: $($.attr(this, "href")).offset().top
+    }, 800);
+    return false;
+  });
+});
