@@ -1,5 +1,5 @@
 .nav-menu__items__animation {
-  animation: slideInMenuItems 0.5s 1 forwards ease-in;
+  animation: slideInMenuItems 0.3s 1 forwards ease-in;
 }
 .nav-menu__list-item:nth-child(2) {
   animation-delay: 0.2s;

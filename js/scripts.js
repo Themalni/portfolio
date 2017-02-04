@@ -29,7 +29,13 @@ function animateElement(item){
     item.classList.add("nav-menu__items__animation");
   }
 }
-
+function toggleAnimation(){
+  animateItems();
+  animateElement(navMenuSeparator);
+  animateElement(navMenuText);
+  animateElement(navMenuEmail);
+  animateElement(navMenuSocialBtn);
+}
 
 window.onload = fadeInHeader;
 navHamburger.addEventListener("click", showMenu);
@@ -44,20 +50,12 @@ function fadeInHeader(){
 function showMenu(){
   navMenu.style.width = "250px";
   navMenuCross.style.visibility = "visible";
-  animateItems();
-  animateElement(navMenuSeparator);
-  animateElement(navMenuText);
-  animateElement(navMenuEmail);
-  animateElement(navMenuSocialBtn);
+  toggleAnimation();
 }
 
 /* hide menu */
 function hideMenu(){
   navMenuCross.style.visibility = "hidden";
   navMenu.style.width = "0px";
-  animateItems();
-  animateElement(navMenuSeparator);
-  animateElement(navMenuText);
-  animateElement(navMenuEmail);
-  animateElement(navMenuSocialBtn);
+  toggleAnimation();
 }
