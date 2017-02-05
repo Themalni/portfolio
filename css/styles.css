@@ -6,6 +6,10 @@ blue: #8d94ba
 
 /***  General styles  ***/
 
+body {
+  margin: 0;
+  padding: 0;
+}
 li {
   list-style-type: none;
 }
@@ -119,7 +123,6 @@ a:focus {
   transform: rotateZ(-45deg);
 }
 .nav-menu__list {
-  margin-top: 2em;
   margin-left: -0.7em;
 }
 .nav-menu__list-item {
@@ -308,15 +311,18 @@ a:focus {
 }
 
 /*** About section ***/
+
 .about {
-  padding: 0 6em 3em;
+  padding: 0 0em 3em;
   background-color: #382266;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .about__text {
-  flex: 5;
+  /*flex: 6;*/
+  min-width: 300px;
+  max-width: 530px;
   box-sizing: content-box;
   background-color: #ff789e;
   padding: 0 2em 0;
@@ -339,7 +345,7 @@ a:focus {
 }
 .about__btn {
   display: inline-block;
-  margin: 1em auto 0;
+  margin: 1em auto 2em;
   padding: 7px 20px;
   border-radius: 20px;
   background-color: #8d94ba;
@@ -355,10 +361,11 @@ a:focus {
   color: #fff;
 }
 .about__img {
-  flex: 3;
+  /*flex: 3;*/
+
+  max-width: 360px;
   box-sizing: content-box;
   border-radius: 50%;
-  height: auto;
   border: 15px solid #ff789e;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -369,13 +376,14 @@ a:focus {
   padding: 0 2em;
 }
 .portfolio__items-container {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .portfolio__item {
   margin: 1em;
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   background-color: #ff789e;
 }
