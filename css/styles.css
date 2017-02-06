@@ -377,7 +377,16 @@ a:focus {
 /*** Portfolio ***/
 
 .portfolio {
-  padding: 0 2em;
+  padding: 0 2em 0;
+}
+.portfolio__description {
+  max-width: 75%;
+  margin: 0 auto 2em;
+  color: #382266;
+  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
 }
 .portfolio__items-container {
   margin: 0 auto;
