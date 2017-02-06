@@ -386,9 +386,9 @@ a:focus {
   flex-wrap: wrap;
 }
 .portfolio__item {
-  margin: 0.5em;
+  margin: 0.1em;
   background-color: #ff789e;
-  width: 320px;
+  width: 340px;
   height: 200px;
   position: relative;
   overflow: hidden;
@@ -406,7 +406,7 @@ a:focus {
   transform: scale(1.1) translateY(100%);
 }
 .portfolio__item:hover .portfolio__item__hover {
-  transform: translateY(30%);
+  transform: translateY(25%);
 }
 .portfolio__item__hover {
   width: 100%;
@@ -431,7 +431,7 @@ a:focus {
 .portfolio__item__hover__description {
   margin: 0;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
