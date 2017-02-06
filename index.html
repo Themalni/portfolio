@@ -18,7 +18,7 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css"/><!-- custom stylesheet -->
   <link rel="stylesheet" media="screen" href="css/media.css"/><!-- mobile stylesheet -->
   <link rel="stylesheet" media="screen" href="css/animations.css"/><!-- animations stylesheet -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,800" rel="stylesheet">
 
 </head>
 <body>
@@ -95,7 +95,7 @@
             <a href="#">
               <img src="images/livet2.jpg" class="portfolio__item__thumbnail">
               <div class="portfolio__item__hover">
-                <h2 class="portfolio__item__hover__title">Website<span class="portfolio__title__dot--white"></span></h2>
+                <h2 class="portfolio__item__hover__title">Website<span class="portfolio__title__dot title__dot--white"></span></h2>
                 <h4 class="portfolio__item__hover__description">Livet Template</h4>
               </div>
             </a>
@@ -104,7 +104,7 @@
             <a href="#">
               <img src="images/EID2.jpg" class="portfolio__item__thumbnail">
               <div class="portfolio__item__hover">
-                <h2 class="portfolio__item__hover__title">Landing Page<span class="portfolio__title__dot--white"></span></h2>
+                <h2 class="portfolio__item__hover__title">Landing Page<span class="portfolio__title__dot title__dot--white"></span></h2>
                 <h4 class="portfolio__item__hover__description">Every Inch Design</h4>
               </div>
             </a>
@@ -113,7 +113,7 @@
             <a href="#">
               <img src="images/pomodoro.jpg" class="portfolio__item__thumbnail">
               <div class="portfolio__item__hover">
-                <h2 class="portfolio__item__hover__title">Web App<span class="portfolio__title__dot--white"></span></h2>
+                <h2 class="portfolio__item__hover__title">Web App<span class="portfolio__title__dot title__dot--white"></span></h2>
                 <h4 class="portfolio__item__hover__description">Pomodoro Clock</h4>
               </div>
             </a>
@@ -122,7 +122,7 @@
             <a href="#">
               <img src="images/calculator.jpg" class="portfolio__item__thumbnail">
               <div class="portfolio__item__hover">
-                <h2 class="portfolio__item__hover__title">Web App<span class="portfolio__title__dot--white"></span></h2>
+                <h2 class="portfolio__item__hover__title">Web App<span class="portfolio__title__dot title__dot--white"></span></h2>
                 <h4 class="portfolio__item__hover__description">Calculator JS</h4>
               </div>
             </a>
@@ -131,7 +131,7 @@
             <a href="#">
               <img src="images/quote.jpg" class="portfolio__item__thumbnail">
               <div class="portfolio__item__hover">
-                <h2 class="portfolio__item__hover__title">Web App<span class="portfolio__title__dot--white"></span></h2>
+                <h2 class="portfolio__item__hover__title">Web App<span class="portfolio__title__dot title__dot--white"></span></h2>
                 <h4 class="portfolio__item__hover__description">Random Quote Mashine</h4>
               </div>
             </a>
@@ -140,7 +140,7 @@
             <a href="#">
               <img src="images/wiki.jpg" class="portfolio__item__thumbnail">
               <div class="portfolio__item__hover">
-                <h2 class="portfolio__item__hover__title">Web App<span class="portfolio__title__dot--white"></span></h2>
+                <h2 class="portfolio__item__hover__title">Web App<span class="portfolio__title__dot title__dot--white"></span></h2>
                 <h4 class="portfolio__item__hover__description">Wikipedia Viewer</h4>
               </div>
             </a>
@@ -148,9 +148,26 @@
         </div>
       </section>
     <!-- Portfolio -->
+    <section id="contact" class="contact">
+    <div class="contact__envelope">
+      <h1 class="contact__title title--white">Get in touch<span class="contact__title__dot title__dot--white"></span></h1>
+      <h2 class="contact__description">You can reach me via email <a class="contact__link" href="mailto:info@dinablaszczak.com">info@dinablaszczak.com</a><br> or by filling the form below.</h2>
+      <form class="contact__form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="email">Email address:</label>
+        <input type="email" id="email">
+        <label for="message">Message:</label>
+        <textarea rows="5" id="message"></textarea>
+        <button type="submit" id="form-submit" class="contact__form__btn">Send</button>
+      </form>
+    </div>
+    </section>
     <!-- Contact -->
     <!-- Footer -->
   </main>
+
+
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script><!-- js scripts-->

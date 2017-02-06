@@ -15,6 +15,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 a:focus {
  outline: none;
@@ -23,7 +24,8 @@ a:focus {
 /* Titles */
 
 .about__title,
-.portfolio__title {
+.portfolio__title,
+.contact__title {
   width: 100%;
   margin: 0;
   padding: 2em 0 1em;
@@ -34,19 +36,19 @@ a:focus {
   text-align: center;
   text-transform: uppercase;
 }
+.title--white {
+  color: #fff;
+}
 .about__title__dot,
-.portfolio__title__dot {
+.portfolio__title__dot,
+.contact__title__dot {
   display: inline-block;
   width: 10px;
   height: 10px;
   margin-left: 5px;
   background-color: #ff789e;
 }
-.portfolio__title__dot--white {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-left: 5px;
+.title__dot--white {
   background-color: #fff;
 }
 /***  Navigation  ***/
@@ -326,7 +328,6 @@ a:focus {
   flex-wrap: wrap;
 }
 .about__text {
-  /*flex: 6;*/
   min-width: 300px;
   max-width: 530px;
   box-sizing: content-box;
@@ -377,10 +378,10 @@ a:focus {
 /*** Portfolio ***/
 
 .portfolio {
-  padding: 0 2em 0;
+  padding: 0 2em 3em;
 }
 .portfolio__description {
-  max-width: 75%;
+  max-width: 65%;
   margin: 0 auto 2em;
   color: #382266;
   font-size: 1.3em;
@@ -402,14 +403,12 @@ a:focus {
   position: relative;
   overflow: hidden;
 }
-
 .portfolio__item__thumbnail {
   width: 100%;
   height: auto;
   opacity: 1;
   transform: translateY(0%);
   transition: all 0.5s linear;
-  z-index: 5;
 }
 .portfolio__item:hover .portfolio__item__thumbnail {
   transform: scale(1.1) translateY(100%);
@@ -428,7 +427,6 @@ a:focus {
   transition: all 0.4s linear;
   text-align: center;
   opacity: 1;
-  z-index: 4;
 }
 .portfolio__item__hover__title {
   margin: 0;
@@ -443,4 +441,82 @@ a:focus {
   font-size: 1.4em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+}
+/*** Contact ***/
+
+.contact {
+  padding: 0 0 3em;
+  background-color: #ff789e;
+}
+.contact__description {
+  margin: 0;
+  color: #fff;
+  font-size: 1.4em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.contact__link {
+  border-bottom: 1px solid #fff;
+}
+.contact__form {
+  box-sizing: content-box;
+  max-width: 50%;
+  margin: 3em auto 0;
+  padding: 0;
+}
+label {
+  display: block;
+  margin: 0.6em 0 0.2em;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 95%;
+  height: 25px;
+  padding: 10px 10px 10px 20px;
+  background-color: #fff;
+  color: #ff789e;
+  border: none;
+  transition: all 0.3s linear;
+}
+textarea {
+  width: 93%;
+  height: 150px;
+  padding: 20px;
+  resize: none;
+  background-color: #fff;
+  color: #ff789e;
+  border: none;
+  transition: all 0.3s linear;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus  {
+  border-radius: 25px;
+}
+.contact__form__btn {
+  width: 100%;
+  margin-top: 1em;
+  padding: 15px 0;
+  background-color: #8d94ba;
+  color: #fff;
+  border: none;
+  transition: all 0.3s linear;
+}
+.contact__form__btn:hover {
+  background-color: #fff;
+  color: #ff789e;
+  border-radius: 25px;
+}
+.contact__envelope {
+  background-image: url(../images/envelope.svg);
+  background-size: 450px;
+  height: 800px;
+  background-position: 95% 10%;
+  background-repeat: no-repeat;
 }
