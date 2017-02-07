@@ -22,6 +22,13 @@ function animateItems(){
     }
   }
 }
+function animateCross(item){
+  if(item.classList.contains("nav-menu__cross__animation")){
+    item.classList.remove("nav-menu__cross__animation");
+  }else{
+    item.classList.add("nav-menu__cross__animation");
+  }
+}
 function animateElement(item){
   if(item.classList.contains("nav-menu__items__animation")){
     item.classList.remove("nav-menu__items__animation");
@@ -35,6 +42,7 @@ function toggleAnimation(){
   animateElement(navMenuText);
   animateElement(navMenuEmail);
   animateElement(navMenuSocialBtn);
+  animateCross(navMenuCross);
 }
 
 window.onload = fadeInHeader;
@@ -48,17 +56,21 @@ function fadeInHeader(){
 
 /* show menu */
 function showMenu(){
+  navHamburger.style.visibility = "hidden";
   navMenu.style.width = "250px";
-  navMenuCross.style.visibility = "visible";
+  navMenuCross.style.display = "block";
   toggleAnimation();
 }
 
 /* hide menu */
 function hideMenu(){
-  navMenuCross.style.visibility = "hidden";
+  navMenuCross.style.display = "none";
   navMenu.style.width = "0px";
+  navHamburger.style.visibility = "visible";
   toggleAnimation();
 }
+
+/*========= jQuery ==========*/
 
 /* Scroll to a section */
 $(document).ready(function($){

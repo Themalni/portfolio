@@ -22,9 +22,9 @@
 .nav-menu__social-btn {
   animation-delay: 1.4s;
 }
-.nav-menu__cross {
-  animation: fadeIn 3s 1 forwards linear;
-  animation-delay: 2s;
+.nav-menu__cross__animation {
+  animation: fadeIn 0.5s 1 forwards linear;
+  animation-delay: 1s;
 }
 /********** Animations ************/
 
