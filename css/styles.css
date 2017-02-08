@@ -444,7 +444,7 @@ a:focus {
 .contact__link {
   border-bottom: 1px solid #fff;
 }
-.contact__form {
+#contact__form {
   box-sizing: content-box;
   max-width: 50%;
   margin: 3em auto 0;
@@ -504,6 +504,15 @@ textarea:focus  {
   height: 800px;
   background-position: 95% 10%;
   background-repeat: no-repeat;
+}
+.form__status {
+  display: none;
+  width: 120px;
+  margin: 1em auto;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 /***  Footer  ***/
 
