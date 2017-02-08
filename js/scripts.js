@@ -7,12 +7,6 @@ var navMenuSeparator = document.querySelector(".nav-menu__separator");
 var navMenuText = document.querySelector(".nav-menu__text");
 var navMenuEmail = document.querySelector(".nav-menu__email");
 var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
-var contactForm = document.querySelector("#contact__form");
-var name = document.querySelector("#name");
-var email = document.querySelector("#email");
-var message = document.querySelector("#message");
-var submitBtn = document.querySelector("#form-submit");
-var formStatus = document.querySelector(".form__status");
 var i;
 var itemsLength = navMenuListItem.length;
 var listItem = "";
@@ -75,34 +69,6 @@ function hideMenu(){
   navHamburger.style.visibility = "visible";
   toggleAnimation();
 }
-
-/* Contact form */
-
-contactForm.addEventListener("submit", submitForm, false);
-
-function submitForm(){
-  submitBtn.disabled = true;
-  formStatus.style.display = "block";
-  var formdata = new FormData();
-  formdata.append("name", name.value);
-  formdata.append("email", email.value);
-  formdata.append("message", message.value);
-  var ajax = new XMLHttpRequest();
-  ajax.open("POST", "contact.php");
-  ajax.onreadystatechange = function(){
-    if(ajax.readyState == 4 && ajax.status == 200){
-      if(ajax.responseText == "success"){
-        contactForm.innerHTML = "<h2>Thanks " + name.value + ", your message has been sent.</h2>";
-      }else{
-        formStatus.innerHTML = ajax.responseText;
-        submitBtn.disabled = false;
-      }
-    }
-  };
-  ajax.send(formdata);
-}
-
-
 
 
 /*========= jQuery ==========*/
