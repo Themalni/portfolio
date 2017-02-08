@@ -9,6 +9,7 @@ blue: #8d94ba
 body {
   margin: 0;
   padding: 0;
+  background-color:  #ff789e;
 }
 li {
   list-style-type: none;
@@ -51,6 +52,7 @@ a:focus {
 .title__dot--white {
   background-color: #fff;
 }
+
 /***  Navigation  ***/
 .nav {
   max-width: 100%;
@@ -190,8 +192,8 @@ a:focus {
   position: relative;
   z-index: 1;
   opacity: 0;
+  visibility: hidden;
   overflow: hidden;
-  transition: all 1s linear;
 }
 .header__title {
   display: inline-block;
@@ -207,8 +209,6 @@ a:focus {
   top: 2em;
   left: 50%;
   transform: translateX(-50%);
-  /*animation: slideInTitle 0.8s 1s 1 forwards ease-in;*/
-  animation: fadeIn 0.5s 1s 1 forwards ease-in;
 }
 .header__subtitle {
   display: inline-block;
@@ -224,8 +224,6 @@ a:focus {
   top: 6em;
   left: 50%;
   transform: translateX(-50%);
-  /*animation: slideInSubtitle 0.8s 1.5s 1 forwards ease-in;*/
-  animation: fadeIn 0.5s 1s 1 forwards ease-in;
 }
 .header__btn {
   border: 4px solid #fff;
@@ -245,8 +243,6 @@ a:focus {
   bottom: 6em;
   left: 50%;
   transform: translateX(-50%);
-  /*animation: slideInBtn 0.8s 1.8s 1 forwards ease-in;*/
-  animation: fadeIn 0.8s 1s 1 forwards ease-in;
   transition: all .3s linear;
 }
 .header__btn:hover {
@@ -264,7 +260,6 @@ a:focus {
   transform: translateX(-50%);
   z-index: 2;
   opacity: 0;
-  animation: slideInBottom 1s 0.5s 1 forwards ease-in;
 }
 .header__mouse {
   width: 34px;
@@ -282,7 +277,6 @@ a:focus {
   bottom: 1.7em;
   left: calc(50% - 17.5px);
   z-index: 3;
-  animation: roll 2s infinite normal forwards;
 }
 .header__mouse__text {
   color: #fff;
@@ -299,7 +293,7 @@ a:focus {
 
 /*** Main section ***/
 .main-container {
-  margin-bottom: 112px;
+  opacity: 0;
   border-top: 40px solid #8d94ba;
   z-index: 4;
 }
@@ -519,14 +513,10 @@ a:focus {
   border-top: 2px solid #cfd2e2;
   height: 110px;
   background-color: #382266;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+  opacity: 0;
 }
 .footer__info__container {
-  margin: 1.5em 4em;
+  margin: 1.5em 4em 1em;
   display: flex;
   justify-content: space-around;
   align-items: center;
