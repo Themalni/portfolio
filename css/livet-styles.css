@@ -1,0 +1,111 @@
+body {
+  background-color: #fff;
+}
+.livet__header {
+  margin: 4em auto;
+  max-width: 85%;
+  height: 600px;
+  background-color: #8d94ba;
+  border-bottom: 2px solid #382266;
+}
+.livet__header__img {
+  max-width: 60%;
+  height: auto;
+  position: relative;
+  top: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 30px 10px -20px #666;
+}
+.livet__main-container {
+  background-color: #fff;
+  padding-bottom: 3em;
+  position: relative;
+}
+.livet__title {
+  padding-top: 1em;
+  color: #ff789e;
+  font-size: 2.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.livet__description {
+  width: 100%;
+  margin: 0 0 2em;
+  color: #8d94ba;
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.livet__header__btn {
+  border: 4px solid #fff;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  display: inline-block;
+  width: 200px;
+  background-color: #382266;
+  border-radius: 25px;
+  margin: 1em;
+  padding: 7px 0;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: -3em;
+  transition: all .3s linear;
+  text-align: center;
+}
+.livet__header__btn:first-of-type {
+  left: 29%;
+}
+.livet__header__btn:last-of-type {
+  left: 49.5%;
+}
+.livet__header__btn:hover {
+  box-shadow: 0 3px 5px -3px #333,
+              inset 0 -50px 0 0  #ff789e;
+  color: #fff;
+}
+.livet__flex {
+  margin: 4em 4em 2em;
+  display: flex;
+  justify-content: center;
+}
+.livet__flex__item {
+  padding: 1em 1.5em 2em;
+  border-bottom: 3px solid #ff789e;
+}
+.livet__flex__item:nth-child(1) {
+  flex: 4;
+}
+.livet__flex__item:nth-child(2) {
+  flex: 4;
+}
+.livet__flex__title {
+  display: inline-block;
+  padding: 0 1.5em 0.4em 0;
+  border-bottom: 3px solid #ff789e;
+  color: #ff789e;
+  font-size: 1.7em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.livet__flex__text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #333;
+  font-size: 1.1em;
+}
+.livet__flex__text--color {
+  color: #8d94ba;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.livet__flex__text--bold {
+  font-weight: 600;
+}
