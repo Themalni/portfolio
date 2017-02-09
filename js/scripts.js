@@ -75,7 +75,16 @@ function hideMenu(){
 
 /* Scroll to a section */
 $(document).ready(function($){
-  $("a").click(function(){
+
+  $(".nav-menu__link").click(function(){
+    hideMenu();
+    $("html, body").animate({
+      scrollTop: $($.attr(this, "href")).offset().top
+    }, 800);
+    return false;
+  });
+
+  $(".nav__logo__link").click(function(){
     $("html, body").animate({
       scrollTop: $($.attr(this, "href")).offset().top
     }, 800);

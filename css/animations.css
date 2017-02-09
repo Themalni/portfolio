@@ -32,7 +32,7 @@
 }
 .nav-menu__cross__animation {
   animation: fadeIn 0.5s 1 forwards linear;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 /* Header */
 .header,

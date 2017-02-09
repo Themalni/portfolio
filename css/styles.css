@@ -437,7 +437,6 @@ a:focus {
   text-align: center;
 }
 .contact__description {
-  max-width: 60%;
   margin: 0 auto;
   color: #fff;
   font-size: 1.4em;
@@ -492,7 +491,6 @@ a:focus {
 .contact__social-btn__container .fa.fa-youtube,
 .contact__social-btn__container .fa.fa-linkedin-square {
   color: #fff;
-  transition: all 0.3s linear;
   position: relative;
   left: 1.1em;
   top: -0.55em;
@@ -502,11 +500,11 @@ a:focus {
 }
 .contact__social-btn:hover {
   transform: rotate(180deg);
+  background-color: rgba(255,255,255, 0.5);
 }
 .contact__social-btn__container .fa-2x {
   font-size: 1.5em;
 }
-
 /***  Footer  ***/
 
 .footer {
