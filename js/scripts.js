@@ -3,37 +3,23 @@ function onReady() { // Handler when the DOM is fully loaded
   var navHamburger = document.querySelector(".nav__hamburger");
   var navMenu = document.querySelector(".nav-menu");
   var navMenuCross = document.querySelector(".nav-menu__cross");
-  var navMenuListItem = document.querySelectorAll(".nav-menu__list-item");
+  var navMenuListItems = document.querySelectorAll(".nav-menu__list-item");
   var navMenuSeparator = document.querySelector(".nav-menu__separator");
   var navMenuText = document.querySelector(".nav-menu__text");
   var navMenuEmail = document.querySelector(".nav-menu__email");
   var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
 
-  /* show menu items */
-  function animateItems(){
-    var listItem = "";
-    var itemsLength = navMenuListItem.length;
-    for(var i = 0; i < itemsLength; i++){
-      listItem = navMenuListItem[i];
-      animateElement(listItem);
-    }
-  }
+  function animateElements() {
+    // Creating array from NodeList:
+    var menuItemsArray = [].slice.call(navMenuListItems);
+    // Concat all elements for animation together:
+    var elementsForAnimation = [navMenuSeparator, navMenuText, navMenuEmail, navMenuSocialBtn].concat(menuItemsArray);
+    // Loop through elements
+    elementsForAnimation.forEach(function(element) {
+      element.classList.toggle("nav-menu__items__animation");
+    });
 
-  function animateCross(item){
-    item.classList.toggle("nav-menu__cross__animation");
-  }
-
-  function animateElement(item){
-    item.classList.toggle("nav-menu__items__animation");
-  }
-
-  function toggleAnimation(){
-    animateItems();
-    animateElement(navMenuSeparator);
-    animateElement(navMenuText);
-    animateElement(navMenuEmail);
-    animateElement(navMenuSocialBtn);
-    animateCross(navMenuCross);
+    navMenuCross.classList.toggle("nav-menu__cross__animation");
   }
 
   /* show header */
@@ -46,7 +32,7 @@ function onReady() { // Handler when the DOM is fully loaded
     navHamburger.style.visibility = "hidden";
     navMenu.style.width = "250px";
     navMenuCross.style.display = "block";
-    toggleAnimation();
+    animateElements();
   }
 
   /* hide menu */
@@ -54,7 +40,7 @@ function onReady() { // Handler when the DOM is fully loaded
     navMenuCross.style.display = "none";
     navMenu.style.width = "0px";
     navHamburger.style.visibility = "visible";
-    toggleAnimation();
+    animateElements();
   }
 
   /* Scroll to a section */
