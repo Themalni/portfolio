@@ -48,10 +48,6 @@ function onReady() { // Handler when the DOM is fully loaded
     animateCross(navMenuCross);
   }
 
-  window.onload = fadeInHeader;
-  navHamburger.addEventListener("click", showMenu);
-  navMenuCross.addEventListener("click", hideMenu);
-
   /* show header */
   function fadeInHeader(){
     header.style.opacity = 1;
@@ -74,20 +70,32 @@ function onReady() { // Handler when the DOM is fully loaded
   }
 
   /* Scroll to a section */
-  $(".nav-menu__link").click(function(){
-    hideMenu();
-    $("html, body").animate({
-      scrollTop: $($.attr(this, "href")).offset().top
-    }, 800);
-    return false;
-  });
+  function addScrollEffects() {
+    $(".nav-menu__link").click(function(){
+      hideMenu();
+      $("html, body").animate({
+        scrollTop: $($.attr(this, "href")).offset().top
+      }, 800);
+      return false;
+    });
 
-  $(".nav__logo__link").click(function(){
-    $("html, body").animate({
-      scrollTop: $($.attr(this, "href")).offset().top
-    }, 800);
-    return false;
-  });
+    $(".nav__logo__link").click(function(){
+      $("html, body").animate({
+        scrollTop: $($.attr(this, "href")).offset().top
+      }, 800);
+      return false;
+    });
+  }
+
+  // Make all initial processes in one place
+  function init() {
+    fadeInHeader();
+    addScrollEffects();
+    navHamburger.addEventListener("click", showMenu);
+    navMenuCross.addEventListener("click", hideMenu);
+  }
+
+  init();
 
 }
 
