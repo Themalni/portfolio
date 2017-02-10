@@ -15,28 +15,16 @@ function onReady() { // Handler when the DOM is fully loaded
     var itemsLength = navMenuListItem.length;
     for(var i = 0; i < itemsLength; i++){
       listItem = navMenuListItem[i];
-      if(listItem.classList.contains("nav-menu__items__animation")){
-        listItem.classList.remove("nav-menu__items__animation");
-      }else{
-        listItem.classList.add("nav-menu__items__animation");
-      }
+      animateElement(listItem);
     }
   }
 
   function animateCross(item){
-    if(item.classList.contains("nav-menu__cross__animation")){
-      item.classList.remove("nav-menu__cross__animation");
-    }else{
-      item.classList.add("nav-menu__cross__animation");
-    }
+    item.classList.toggle("nav-menu__cross__animation");
   }
 
   function animateElement(item){
-    if(item.classList.contains("nav-menu__items__animation")){
-      item.classList.remove("nav-menu__items__animation");
-    }else{
-      item.classList.add("nav-menu__items__animation");
-    }
+    item.classList.toggle("nav-menu__items__animation");
   }
 
   function toggleAnimation(){
