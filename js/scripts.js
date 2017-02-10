@@ -8,13 +8,12 @@ function onReady() { // Handler when the DOM is fully loaded
   var navMenuText = document.querySelector(".nav-menu__text");
   var navMenuEmail = document.querySelector(".nav-menu__email");
   var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
-  var i;
-  var itemsLength = navMenuListItem.length;
-  var listItem = "";
 
   /* show menu items */
   function animateItems(){
-    for(i = 0; i < itemsLength; i++){
+    var listItem = "";
+    var itemsLength = navMenuListItem.length;
+    for(var i = 0; i < itemsLength; i++){
       listItem = navMenuListItem[i];
       if(listItem.classList.contains("nav-menu__items__animation")){
         listItem.classList.remove("nav-menu__items__animation");
@@ -23,6 +22,7 @@ function onReady() { // Handler when the DOM is fully loaded
       }
     }
   }
+
   function animateCross(item){
     if(item.classList.contains("nav-menu__cross__animation")){
       item.classList.remove("nav-menu__cross__animation");
@@ -30,6 +30,7 @@ function onReady() { // Handler when the DOM is fully loaded
       item.classList.add("nav-menu__cross__animation");
     }
   }
+
   function animateElement(item){
     if(item.classList.contains("nav-menu__items__animation")){
       item.classList.remove("nav-menu__items__animation");
@@ -37,6 +38,7 @@ function onReady() { // Handler when the DOM is fully loaded
       item.classList.add("nav-menu__items__animation");
     }
   }
+
   function toggleAnimation(){
     animateItems();
     animateElement(navMenuSeparator);
