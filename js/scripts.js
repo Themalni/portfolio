@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-var header = document.querySelector(".header");
-var navHamburger = document.querySelector(".nav__hamburger");
-var navMenu = document.querySelector(".nav-menu");
-var navMenuCross = document.querySelector(".nav-menu__cross");
-var navMenuListItem = document.querySelectorAll(".nav-menu__list-item");
-var navMenuSeparator = document.querySelector(".nav-menu__separator");
-var navMenuText = document.querySelector(".nav-menu__text");
-var navMenuEmail = document.querySelector(".nav-menu__email");
-var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
-var i;
-var itemsLength = navMenuListItem.length;
-var listItem = "";
-/*navMenu = true;*/
-=======
 function onReady() { // Handler when the DOM is fully loaded
   var header = document.querySelector(".header");
   var navHamburger = document.querySelector(".nav__hamburger");
@@ -23,7 +8,7 @@ function onReady() { // Handler when the DOM is fully loaded
   var navMenuText = document.querySelector(".nav-menu__text");
   var navMenuEmail = document.querySelector(".nav-menu__email");
   var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
->>>>>>> 07c574292b0951edbdcff4b9daf435a9415ba858
+  navMenu.inert = true;
 
   function animateElements() {
     // Creating array from NodeList:
@@ -49,6 +34,7 @@ function onReady() { // Handler when the DOM is fully loaded
     navMenu.style.width = "250px";
     navMenuCross.style.display = "block";
     animateElements();
+    navMenu.inert = false;
   }
 
   /* hide menu */
@@ -57,6 +43,7 @@ function onReady() { // Handler when the DOM is fully loaded
     navMenu.style.width = "0px";
     navHamburger.style.visibility = "visible";
     animateElements();
+    navMenu.inert = true;
   }
 
   /* Scroll to a section */
