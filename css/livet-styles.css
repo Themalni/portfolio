@@ -96,16 +96,16 @@ body {
   font-weight: 400;
 }
 .livet__flex__text {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   color: #333;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 .livet__flex__text--color {
   color: #8d94ba;
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 .livet__flex__text--bold {
-  font-weight: 600;
+  font-weight: 400;
 }

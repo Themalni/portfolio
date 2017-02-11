@@ -10,6 +10,7 @@ var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
 var i;
 var itemsLength = navMenuListItem.length;
 var listItem = "";
+/*navMenu = true;*/
 
 /* show menu items */
 function animateItems(){
@@ -60,6 +61,7 @@ function showMenu(){
   navMenu.style.width = "250px";
   navMenuCross.style.display = "block";
   toggleAnimation();
+  navMenu.inert = false;
 }
 
 /* hide menu */
@@ -68,6 +70,7 @@ function hideMenu(){
   navMenu.style.width = "0px";
   navHamburger.style.visibility = "visible";
   toggleAnimation();
+  navMenu.inert = true;
 }
 
 
