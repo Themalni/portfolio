@@ -1,5 +1,4 @@
 function onReady() { // Handler when the DOM is fully loaded
-  var header = document.querySelector(".header");
   var navHamburger = document.querySelector(".nav__hamburger");
   var navMenu = document.querySelector(".nav-menu");
   var navMenuCross = document.querySelector(".nav-menu__cross");
@@ -21,11 +20,6 @@ function onReady() { // Handler when the DOM is fully loaded
     });
 
     navMenuCross.classList.toggle("nav-menu__cross__animation");
-  }
-
-  /* show header */
-  function fadeInHeader(){
-    header.style.opacity = 1;
   }
 
   /* show menu */
@@ -66,7 +60,6 @@ function onReady() { // Handler when the DOM is fully loaded
 
   // Make all initial processes in one place
   function init() {
-    fadeInHeader();
     addScrollEffects();
     navHamburger.addEventListener("click", showMenu);
     navMenuCross.addEventListener("click", hideMenu);

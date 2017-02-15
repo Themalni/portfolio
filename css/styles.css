@@ -77,6 +77,7 @@ a {
   right: 0.8em;
   cursor: pointer;
   opacity: 1;
+  user-select: none;
 }
 .hamburger {
   stroke: #fff;
@@ -102,6 +103,7 @@ a {
   opacity: 0;
   cursor: pointer;
   z-index: 6;
+  user-select: none;
 }
 .nav-menu__cross-line {
   stroke: #cfd2e2;
