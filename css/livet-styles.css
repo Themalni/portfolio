@@ -2,20 +2,18 @@ body {
   background-color: #fff;
 }
 .livet__header {
-  margin: 4em auto;
-  max-width: 85%;
+  margin: 3em auto;
+  /*max-width: 85%;
   height: 600px;
   background-color: #8d94ba;
-  border-bottom: 2px solid #382266;
+  border-bottom: 2px solid #382266;*/
 }
 .livet__header__img {
-  max-width: 60%;
+  display: block;
+  margin: 0 auto;
+  max-width: 65%;
   height: auto;
-  position: relative;
-  top: 3em;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0 30px 10px -20px #666;
+  box-shadow: 0 10px 10px -8px #666;
 }
 .livet__main-container {
   background-color: #fff;
@@ -78,7 +76,7 @@ body {
 }
 .livet__flex__item {
   padding: 1em 1.5em 2em;
-  border-bottom: 3px solid #ff789e;
+  border-bottom: 2px solid #ff789e;
 }
 .livet__flex__item:nth-child(1) {
   flex: 4;
@@ -89,7 +87,7 @@ body {
 .livet__flex__title {
   display: inline-block;
   padding: 0 1.5em 0.4em 0;
-  border-bottom: 3px solid #ff789e;
+  border-bottom: 2px solid #ff789e;
   color: #ff789e;
   font-size: 1.7em;
   font-family: 'Open Sans', sans-serif;
