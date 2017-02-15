@@ -23,7 +23,8 @@ function onReady() { // Handler when the DOM is fully loaded
   }
 
   /* show menu */
-  function showMenu(){
+  function showMenu(e){
+    e.stopPropagation();
     navHamburger.style.visibility = "hidden";
     navMenu.style.width = "250px";
     navMenuCross.style.display = "block";
