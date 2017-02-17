@@ -383,7 +383,7 @@ a {
   margin: 0.5em;
   width: 500px;
   height: 350px;
-  background-color: #382266;
+  background-color: #7078a9;
   position: relative;
   overflow: hidden;
 }
@@ -398,7 +398,7 @@ a {
 .portfolio__item__thumbnail {
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #cfd2e2;
   opacity: 1;
   transform: translateY(0%);
   transition: all 0.6s linear;
