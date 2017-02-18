@@ -34,11 +34,6 @@
   }
   .about__img {
     display: none;
-    /*max-width: 345px;
-    margin-left: 3em;
-    margin-right: 3em;
-    order: 2;
-    border-radius: 0;*/
   }
   .about__img__mobile {
     display: inline-block;
@@ -77,6 +72,7 @@
     padding-right: 1em;
   }
   .portfolio__item {
+    width: 420px;
     height: 300px;
   }
   .portfolio__item__hover__title {
@@ -110,6 +106,7 @@
   }
   .contact__social-btn__container {
     width: 340px;
+    padding-left: 0.8em;
   }
   .contact__social-btn {
     margin-left: -1.8em;

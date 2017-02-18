@@ -40,6 +40,9 @@
     order: 2;
     border-radius: 0;
   }
+  .about__img__mobile {
+    display: none;
+  }
   .about__text {
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -91,6 +94,7 @@
     font-size: 1.6em;
   }
   .contact__social-btn__container {
+    margin-left: 1em;
     width: 340px;
   }
   .contact__social-btn {
