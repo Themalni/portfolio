@@ -358,7 +358,7 @@ a {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.about__img_mobile {
+.about__img__mobile {
   display: none;
 }
 /*** Portfolio ***/
