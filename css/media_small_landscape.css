@@ -38,7 +38,7 @@
   .about__img__mobile {
     display: inline-block;
     max-width: 220px;
-    margin-left: 0.2em;
+    margin-left: 0.3em;
     margin-bottom: 0.3em;
     height: auto;
     float: right;
@@ -60,7 +60,7 @@
     border-bottom: 1px solid #fff;
   }
   .about__text__description:last-of-type {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
   }
