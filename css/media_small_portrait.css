@@ -52,11 +52,15 @@
     border-left: none;
   }
   .about__text__description:first-of-type {
+    margin-top: 0.5em;
     padding-bottom: 0.8em;
     font-size: 1.3em;
     font-weight: 400;
     border-bottom: 1px solid #fff;
   }
+  .about__text__description:last-of-type {
+     font-size: 1.1em;
+   }
   .portfolio__description {
     max-width: 90%;
   }
