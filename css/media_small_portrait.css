@@ -51,8 +51,11 @@
     padding: 1em 1.5em 0;
     border-left: none;
   }
-  .about__text__description:nth-child(n+2) {
-    font-size: 1.1em;
+  .about__text__description:first-of-type {
+    padding-bottom: 0.8em;
+    font-size: 1.3em;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
   }
   .portfolio__description {
     max-width: 90%;
