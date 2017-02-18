@@ -1,0 +1,124 @@
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait){
+  .nav-menu__text,
+  .nav-menu__email {
+    font-size: 1em;
+  }
+  .nav-menu__social-btn {
+    margin-left: 1.6em;
+  }
+  .nav-menu .fa-2x {
+    font-size: 1.9em;
+  }
+  .header__title {
+    padding: 5px 10px;
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+  .header__subtitle {
+    width: 280px;
+    top: 8em;
+    font-size: 1.5em;
+  }
+  .about__title,
+  .portfolio__title,
+  .contact__title {
+    font-size: 2.2em;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about__title {
+    order: 1;
+  }
+  .about__img {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    width: auto;
+    height: 300px;
+    order: 2;
+    border-radius: 0;
+  }
+  .about__text {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    min-width: 280px;
+    order: 3;
+    padding: 1em 1.5em 0;
+    border-left: none;
+  }
+  .about__text__description:nth-child(n+2) {
+    font-size: 1.1em;
+  }
+  .portfolio__description {
+    max-width: 90%;
+  }
+  .portfolio {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .portfolio__item {
+    height: 230px;
+  }
+  .portfolio__item__hover__title {
+    margin-top: -0.5em;
+    font-size: 2em;
+  }
+  .portfolio__item__hover__description {
+    font-size: 1.2em;
+  }
+  .portfolio__item__hover__base-info {
+    font-size: 1em;
+  }
+  .contact {
+    padding-bottom: 2em;
+    overflow-x: hidden;
+  }
+  .contact__envelope {
+    background-image: url(../images/envelope.svg);
+    background-size: 300px;
+    height: 500px;
+    background-position: 75% 15%;
+    background-repeat: no-repeat;
+  }
+  .contact__description {
+    max-width: 90%;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .contact__link {
+    font-size: 1.6em;
+  }
+  .contact__social-btn__container {
+    width: 320px;
+  }
+  .contact__social-btn {
+    margin-left: -1.3em;
+  }
+  .contact__social-btn__container .fa.fa-twitter,
+  .contact__social-btn__container .fa.fa-codepen,
+  .contact__social-btn__container .fa.fa-github,
+  .contact__social-btn__container .fa.fa-youtube,
+  .contact__social-btn__container .fa.fa-linkedin-square {
+    left: 0.7em;
+  }
+  .contact__social-btn__container .fa.fa-codepen {
+    left: 0.78em;
+  }
+  .footer {
+    height: 170px;
+  }
+  .footer__info__container {
+    margin: 1.5em 1em 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__copyright {
+    flex: 4
+  }
+  .footer-menu__list {
+    flex: 4;
+  }
+  .footer__social-btn {
+    flex: 5;
+  }
+}

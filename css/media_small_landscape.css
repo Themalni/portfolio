@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 640px){
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape){
   .nav-menu__text,
   .nav-menu__email {
     font-size: 1em;
@@ -15,9 +15,8 @@
     line-height: 1em;
   }
   .header__subtitle {
+    width: 280px;
     top: 8em;
-    left: 12.5%;
-    transform: translateX(-1%);
     font-size: 1.5em;
   }
   .about__title,
@@ -32,16 +31,15 @@
     order: 1;
   }
   .about__img {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    width: auto;
-    height: 300px;
+    max-width: 345px;
+    margin-left: 3em;
+    margin-right: 3em;
     order: 2;
     border-radius: 0;
   }
   .about__text {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 3em;
+    margin-right: 3em;
     min-width: 280px;
     order: 3;
     padding: 1em 1.5em 0;
@@ -58,7 +56,7 @@
     padding-right: 1em;
   }
   .portfolio__item {
-    height: 230px;
+    height: 300px;
   }
   .portfolio__item__hover__title {
     margin-top: -0.5em;
@@ -93,7 +91,7 @@
     width: 320px;
   }
   .contact__social-btn {
-    margin-left: -1.8em;
+    margin-left: -1.3em;
   }
   .contact__social-btn__container .fa.fa-twitter,
   .contact__social-btn__container .fa.fa-codepen,
