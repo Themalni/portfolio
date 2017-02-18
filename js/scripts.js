@@ -43,7 +43,7 @@ function onReady() { // Handler when the DOM is fully loaded
 
   /* Scroll to a section */
   function addScrollEffects() {
-    $(".nav-menu__link, .header__btn").click(function(){
+    $(".nav-menu__link").click(function(){
       hideMenu();
       $("html, body").animate({
         scrollTop: $($.attr(this, "href")).offset().top
@@ -51,7 +51,7 @@ function onReady() { // Handler when the DOM is fully loaded
       return false;
     });
 
-    $(".nav__logo__link").click(function(){
+    $(".nav__logo__link, .header__btn").click(function(){
       $("html, body").animate({
         scrollTop: $($.attr(this, "href")).offset().top
       }, 800);
