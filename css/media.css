@@ -1,13 +1,13 @@
 @media screen and (min-width: 320px) and (max-width: 640px){
-  .nav {
-    overflow-y: scroll;
-  }
   .nav-menu__text,
   .nav-menu__email {
     font-size: 1em;
   }
-  .nav .fa-2x {
-    font-size: 1.4em;
+  .nav-menu__social-btn {
+    margin-left: 1.8em;
+  }
+  .nav-menu .fa-2x {
+    font-size: 1.5em;
   }
   .header__title {
     padding: 5px 10px;
