@@ -53,14 +53,14 @@
     border-left: none;
   }
   .about__text__description {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-left: 0.5em;
     margin-right: 0.5em;
   }
   .about__text__description:first-of-type {
     width: 55%;
     padding-bottom: 0.8em;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 400;
     border-bottom: 1px solid #fff;
   }
