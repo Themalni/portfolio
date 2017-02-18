@@ -1,15 +1,21 @@
 @media screen and (min-width: 320px)
               and (max-width: 640px)
               and (orientation: landscape){
-  .nav-menu__text,
+  .nav-menu__text {
+    display: none;
+  }
+  .nav-menu__separator {
+    margin: 1em auto 0.5em;
+  }
   .nav-menu__email {
     font-size: 1em;
+    margin-left: 1.5em;
   }
   .nav-menu__social-btn {
-    margin-left: 1.6em;
+    margin-left: 1.2em;
   }
   .nav-menu .fa-2x {
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
   .header__title {
     padding: 5px 10px;
