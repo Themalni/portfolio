@@ -350,12 +350,16 @@ a {
   color: #fff;
 }
 .about__img {
+  display: block;
   max-width: 360px;
   box-sizing: content-box;
   border-radius: 50%;
   border: 15px solid #ff789e;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+.about__img_mobile {
+  display: none;
 }
 /*** Portfolio ***/
 
