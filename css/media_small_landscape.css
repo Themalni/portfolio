@@ -59,7 +59,7 @@
     font-weight: 400;
     border-bottom: 1px solid #fff;
   }
-  .about__text__description {
+  .about__text__description:last-of-type {
     font-size: 1.3em;
     margin-left: 0.5em;
     margin-right: 0.5em;
