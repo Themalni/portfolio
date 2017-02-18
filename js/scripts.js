@@ -43,7 +43,7 @@ function onReady() { // Handler when the DOM is fully loaded
 
   /* Scroll to a section */
   function addScrollEffects() {
-    $(".nav-menu__link").click(function(){
+    $(".nav-menu__link, .header__btn").click(function(){
       hideMenu();
       $("html, body").animate({
         scrollTop: $($.attr(this, "href")).offset().top
