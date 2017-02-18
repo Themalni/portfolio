@@ -317,14 +317,14 @@ a {
 .about__text__description {
   font-family: 'Open Sans', sans-serif;
 }
-.about__text__description:nth-child(1) {
+.about__text__description:first-of-type {
   padding-bottom: 1em;
   color: #fff;
   font-size: 1.4em;
   font-weight: 400;
   border-bottom: 1px solid #fff;
 }
-.about__text__description:nth-child(n+2) {
+.about__text__description:last-of-type {
   color: #fff;
   font-size: 1em;
   font-weight: 300;
