@@ -27,6 +27,9 @@
     top: 8em;
     font-size: 1.5em;
   }
+  .main-container {
+    overflow-x: hidden;
+  }
   .about__title,
   .portfolio__title,
   .contact__title {
