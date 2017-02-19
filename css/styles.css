@@ -486,8 +486,8 @@ a {
   transition: all 0.1s linear;
 }
 .contact__link:hover {
-  color: #cfd2e2;
-  border-color: #cfd2e2;
+  color: #ffe6ed;
+  border-color: #ffe6ed;
 }
 .contact__envelope {
   background-image: url(../images/envelope.svg);

@@ -1,19 +1,21 @@
 body {
   background-color: #fff;
 }
-.about-me__main {
-  background: #fff;
+.about-me__header {
+  margin-top: 3em;
 }
 .about-me__title {
   width: 100%;
   margin: 0;
-  padding: 2em 0 1em;
+  padding: 1em 0 0.5em;
   color: #ff789e;
   font-size: 2.5em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  z-index: 3;
 }
 .about-me__title--white {
   color: #fff;
@@ -33,12 +35,12 @@ body {
   font-size: 1.4em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  color: #333;
+  color: #382266;
   text-align: center;
 }
 .about-me__flex {
   display: flex;
-  margin: 3em 0 0;
+  margin: 5em 0 0;
   padding-bottom: 10em;
   padding: 0 3em;
   justify-content: space-around;
@@ -46,17 +48,16 @@ body {
   background-color: #ff789e;
   position: relative;
 }
-.biography-svg {
+.about-me__svg {
   width: 100%;
-  height: 360px;
+  height: 519px;
   background-color: #ff789e;
   position: absolute;
   top: 0;
   left: 0;
 }
-.biography-triangle,
-.biography-rectangle,
-.biography-curve {
+.about-me__rectangle,
+.about-me__curve {
   fill: #fff;
 }
 .about-me__flex__item {
@@ -67,6 +68,7 @@ body {
   background-color: #8d94ba;
   border-radius: 50%;
   position: relative;
+  z-index: 2;
 }
 .about-me__flex__item:nth-child(3) {
   top: 5em;
@@ -117,18 +119,27 @@ body {
   font-weight: 400;
   position: relative;
 }
+/***  Main ***/
+.about-me__main {
+  margin: 10em 0 3em;
+  background: #fff;
+}
 .about-me__biography {
   max-width: 100%;
-  margin-top: 4em;
-  padding-bottom: 5em;
-  background-color: #ff789e;
+  background-color: #fff;
 }
 .about-me__biography__text {
   max-width: 60%;
   margin: 1em auto;
-  color: #fff;
-  font-size: 1.4em;
+  padding: 0 1.5em;
+  color: #382266;
+  font-size: 1.3em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
-.about-me__biography__first-letter { font-size: 2em; }
+.about-me__first-letter {
+  display: inline-block;
+  margin-top: -1em;
+  font-size: 2em;
+  color: #ff789e;
+}
