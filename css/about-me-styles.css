@@ -27,7 +27,9 @@ body {
   margin-left: 5px;
   background-color: #ff789e;
 }
-.about-me__title__dot--white { background-color: #fff; }
+.about-me__title__dot--white {
+  background-color: #fff;
+}
 
 .about-me__description {
   max-width: 60%;
@@ -42,27 +44,25 @@ body {
   display: flex;
   margin: 5em 0 0;
   padding-bottom: 10em;
-  padding: 0 3em;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
   background-color: #ff789e;
   position: relative;
 }
 .about-me__svg {
   width: 100%;
-  height: 519px;
+  height: 540px;
   background-color: #ff789e;
   position: absolute;
   top: 0;
   left: 0;
 }
-.about-me__rectangle,
-.about-me__curve {
+.about-me__circle {
   fill: #fff;
 }
 .about-me__flex__item {
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
   margin: 0 2.5em;
   padding: 1em;
   background-color: #8d94ba;
@@ -121,7 +121,7 @@ body {
 }
 /***  Main ***/
 .about-me__main {
-  margin: 10em 0 3em;
+  margin-bottom: 3em;
   background: #fff;
 }
 .about-me__biography {

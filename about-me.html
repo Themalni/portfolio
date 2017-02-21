@@ -17,7 +17,8 @@
   <link rel="stylesheet" media="screen" href="css/font-awesome.min.css"/><!-- mobile stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/styles.css"/><!-- custom stylesheet -->
   <link rel="stylesheet" type="text/css" href="css/about-me-styles.css"/><!-- custom stylesheet -->
-  <link rel="stylesheet" media="screen" href="css/media.css"/><!-- mobile stylesheet -->
+  <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait)" href="css/about_media_small_portrait.css"/><!-- mobile stylesheet -->
+  <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 640px) and (orientation: landscape)" href="css/about_media_small_landscape.css"/><!-- mobile stylesheet -->
   <link rel="stylesheet" media="screen" href="css/animations.css"/><!-- animations stylesheet -->
 
   <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
@@ -75,10 +76,9 @@
     <h1 class="about-me__title">About Me<span class="about-me__title__dot"></span></h1>
     <h3 class="about-me__description">Looks like you are interested in getting to know me better, I couldn't be happier. This page is all yours then, enjoy!</h3>
     <div class="about-me__flex">
-      <svg class="about-me__svg" xmlns="http://www.w3.org/2000/svg">
-        <path class="about-me__rectangle" d="M0 0 L1260 0 L1260 101 L0 101 Z"/>
-        <path class="about-me__curve" d="M0 100 Q630 320 1260 100"/>
-        <path class="about-me__curve" d="M0 520 Q630 300 1260 520"/>
+      <svg class="about-me__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <circle class="about-me__circle" cx="50" cy="-35" r="75"/>
+        <circle class="about-me__circle" cx="50" cy="145" r="70"/>
       </svg>
       <div class="about-me__flex__item">
         <h2 class="about-me__flex__item__title">Skills</h2>
