@@ -1,4 +1,5 @@
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px)
+              and (max-width: 680px){
   .about-me__title {
     font-size: 2.2em;
   }
@@ -19,8 +20,7 @@
     display: none;
   }
   .about-me__flex__item {
-    margin-top: 1em;
-    margin-bottom: 6em;
+    margin: 1em auto 6em;
   }
   .about-me__flex__item:nth-child(4) {
     margin-bottom: 2em;
