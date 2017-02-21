@@ -4,9 +4,11 @@
   }
   .about-me__description {
     max-width: 85%;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .about-me__flex {
+    margin-top: 8em;
+    padding-bottom: 0;
     flex-direction: column;
     background-color: #fff;
   }
@@ -16,11 +18,44 @@
   .about-me__circle {
     display: none;
   }
-
+  .about-me__flex__item {
+    margin-top: 1em;
+    margin-bottom: 6em;
+  }
+  .about-me__flex__item:nth-child(4) {
+    margin-bottom: 2em;
+  }
+  .about-me__flex__item__title {
+    position: absolute;
+    top: -3em;
+    left: 50%;
+    margin-left: 0;
+    transform: translateX(-50%);
+  }
+  .about-me__flex__item:nth-child(3) {
+    top: 0;
+  }
   .about-me__biography__text {
     max-width: 85%;
   }
   .about-me__first-letter {
     font-size: 1.7em;
+  }
+  .footer {
+    height: 170px;
+  }
+  .footer__info__container {
+    margin: 1.5em 1em 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__copyright {
+    flex: 4
+  }
+  .footer-menu__list {
+    flex: 4;
+  }
+  .footer__social-btn {
+    flex: 5;
   }
 }
