@@ -1,0 +1,67 @@
+@media screen and (min-width: 640px)
+              and (max-width: 1080px){
+  .about-me__title {
+    font-size: 2.2em;
+  }
+  .about-me__description {
+    max-width: 85%;
+    font-size: 1.3em;
+  }
+  .about-me__flex {
+    margin-top: 8em;
+    padding-bottom: 0;
+  }
+  .about-me__svg {
+    height: 470px;
+    top: -2.5em;
+  }
+  .about-me__flex__item {
+    width: 180px;
+    height: 180px;
+    margin: 0 1em;
+  }
+  .about-me__flex__item:nth-child(4) {
+    margin-bottom: 2em;
+  }
+  .about-me__flex__item__title {
+    width: 95px;
+    margin-left: 0;
+    position: absolute;
+    top: -3em;
+    left: 50%;
+    font-size: 1.4em;
+    transform: translateX(-50%);
+  }
+  .about-me__flex__item:nth-child(3) {
+    top: 5em;
+  }
+  .about-me__list__item {
+    font-size: 0.9em;
+  }
+  .about-me__biography__text {
+    max-width: 75%;
+  }
+  .about-me__first-letter {
+    font-size: 1.7em;
+  }
+  .about-me__main {
+    margin-top: 5em;
+  }
+  .footer {
+    height: 170px;
+  }
+  .footer__info__container {
+    margin: 1.5em 1em 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__copyright {
+    flex: 4
+  }
+  .footer-menu__list {
+    flex: 4;
+  }
+  .footer__social-btn {
+    flex: 5;
+  }
+}
