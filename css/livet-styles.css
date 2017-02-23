@@ -88,23 +88,20 @@ body {
   flex-wrap: wrap;
 }
 .livet__flex__item {
-  padding: 1em 1.5em;
+  padding: 1em 0.5em;
+  border-bottom: 2px solid #ff789e;
 }
 .livet__flex__item:nth-child(1) {
-  width: 100%;
+  padding-right: 1.5em;
+  flex: 6;
 }
 .livet__flex__item:nth-child(2) {
   flex: 4;
-  border-bottom: 2px solid #ff789e;
-}
-.livet__flex__item:nth-child(3) {
-  flex: 4;
-  border-bottom: 2px solid #ff789e;
 }
 .livet__flex__title {
-  margin-bottom: 0.5em;
+  margin: 0 0 0.3em;
   display: inline-block;
-  padding: 0 1.5em 0.4em 0;
+  padding: 0 0.8em 0.2em 0;
   border-bottom: 2px solid #ff789e;
   color: #ff789e;
   font-size: 1.7em;
@@ -124,4 +121,17 @@ body {
 }
 .livet__flex__text--bold {
   font-weight: 400;
+}
+.livet__flex__skill {
+  display: inline-block;
+  margin: 5px;
+  padding: 4px 10px;
+  font-size: 0.9em;
+  font-weight: 400;
+  background-color: #8d94ba;
+  border-radius: 5px;
+  color: #fff;
+}
+.livet__flex__skill--pink {
+  background-color: #ff789e;
 }
