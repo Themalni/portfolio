@@ -1,7 +1,7 @@
 @media screen and (min-width: 320px)
               and (max-width: 768px) {
   .livet__header {
-    padding-bottom: 1.5em;
+    padding-bottom: 2em;
   }
   .livet__description {
     margin-bottom: 2.5em;
@@ -19,7 +19,7 @@
     font-size: 1em;
   }
   .livet__flex {
-    margin: 1em 1em 0;
+    margin: 2em 1em 0;
   }
   .livet__flex__item {
     min-width: 90%;
