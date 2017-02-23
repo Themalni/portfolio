@@ -30,7 +30,6 @@ body {
 .about-me__title__dot--white {
   background-color: #fff;
 }
-
 .about-me__description {
   max-width: 60%;
   margin: 0 auto;
@@ -142,4 +141,13 @@ body {
   margin-top: -1em;
   font-size: 2em;
   color: #ff789e;
+}
+.about-me__email {
+  display: block;
+  margin: 0 auto;
+  color: #ff789e;
+  font-size: 1.6em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  text-align: center;
 }
