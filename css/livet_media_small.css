@@ -1,0 +1,54 @@
+@media screen and (min-width: 320px)
+              and (max-width: 768px) {
+  .livet__header {
+    padding-bottom: 1.5em;
+  }
+  .livet__description {
+    margin-bottom: 2.5em;
+    width: 300px;
+    font-size: 1.3em;
+    border: none;
+    text-align: center;
+  }
+  .livet__header__img {
+    margin-bottom: 1.5em;
+  }
+  .livet__header__btn {
+    width: 140px;
+    margin: 0.5em;
+    font-size: 1em;
+  }
+  .livet__flex {
+    margin: 1em 1em 0;
+  }
+  .livet__flex__item {
+    min-width: 90%;
+  }
+  .livet__flex__item:nth-child(1) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .livet__flex__title {
+    font-size: 1.5em;
+  }
+  .livet__flex__text {
+    font-size: 1.1em;
+  }
+  .footer {
+    height: 170px;
+  }
+  .footer__info__container {
+    margin: 1.5em 1em 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__copyright {
+    flex: 4
+  }
+  .footer-menu__list {
+    flex: 4;
+  }
+  .footer__social-btn {
+    flex: 5;
+  }
+}

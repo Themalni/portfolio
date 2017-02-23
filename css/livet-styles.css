@@ -32,6 +32,7 @@ body {
 }
 .livet__description {
   display: inline-block;
+  width: 520px;
   position: relative;
   left: 50%;
   padding: 0 0.5em 0.4em;
@@ -53,28 +54,25 @@ body {
   padding-bottom: 3em;
   position: relative;
 }
+.livet__buttons-container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
 .livet__header__btn {
   border: 2px solid #fff;
   display: inline-block;
   width: 200px;
   background-color: rgba(255,255,255,0.3);
-  margin: 1.5em 1em 2.5em;
+  margin: 1em 1em 2.5em;
   padding: 7px 0;
   color: #fff;
   font-size: 1.2em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  position: relative;
-  left: 50%;
   transition: all .3s linear;
   text-align: center;
-}
-.livet__header__btn:first-of-type {
-  transform: translateX(-130%);
-}
-.livet__header__btn:last-of-type {
-  transform: translateX(-120%);
 }
 .livet__header__btn:hover {
   box-shadow: 0 3px 5px -3px #333,
@@ -113,14 +111,6 @@ body {
   font-weight: 300;
   color: #382266;
   font-size: 1.2em;
-}
-.livet__flex__text--color {
-  color: #8d94ba;
-  font-size: 1.3em;
-  font-weight: 400;
-}
-.livet__flex__text--bold {
-  font-weight: 400;
 }
 .livet__flex__skill {
   display: inline-block;
