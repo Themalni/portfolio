@@ -29,13 +29,10 @@
     border-bottom: none;
   }
   .livet__flex__title {
-    font-size: 1.7em;
+    font-size: 1.9em;
   }
   .livet__flex__text {
     font-size: 1.3em;
-  }
-  .livet__flex__skill {
-    font-size: 1.1em;
   }
   .footer {
     height: 170px;
