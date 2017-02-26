@@ -1,5 +1,15 @@
 @media screen and (min-width: 320px)
               and (max-width: 768px) {
+  .nav-menu__text,
+  .nav-menu__email {
+    font-size: 1em;
+  }
+  .nav-menu__social-btn {
+    margin-left: 1.6em;
+  }
+  .nav-menu .fa-2x {
+    font-size: 1.9em;
+  }
   .project__header {
     padding-bottom: 2em;
   }
