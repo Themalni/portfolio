@@ -1,37 +1,36 @@
 @media screen and (min-width: 320px)
               and (max-width: 768px) {
-  .livet__header {
+  .project__header {
     padding-bottom: 2em;
   }
-  .livet__description {
+  .project__description {
+    max-width: 90%;
     margin-bottom: 2.5em;
-    width: 300px;
     font-size: 1.3em;
     border: none;
-    text-align: center;
   }
-  .livet__header__img {
+  .project__header__img {
     margin-bottom: 1.5em;
   }
-  .livet__header__btn {
+  .project__header__btn {
     width: 140px;
     margin: 0.5em;
     font-size: 1em;
   }
-  .livet__flex {
+  .project__flex {
     margin: 2em 1em 0;
   }
-  .livet__flex__item {
+  .project__flex__item {
     min-width: 90%;
   }
-  .livet__flex__item:nth-child(1) {
+  .project__flex__item:nth-child(1) {
     padding-bottom: 0;
     border-bottom: none;
   }
-  .livet__flex__title {
+  .project__flex__title {
     font-size: 1.9em;
   }
-  .livet__flex__text {
+  .project__flex__text {
     font-size: 1.3em;
   }
   .footer {
