@@ -48,7 +48,7 @@ body {
 }
 .project__main-container {
   background-color: #fff;
-  padding-bottom: 3em;
+  padding-bottom: 4em;
   position: relative;
 }
 .project__buttons-container {
@@ -130,4 +130,35 @@ body {
 }
 .project__flex__skill--pink {
   background-color: #ff789e;
+}
+.project__main__btn {
+  width: 160px;
+  padding: 5px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  background-color: #ff789e;
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+  border: 2px solid #ff789e;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+.project__main__btn:hover {
+  background-color: #fff;
+  color: #ff789e;
+}
+.project__main__btn--previous {
+  left: 5.8em;
+}
+.project__main__btn--next {
+  right: 5.8em;
+}
+.project__main__btn--previous .project__main__btn__arrow {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+.project__main__btn--next .project__main__btn__arrow {
+  margin-left: 0.5em;
+  margin-right: 0;
 }
