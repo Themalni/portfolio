@@ -17,6 +17,9 @@
   .nav-menu .fa-2x {
     font-size: 1.5em;
   }
+  .header {
+    height: 450px;
+  }
   .header__title {
     padding: 5px 10px;
     font-size: 2.5em;

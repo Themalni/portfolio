@@ -9,7 +9,7 @@ body {
   text-align: center;
 }
 .project__title {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 1em;
   color: #ff789e;
   font-size: 2.5em;

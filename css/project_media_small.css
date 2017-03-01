@@ -13,8 +13,11 @@
   .project__header {
     padding-bottom: 2em;
   }
+  .project__title {
+   max-width: 90%;
+  }
   .project__description {
-    max-width: 90%;
+    max-width: 85%;
     margin-bottom: 2.5em;
     font-size: 1.3em;
     border: none;
