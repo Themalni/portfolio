@@ -145,7 +145,7 @@ a {
   margin: 2em 2em;
   width: 200px;
   color: #cfd2e2;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   opacity: 0;
@@ -177,7 +177,7 @@ a {
   color: #fff;
 }
 .fa-2x {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 /***  Header  ***/
@@ -199,7 +199,7 @@ a {
   background-color: #fff;
   padding: 0 15px;
   color: #ff789e;
-  font-size: 2.8em;
+  font-size: 2.9em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -214,7 +214,7 @@ a {
   background-color: #8d94ba;
   padding: 3px 15px;
   color: #fff;
-  font-size: 1.7em;
+  font-size: 1.8em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
@@ -233,7 +233,7 @@ a {
   border-radius: 25px;
   padding: 5px 0;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
@@ -315,18 +315,18 @@ a {
   border-left: 15px solid #8d94ba;
 }
 .about__text__description {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .about__text__description:first-of-type {
   padding-bottom: 1em;
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 400;
   border-bottom: 1px solid #fff;
 }
 .about__text__description:last-of-type {
   color: #fff;
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 300;
 }
 .about__btn {
@@ -352,7 +352,7 @@ a {
 .about__img {
   display: block;
   max-width: 360px;
-  box-sizing: content-box;
+  max-height: 360px;
   border-radius: 50%;
   border: 15px solid #ff789e;
   border-top-left-radius: 0;
@@ -392,7 +392,7 @@ a {
   overflow: hidden;
 }
 .portfolio__item__info {
-  margin: 0;
+  margin: 0.2em 0 0;
   color: #fff;
   font-size: 1.4em;
   font-family: 'Open Sans', sans-serif;
@@ -524,14 +524,14 @@ a {
 .contact__social-btn__container .fa.fa-linkedin-square {
   color: #fff;
   position: relative;
-  left: 0.9em;
-  top: -0.55em;
-}
-.contact__social-btn__container .fa.fa-codepen {
-  left: 0.98em;
+  left: 1.02em;
+  top: -0.67em;
 }
 .contact__social-btn__container .fa.fa-twitter {
-  left: 0.99em;
+  left: 1.05em;
+}
+.contact__social-btn__container .fa.fa-codepen {
+  left: 1.1em;
 }
 .contact__social-btn:hover {
   transform: rotate(180deg);
@@ -544,7 +544,7 @@ a {
 
 .footer {
   border-top: 2px solid #cfd2e2;
-  height: 110px;
+  height: 100px;
   background-color: #382266;
   opacity: 0;
 }
