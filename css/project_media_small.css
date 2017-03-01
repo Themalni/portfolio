@@ -28,7 +28,7 @@
     font-size: 1em;
   }
   .project__flex {
-    margin: 2em 1em 0;
+    margin: 2em 1em 1em;
   }
   .project__flex__item {
     min-width: 90%;
@@ -42,6 +42,16 @@
   }
   .project__flex__text {
     font-size: 1.3em;
+  }
+  .project__main__btn {
+    width: 130px;
+    font-size: 1.3em;
+  }
+  .project__main__btn--previous {
+    left: 0.8em;
+  }
+  .project__main__btn--next {
+    right: 0.8em;
   }
   .footer {
     height: 170px;

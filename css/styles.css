@@ -231,7 +231,7 @@ a {
   width: 220px;
   background-color: #8d94ba;
   border-radius: 25px;
-  padding: 7px 0;
+  padding: 5px 0;
   color: #fff;
   font-size: 1.2em;
   font-family: 'Open Sans', sans-serif;
@@ -515,7 +515,7 @@ a {
   border-bottom-color: transparent;
   border-top-color: transparent;
   transition: all 0.3s linear;
-  margin-left: -1em;
+  margin-left: -1.3em;
 }
 .contact__social-btn__container .fa.fa-twitter,
 .contact__social-btn__container .fa.fa-codepen,
@@ -524,11 +524,14 @@ a {
 .contact__social-btn__container .fa.fa-linkedin-square {
   color: #fff;
   position: relative;
-  left: 1.1em;
+  left: 0.9em;
   top: -0.55em;
 }
 .contact__social-btn__container .fa.fa-codepen {
-  left: 1.15em;
+  left: 0.98em;
+}
+.contact__social-btn__container .fa.fa-twitter {
+  left: 0.99em;
 }
 .contact__social-btn:hover {
   transform: rotate(180deg);

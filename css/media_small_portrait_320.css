@@ -1,6 +1,7 @@
-@media screen and (min-width: 360px)
-              and (max-width: 480px)
+@media screen and (min-width: 320px)
+              and (max-width: 360px)
               and (orientation: portrait){
+  /*** Navigation ***/
   .nav-menu__text,
   .nav-menu__email {
     font-size: 1em;
@@ -11,23 +12,33 @@
   .nav-menu .fa-2x {
     font-size: 1.9em;
   }
+  /*** Header ***/
+  .header {
+    height: 450px;
+  }
   .header__title {
     padding: 5px 10px;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 1em;
   }
   .header__subtitle {
-    width: 280px;
+    width: 240px;
     top: 8em;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
+  .header__btn {
+    width: 190px;
+    bottom: 7em;
+  }
+  /*** Main ***/
   .main-container {
     overflow-x: hidden;
   }
+  /*** About ***/
   .about__title,
   .portfolio__title,
   .contact__title {
-    font-size: 2.2em;
+    font-size: 2em;
   }
   .about {
     flex-direction: column;
@@ -39,7 +50,7 @@
     margin-left: 0.5em;
     margin-right: 0.5em;
     width: auto;
-    height: 315px;
+    height: 280px;
     order: 2;
     border-radius: 0;
   }
@@ -49,7 +60,7 @@
   .about__text {
     margin-left: 0.5em;
     margin-right: 0.5em;
-    min-width: 280px;
+    min-width: 255px;
     order: 3;
     padding: 1em 1.5em 0;
     border-left: none;
@@ -64,15 +75,20 @@
   .about__text__description:last-of-type {
      font-size: 1.1em;
    }
+   .about__btn {
+     padding-bottom: 2px;
+   }
+   /*** Portfolio ***/
+  .portfolio {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
   .portfolio__description {
     max-width: 90%;
-  }
-  .portfolio {
-    padding-left: 1em;
-    padding-right: 1em;
+    font-size: 1.2em;
   }
   .portfolio__item {
-    height: 230px;
+    height: 215px;
   }
   .portfolio__item__hover__title {
     margin-top: -0.5em;
@@ -84,6 +100,7 @@
   .portfolio__item__hover__base-info {
     font-size: 1em;
   }
+  /*** Contact ***/
   .contact {
     padding-bottom: 2em;
     overflow-x: hidden;
@@ -101,14 +118,16 @@
     text-align: center;
   }
   .contact__link {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .contact__social-btn__container {
-    margin-left: 1em;
+    margin-left: -0.1em;
     width: 340px;
   }
   .contact__social-btn {
-    margin-left: -1.8em;
+    margin-left: -1.6em;
+    width: 20px;
+    height: 18px;
   }
   .contact__social-btn__container .fa.fa-twitter,
   .contact__social-btn__container .fa.fa-codepen,
@@ -116,11 +135,18 @@
   .contact__social-btn__container .fa.fa-youtube,
   .contact__social-btn__container .fa.fa-linkedin-square {
     top: -0.7em;
-    left: 0.7em;
+    left: 0.75em;
   }
   .contact__social-btn__container .fa.fa-codepen {
-    left: 0.78em;
+    left: 1em;
   }
+  .contact__social-btn__container .fa.fa-codepen {
+    left: 0.85em;
+  }
+  .contact__social-btn__container .fa-2x {
+    font-size: 1.3em;
+  }
+  /*** Footer ***/
   .footer {
     height: 170px;
   }
