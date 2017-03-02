@@ -129,10 +129,10 @@
   0% {
     visibility: hidden;
     opacity: 0;
-    transform: translateY(0%) scale(0.8);
+    transform: scale(0.8);
   }
   100% {
-    transform: translateY(0%) scale(1);
+    transform: scale(1);
     visibility: visible;
     opacity: 1;
   }
@@ -141,7 +141,7 @@
 /*** Project Page ***/
 
 .project__container {
-  animation: showNextProject 0.7s forwards linear;
+  animation: showNextProject 0.5s forwards linear;
 }
 
 /*** Project page animations ***/
@@ -150,12 +150,12 @@
   0% {
     visibility: visible;
     opacity: 0;
-    transform: translateY(0%) scale(-1, 0.5);
+    transform: scale(0.8);
   }
   100% {
     visibility: visible;
     opacity: 1;
-    transform: translateY(0%) scale(1, 1);
+    transform: scale(1);
 
   }
 }
