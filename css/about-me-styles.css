@@ -1,8 +1,10 @@
 body {
   background-color: #fff;
+  overflow-x: hidden;
 }
-.about-me__header {
-  margin-top: 3em;
+.about-me__container {
+  padding-top: 4em;
+  animation: showAbout 0.8s forwards linear;
 }
 .about-me__title {
   width: 100%;

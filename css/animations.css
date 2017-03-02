@@ -47,6 +47,7 @@
 .header__mouse__roll {
   animation: roll 2s infinite normal forwards;
 }
+
 /********** Animations ************/
 
 /*  .header__nav  */
@@ -115,5 +116,46 @@
   100% {
     opacity: 1;
     visibility: visible;
+  }
+}
+
+/*** About me animations ***/
+
+.about-me__container {
+  animation: showAbout 0.5s forwards linear;
+}
+
+@keyframes showAbout {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0%) scale(0.8);
+  }
+  100% {
+    transform: translateY(0%) scale(1);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/*** Project Page ***/
+
+.project__container {
+  animation: showNextProject 0.7s forwards linear;
+}
+
+/*** Project page animations ***/
+
+@keyframes showNextProject {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateY(0%) scale(-1, 0.5);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%) scale(1, 1);
+
   }
 }

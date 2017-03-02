@@ -1,5 +1,10 @@
 body {
+  background-color: #8d94ba;
+  overflow-x: hidden;
+}
+.project__container {
   background-color: #fff;
+  position: relative;
 }
 .project__header {
   padding-top: 3em;
@@ -33,7 +38,7 @@ body {
 }
 .project__description {
   display: inline-block;
-  padding: 0 0.5em 0.4em;
+  padding: 0 0.2em 0.4em;
   color: #fff;
   font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
@@ -92,11 +97,10 @@ body {
   flex-wrap: wrap;
 }
 .project__flex__item {
-  padding: 1em 0.5em;
+  padding: 1em 1.5em;
   border-bottom: 2px solid #ff789e;
 }
 .project__flex__item:nth-child(1) {
-  padding-right: 1.5em;
   flex: 6;
 }
 .project__flex__item:nth-child(2) {
@@ -108,7 +112,7 @@ body {
   padding: 0 0.8em 0.1em 0;
   border-bottom: 2px solid #ff789e;
   color: #ff789e;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
@@ -116,7 +120,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   color: #382266;
-  font-size: 1.2em;
+  font-size: 1.22em;
 }
 .project__flex__skill {
   display: inline-block;
@@ -161,4 +165,7 @@ body {
 .project__main__btn--next .project__main__btn__arrow {
   margin-left: 0.5em;
   margin-right: 0;
+}
+.project__main__btn--invisible {
+  visibility: hidden;
 }
