@@ -4,7 +4,6 @@ body {
 }
 .project__container {
   background-color: #fff;
-  position: relative;
 }
 .project__header {
   padding-top: 3em;

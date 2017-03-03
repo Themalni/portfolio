@@ -7,6 +7,10 @@ function onReady() { // Handler when the DOM is fully loaded
   var navMenuText = document.querySelector(".nav-menu__text");
   var navMenuEmail = document.querySelector(".nav-menu__email");
   var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
+  /*var projectContainer = document.querySelector(".project__container");*/
+  var nav = document.querySelector(".nav");
+  var header = document.querySelector(".header");
+  var mainContainer= document.querySelector(".main-container");
   navMenu.inert = true;
 
   function animateElements() {
@@ -64,6 +68,10 @@ function onReady() { // Handler when the DOM is fully loaded
     addScrollEffects();
     navHamburger.addEventListener("click", showMenu);
     navMenuCross.addEventListener("click", hideMenu);
+  /*  projectContainer.addEventListener("click", hideMenu);*/
+    nav.addEventListener("click", hideMenu);
+    header.addEventListener("click", hideMenu);
+    mainContainer.addEventListener("click", hideMenu);
   }
 
   init();
