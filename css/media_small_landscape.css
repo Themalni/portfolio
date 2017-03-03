@@ -54,6 +54,7 @@
     margin-bottom: 0.3em;
     height: auto;
     float: right;
+    border-radius: 50%;
   }
   .about__text {
     margin-left: 0.5em;
