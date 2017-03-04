@@ -7,10 +7,6 @@ function onReady() { // Handler when the DOM is fully loaded
   var navMenuText = document.querySelector(".nav-menu__text");
   var navMenuEmail = document.querySelector(".nav-menu__email");
   var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
-  /*var projectContainer = document.querySelector(".project__container");*/
-  var nav = document.querySelector(".nav");
-  var header = document.querySelector(".header");
-  var mainContainer= document.querySelector(".main-container");
   navMenu.inert = true;
 
   function animateElements() {
@@ -45,6 +41,25 @@ function onReady() { // Handler when the DOM is fully loaded
     navMenu.inert = true;
   }
 
+  function checkBody(){
+    var nav = document.querySelector(".nav");
+    var header = document.querySelector(".header");
+    var mainContainer= document.querySelector(".main-container");
+    var aboutMeContainer = document.querySelector(".about-me__container");
+    var projectContainer = document.querySelector(".project__container");
+
+    if(document.body.id == "body-index"){
+      nav.addEventListener("click", hideMenu);
+      header.addEventListener("click", hideMenu);
+      mainContainer.addEventListener("click", hideMenu);
+    }else if(document.body.id == "body-project"){
+      nav.addEventListener("click", hideMenu);
+      projectContainer.addEventListener("click", hideMenu);
+    }else if(document.body.id == "body-about"){
+      nav.addEventListener("click", hideMenu);
+      aboutMeContainer.addEventListener("click", hideMenu);
+    }
+  }
   /* Scroll to a section */
   function addScrollEffects() {
     $(".nav-menu__link").click(function(){
@@ -68,10 +83,7 @@ function onReady() { // Handler when the DOM is fully loaded
     addScrollEffects();
     navHamburger.addEventListener("click", showMenu);
     navMenuCross.addEventListener("click", hideMenu);
-  /*  projectContainer.addEventListener("click", hideMenu);*/
-    nav.addEventListener("click", hideMenu);
-    header.addEventListener("click", hideMenu);
-    mainContainer.addEventListener("click", hideMenu);
+    checkBody();
   }
 
   init();
