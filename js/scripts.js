@@ -41,6 +41,12 @@ function onReady() { // Handler when the DOM is fully loaded
     navMenu.inert = true;
   }
 
+  function addClickListener(elements, callback) {
+    elements.forEach(function(element) {
+      element.addEventListener("click", callback);
+    });
+  }
+
   function checkBody(){
     var nav = document.querySelector(".nav");
     var header = document.querySelector(".header");
@@ -48,17 +54,13 @@ function onReady() { // Handler when the DOM is fully loaded
     var aboutMeContainer = document.querySelector(".about-me__container");
     var projectContainer = document.querySelector(".project__container");
 
-    if(document.body.id == "body-index"){
-      nav.addEventListener("click", hideMenu);
-      header.addEventListener("click", hideMenu);
-      mainContainer.addEventListener("click", hideMenu);
-    }else if(document.body.id == "body-project"){
-      nav.addEventListener("click", hideMenu);
-      projectContainer.addEventListener("click", hideMenu);
-    }else if(document.body.id == "body-about"){
-      nav.addEventListener("click", hideMenu);
-      aboutMeContainer.addEventListener("click", hideMenu);
-    }
+    var settings = {
+      "body-index": [nav, header, mainContainer],
+      "body-project": [nav, projectContainer],
+      "body-about": [nav, aboutMeContainer]
+    };
+
+    addClickListener(settings[document.body.id], hideMenu);
   }
   /* Scroll to a section */
   function addScrollEffects() {
