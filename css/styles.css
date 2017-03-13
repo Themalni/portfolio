@@ -200,10 +200,10 @@ a {
   background-repeat: repeat;
   background-size: 400px;
   background-position: top left;
-  height: 510px;
+  height: 530px;
   text-align: center;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
@@ -253,7 +253,7 @@ a {
   letter-spacing: 1px;
   opacity: 0;
   position: absolute;
-  bottom: 6em;
+  bottom: 8em;
   left: 50%;
   transform: translateX(-50%);
   transition: all .3s linear;
@@ -263,33 +263,22 @@ a {
               inset 0 -50px 0 0 #382266;
   color: #fff;
 }
-.header__bottom {
-  width: 70%;
-  height: 45px;
-  background-color: #382266;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  opacity: 0;
-}
 .header__mouse {
   width: 34px;
   height: auto;
   position: absolute;
-  bottom: 1.5em;
+  bottom: 4em;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3;
+  z-index: 4;
 }
 .header__mouse__roll {
   width: 34px;
   height: auto;
   position: absolute;
-  bottom: 1.7em;
+  bottom: 4em;
   left: calc(50% - 17.5px);
-  z-index: 3;
+  z-index: 4;
 }
 .header__mouse__text {
   color: #fff;
@@ -298,17 +287,29 @@ a {
   font-weight: 400;
   letter-spacing: 1px;
   position: absolute;
-  bottom: -0.9em;
+  bottom: 3.3em;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 4;
+}
+.mouse__container__svg {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 15em;
+  left: 0;
   z-index: 3;
+}
+.mouse__container__circle {
+  fill: #382266;
 }
 
 /*** Main section ***/
 .main-container {
   opacity: 0;
-  border-top: 40px solid #8d94ba;
-  z-index: 4;
+  z-index: 1;
+  position: relative;
+  top: -3em;
 }
 
 /*** About section ***/
@@ -375,6 +376,7 @@ a {
 .about__img__mobile {
   display: none;
 }
+
 /*** Portfolio ***/
 
 .portfolio {
@@ -506,8 +508,8 @@ a {
 .contact__envelope {
   background-image: url(../images/envelope.svg);
   background-size: 550px;
-  height: 500px;
-  background-position: 95% 20%;
+  height: 400px;
+  background-position: 95% 30%;
   background-repeat: no-repeat;
 }
 .contact__social-btn__container {
@@ -561,6 +563,8 @@ a {
   height: 100px;
   background-color: #382266;
   opacity: 0;
+  position: relative;
+  top: 4em;
 }
 .footer__info__container {
   margin: 1.5em 4em 1em;
