@@ -130,6 +130,7 @@
     left: 0.78em;
   }
   .footer {
+    top: 0;
     height: 170px;
   }
   .footer__info__container {
