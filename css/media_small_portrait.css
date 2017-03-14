@@ -30,6 +30,7 @@
   }
   .main-container {
     overflow-x: hidden;
+    z-index: 3;
   }
   .about__title,
   .portfolio__title,
