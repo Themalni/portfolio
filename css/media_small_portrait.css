@@ -24,12 +24,21 @@
     top: 8em;
     font-size: 1.5em;
   }
+  .header__mouse {
+    bottom: 2em;
+  }
+  .header__mouse__roll {
+    bottom: 2em;
+  }
+  .header__mouse__text {
+    bottom: 1.3em;
+  }
   .mouse__container__svg {
     top: 18em;
     height: 260px;
   }
   .main-container {
-    top: 2em;
+    top: 0;
     overflow-x: hidden;
     z-index: 3;
   }
