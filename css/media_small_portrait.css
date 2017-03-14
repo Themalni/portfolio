@@ -24,6 +24,9 @@
     top: 8em;
     font-size: 1.5em;
   }
+  .mouse__container__svg {
+    height: 0px;
+  }
   .main-container {
     overflow-x: hidden;
   }
