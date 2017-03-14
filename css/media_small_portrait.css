@@ -12,7 +12,7 @@
     font-size: 1.9em;
   }
   .header {
-    height: 550px;
+    height: 530px;
   }
   .header__title {
     padding: 5px 10px;
@@ -25,7 +25,7 @@
     font-size: 1.5em;
   }
   .mouse__container__svg {
-    top: 17em;
+    top: 18em;
     height: 260px;
   }
   .main-container {
@@ -100,7 +100,7 @@
   .contact__envelope {
     background-image: url(../images/envelope.svg);
     background-size: 300px;
-    height: 380px;
+    height: 400px;
     background-position: 75% 15%;
     background-repeat: no-repeat;
   }
@@ -132,7 +132,7 @@
   }
   .footer {
     top: 0;
-    height: 170px;
+    height: 150px;
   }
   .footer__info__container {
     margin: 1.5em 1em 1em;
