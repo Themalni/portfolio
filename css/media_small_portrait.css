@@ -27,6 +27,9 @@
     top: 8em;
     font-size: 1.5em;
   }
+  .header_btn {
+    bottom: 6.5em;
+  }
   .header__mouse {
     bottom: 2em;
   }
