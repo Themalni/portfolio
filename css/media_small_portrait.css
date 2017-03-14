@@ -2,7 +2,7 @@
               and (max-width: 480px)
               and (orientation: portrait){
   .about__title {
-    padding-top: 0;  
+    padding-top: 1em;  
   }
   .nav-menu__text,
   .nav-menu__email {
