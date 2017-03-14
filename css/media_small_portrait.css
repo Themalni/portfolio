@@ -38,7 +38,7 @@
     height: 260px;
   }
   .main-container {
-    top: 0;
+    top: 1em;
     overflow-x: hidden;
     z-index: 3;
   }
