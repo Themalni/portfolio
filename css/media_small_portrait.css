@@ -31,14 +31,14 @@
     bottom: 2em;
   }
   .header__mouse__text {
-    bottom: 0.5em;
+    bottom: 0.2em;
   }
   .mouse__container__svg {
     top: 18em;
     height: 260px;
   }
   .main-container {
-    top: 1.5em;
+    top: -1.5em;
     overflow-x: hidden;
     z-index: 3;
   }
