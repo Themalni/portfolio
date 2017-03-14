@@ -1,6 +1,9 @@
 @media screen and (min-width: 340px)
               and (max-width: 480px)
               and (orientation: portrait){
+  .about__title {
+    padding-top: 0;  
+  }
   .nav-menu__text,
   .nav-menu__email {
     font-size: 1em;
