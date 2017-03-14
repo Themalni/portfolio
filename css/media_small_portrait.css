@@ -25,6 +25,7 @@
     font-size: 1.5em;
   }
   .mouse__container__svg {
+    top: 17em;
     height: 260px;
   }
   .main-container {
