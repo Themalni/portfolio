@@ -7,6 +7,7 @@ function onReady() { // Handler when the DOM is fully loaded
   var navMenuText = document.querySelector(".nav-menu__text");
   var navMenuEmail = document.querySelector(".nav-menu__email");
   var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
+  var readMore = document.querySelector(".about-me__more");
   navMenu.inert = true;
 
   function animateElements() {
@@ -41,7 +42,51 @@ function onReady() { // Handler when the DOM is fully loaded
     navMenu.inert = true;
   }
 
-  function addClickListener(elements, callback) {
+  /* show more text */
+  function showAboutText(e){
+    var aboutItems = document.querySelectorAll(".about-me__main__item");
+    var aboutItemsArray = [].slice.call(aboutItems);
+    var readMoreData = e.target.dataset.name;
+    if(readMoreData == "item__one"){
+      aboutItemsArray[0].style.transition = "all 1s ease-out";
+      aboutItemsArray[0].style.height = "700px";
+      this.style.transition = "all .2s linear";
+      this.style.display = "none";
+    }else if(readMoreData == "item__two"){
+      aboutItemsArray[1].style.transition = "all 1s ease-out";
+      aboutItemsArray[1].style.height = "700px";
+      this.style.transition = "all .2s linear";
+      this.style.display = "none";
+    }else if(readMoreData == "item__three"){
+      aboutItemsArray[2].style.transition = "all 1s ease-out";
+      aboutItemsArray[2].style.height = "700px";
+      this.style.transition = "all .2s linear";
+      this.style.display = "none";
+    }
+  }
+
+  /* Check body */
+  function checkBody(){
+    var nav = document.querySelector(".nav");
+    var header = document.querySelector(".header");
+    var mainContainer= document.querySelector(".main-container");
+    var aboutMeContainer = document.querySelector(".about-me__container");
+    var projectContainer = document.querySelector(".project__container");
+
+    if(document.body.id == "body-index"){
+      nav.addEventListener("click", hideMenu);
+      header.addEventListener("click", hideMenu);
+      mainContainer.addEventListener("click", hideMenu);
+    }else if(document.body.id == "body-project"){
+      nav.addEventListener("click", hideMenu);
+      projectContainer.addEventListener("click", hideMenu);
+    }else if(document.body.id == "body-about"){
+      nav.addEventListener("click", hideMenu);
+      aboutMeContainer.addEventListener("click", hideMenu);
+      readMore.addEventListener("click", showAboutText);
+    }
+  }
+  /*function addClickListener(elements, callback) {
     elements.forEach(function(element) {
       element.addEventListener("click", callback);
     });
@@ -53,15 +98,19 @@ function onReady() { // Handler when the DOM is fully loaded
     var mainContainer= document.querySelector(".main-container");
     var aboutMeContainer = document.querySelector(".about-me__container");
     var projectContainer = document.querySelector(".project__container");
+    var readMore = document.querySelector(".about-me__more");
 
     var settings = {
       "body-index": [nav, header, mainContainer],
       "body-project": [nav, projectContainer],
-      "body-about": [nav, aboutMeContainer]
+      "body-about": [nav, aboutMeContainer, readMore]
     };
 
     addClickListener(settings[document.body.id], hideMenu);
-  }
+    addClickListener(settings[document.body.id], showAboutText);
+
+  }*/
+
   /* Scroll to a section */
   function addScrollEffects() {
     $(".nav-menu__link").click(function(){
