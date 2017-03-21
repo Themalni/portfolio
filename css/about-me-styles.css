@@ -20,7 +20,10 @@ body {
   z-index: 3;
 }
 .about-me__title--small {
+  padding-top: 0.5em;
   font-size: 2em;
+  background-color: #ff789e;
+  color: #fff;
 }
 .about-me__title--white {
   color: #fff;
@@ -58,10 +61,6 @@ body {
   padding: 0em;
   overflow-x: hidden;
 }
-.about-me__list {
-
-
-}
 .about-me__list__item {
   color: #ff789e;
   font-size: 1.1em;
@@ -96,24 +95,25 @@ body {
   background: #fff;
 }
 .about-me__main__item {
+  position: relative;
+  margin: 1em;
   flex: 4;
+  height: 340px;
   background-color: #fff;
-  height: 300px;
-  transition: all .5s linear;
-  overflow-y: hidden;
+  box-shadow: 0 0 3px -1px rgba(0,0,0,0.4);
+  border-radius: 1px;
+  transition: all 1s linear;
+  overflow: hidden;
 }
 .about-me__biography__text {
   max-width: 100%;
   margin: 1.5em auto;
-  padding: 0 1.2em;
+  padding: 0 1em;
   color: #382266;
   font-size: 1.15em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   line-height: 1.6em;
-}
-.about-me__biography__text:first-of-type {
-  margin-top: 1em;
 }
 .about-me__first-letter {
   display: inline-block;
@@ -122,13 +122,31 @@ body {
   color: #ff789e;
 }
 .about-me__more {
-  margin-left: 0.3em;
-  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 96px;
+  padding: 5px 0;
+  background-color: #ff789e;
   border: none;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 400;
-  color: #ff789e;
+  color: #fff;
+  box-shadow: -95px 0 0 0 #fff,
+              -180px 0 0 0 #fff,
+              -225px 0 0 0 #fff;
   cursor: pointer;
+}
+.about-me__more.about__me__more__slide {
+  animation: slide 1s linear;
+}
+@keyframes slide {
+  0%, 100% {
+    right: 0;
+  }
+  50% {
+    right: -100%;
+  }
 }
 .about-me__email {
   display: block;

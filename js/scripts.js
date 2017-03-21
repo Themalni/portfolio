@@ -7,6 +7,7 @@ function onReady() { // Handler when the DOM is fully loaded
   var navMenuText = document.querySelector(".nav-menu__text");
   var navMenuEmail = document.querySelector(".nav-menu__email");
   var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
+  var readMoreArray = "";
   navMenu.inert = true;
 
   function animateElements() {
@@ -48,24 +49,26 @@ function onReady() { // Handler when the DOM is fully loaded
     var itemThree = document.querySelector("#item__three");
     var readMoreData = e.target.dataset.name;
 
-    function textUnfold(data, item, height, display){
-      item.style.transition = "all 1s ease-out";
-      item.style.height = height;
-      e.target.style.transition = "all .5s linear";
-      e.target.style.display = display;
+    function textUnfold(item, height){
+      if(item.style.height != height){
+        item.style.transition = "all 1s ease-out";
+        item.style.height = height;
+        e.target.classList.toggle("about__me__more__slide");
+        e.target.innerHTML = "read less";
+      }else{
+        item.style.transition = "all 1s ease-out";
+        item.style.height = "340px";
+        e.target.classList.toggle("about__me__more__slide");
+        e.target.innerHTML = "read more";
+      }
     }
+
     if(readMoreData == "item-one-more"){
-      textUnfold("item-one-more", itemOne, "550px", "none");
+      textUnfold(itemOne, "630px");
     }else if(readMoreData == "item-two-more"){
-      textUnfold("item-two-more", itemTwo, "730px", "none");
+      textUnfold(itemTwo, "810px");
     }else if(readMoreData == "item-three-more"){
-      textUnfold("item-three-more", itemThree, "640px", "none");
-    }else if(readMoreData == "item-one-less"){
-      textUnfold("item-one-more", itemOne, "300px", "block");
-    }else if(readMoreData == "item-two-less"){
-      textUnfold("item-two-more", itemTwo, "300px", "block");
-    }else if(readMoreData == "item-three-less"){
-      textUnfold("item-three-more", itemThree, "300px", "block");
+      textUnfold(itemThree, "690px");
     }
   }
 
@@ -88,9 +91,9 @@ function onReady() { // Handler when the DOM is fully loaded
     }else if(document.body.id == "body-about"){
       nav.addEventListener("click", hideMenu);
       aboutMeContainer.addEventListener("click", hideMenu);
-      var readMoreArray = [].slice.call(readMore);
+      readMoreArray = [].slice.call(readMore);
       readMoreArray.forEach(function(element){
-        element.addEventListener("click", aboutText);
+        element.addEventListener("click", aboutText, false);
       });
 
     }
