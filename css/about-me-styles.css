@@ -98,7 +98,7 @@ body {
 .about-me__main__item {
   flex: 4;
   background-color: #fff;
-  height: 280px;
+  height: 300px;
   transition: all .5s linear;
   overflow-y: hidden;
 }
@@ -123,6 +123,8 @@ body {
 }
 .about-me__more {
   margin-left: 0.3em;
+  background-color: transparent;
+  border: none;
   font-size: 0.9em;
   font-weight: 400;
   color: #ff789e;
