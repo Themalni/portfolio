@@ -57,18 +57,18 @@ function onReady() { // Handler when the DOM is fully loaded
         e.target.innerHTML = "read less";
       }else{
         item.style.transition = "all 1s ease-out";
-        item.style.height = "340px";
+        item.style.height = "360px";
         e.target.classList.toggle("about__me__more__slide");
         e.target.innerHTML = "read more";
       }
     }
 
     if(readMoreData == "item-one-more"){
-      textUnfold(itemOne, "630px");
+      textUnfold(itemOne, "660px");
     }else if(readMoreData == "item-two-more"){
-      textUnfold(itemTwo, "810px");
+      textUnfold(itemTwo, "820px");
     }else if(readMoreData == "item-three-more"){
-      textUnfold(itemThree, "690px");
+      textUnfold(itemThree, "730px");
     }
   }
 
