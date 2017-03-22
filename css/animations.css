@@ -48,6 +48,11 @@
   animation: roll 2s infinite normal forwards;
 }
 
+/* Portfolio */
+/*.portfolio__item:hover .portfolio__item__hover:before {
+  animation: showBorder 1s linear forwards;
+  animation-delay: .5s;
+}*/
 /********** Animations ************/
 
 /*  .header__nav  */
@@ -119,6 +124,17 @@
   }
 }
 
+/* Portfolio animations */
+@keyframes showBorder {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 90%;
+    height: 75%;
+  }
+}
 /*** About me animations ***/
 
 .about-me__container {

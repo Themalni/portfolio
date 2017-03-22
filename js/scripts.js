@@ -68,7 +68,7 @@ function onReady() { // Handler when the DOM is fully loaded
     }else if(readMoreData == "item-two-more"){
       textUnfold(itemTwo, "820px");
     }else if(readMoreData == "item-three-more"){
-      textUnfold(itemThree, "730px");
+      textUnfold(itemThree, "750px");
     }
   }
 
