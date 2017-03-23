@@ -402,8 +402,8 @@ a {
 }
 .portfolio__item {
   margin: 0.5em;
-  width: 500px;
-  height: 350px;
+  width: 450px;
+  height: 320px;
   background-color: #7078a9;
   position: relative;
   overflow: hidden;
@@ -449,10 +449,10 @@ a {
 .portfolio__item__hover:before {
   content: "";
   position: absolute;
-  top: 1.7em;
+  top: 2em;
   left: 1.5em;
   width: 0;
-  height: 75.1%;
+  height: 0;
   border-width: 0;
   border-top-width: 1px;
   border-left-width: 1px;
@@ -463,33 +463,34 @@ a {
 .portfolio__item__hover:after {
   content: "";
   position: absolute;
-  bottom: 4.25em;
+  bottom: 4.5em;
   right: 1.5em;
   width: 0;
-  height: 75%;
+  height: 0;
   border-width: 0;
   border-bottom-width: 1px;
   border-right-width: 1px;
   border-style: solid;
   border-color: #fff;
-  transition: all .5s .3s;
+  transition: all .8s linear;
 }
 .portfolio__item:hover .portfolio__item__hover:before,
 .portfolio__item:hover .portfolio__item__hover:after {
-  width: 100%;
+  width: 85%;
+  height: 65%;
 }
 .portfolio__item__hover__title {
-  margin: 0.5em 0 0;
+  margin: 1.5em 0 0;
   color: #fff;
-  font-size: 2.7em;
+  font-size: 2.4em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 .portfolio__item__hover__description {
-  max-width: 80%;
+  max-width: 60%;
   margin: 0.5em auto 0;
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
