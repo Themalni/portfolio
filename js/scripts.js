@@ -123,6 +123,30 @@ function onReady() { // Handler when the DOM is fully loaded
 
   }*/
 
+
+  function addClickListener(elements, callback) {
+    elements.forEach(function(element) {
+      element.addEventListener("click", callback);
+    });
+  }
+
+  function selectButton(){
+    var portfolioButtons = document.querySelectorAll(".portfolio__nav__btn");
+    var buttonsArray = [].slice.call(portfolioButtons);
+
+    addClickListener(buttonsArray, sortProjectItems);
+
+  }
+  function sortProjectItems(e){
+    if(e.target.dataset.btnName == "websites-btn"){
+      console.log("websites");
+    }else if(e.target.dataset.btnName == "apps-btn"){
+      console.log("apps");
+    }else if(e.target.dataset.btnName == "illustrations-btn"){
+      console.log("illus");
+    }
+  }
+
   /* Scroll to a section */
   function addScrollEffects() {
     $(".nav-menu__link").click(function(){
@@ -147,6 +171,7 @@ function onReady() { // Handler when the DOM is fully loaded
     navHamburger.addEventListener("click", showMenu);
     navMenuCross.addEventListener("click", hideMenu);
     checkBody();
+    selectButton();
   }
 
   init();

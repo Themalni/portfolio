@@ -24,7 +24,7 @@
   <link rel="stylesheet" media="screen" href="css/animations.css"/><!-- animations stylesheet -->
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
 
 </head>
 <body id="body-index">
@@ -100,8 +100,13 @@
       <section id="portfolio" class="portfolio">
         <h1 class="portfolio__title">Portfolio<span class="portfolio__title__dot"></span></h1>
         <h3 class="portfolio__description">Examples of my latest projects I made with HTML, CSS and JavaScript.  Feel free to click on them to view the details.</h3>
+        <div class="portfolio__nav__container">
+          <button class="portfolio__nav__btn" data-btn-name="websites-btn">Websites</button>
+          <button class="portfolio__nav__btn" data-btn-name="illustrations-btn">CSS Images</button>
+          <button class="portfolio__nav__btn" data-btn-name="apps-btn">Web Apps</button>
+        </div>
         <div class="portfolio__items-container">
-          <div class="portfolio__item">
+          <div class="portfolio__item" data-name="website">
             <a href="livet-website-template.html">
               <img src="images/livet2.jpg" class="portfolio__item__thumbnail">
               <h2 class="portfolio__item__info">Livet Template</h2>
@@ -111,7 +116,7 @@
               </div>
             </a>
           </div><!-- END portfolio__item -->
-          <div class="portfolio__item">
+          <div class="portfolio__item" data-name="website">
             <a href="every-inch-design-website.html">
               <img src="images/EID.jpg" class="portfolio__item__thumbnail">
               <h2 class="portfolio__item__info">Every Inch Design</h2>
@@ -121,7 +126,7 @@
               </div>
             </a>
           </div><!-- END portfolio__item -->
-          <div class="portfolio__item">
+          <div class="portfolio__item" data-name="app">
             <a href="pomodoro-clock-app.html">
               <img src="images/pomodoro.jpg" class="portfolio__item__thumbnail">
               <h2 class="portfolio__item__info">Pomodoro Clock</h2>
@@ -131,7 +136,7 @@
               </div>
             </a>
           </div><!-- END portfolio__item -->
-          <div class="portfolio__item">
+          <div class="portfolio__item" data-name="app">
             <a href="calculator-js-app.html">
               <img src="images/calculator.jpg" class="portfolio__item__thumbnail">
               <h2 class="portfolio__item__info">Calculator JS</h2>
@@ -141,7 +146,7 @@
               </div>
             </a>
           </div><!-- END portfolio__item -->
-          <div class="portfolio__item">
+          <div class="portfolio__item" data-name="app">
             <a href="random-quote-machine-app.html">
               <img src="images/quote.jpg" class="portfolio__item__thumbnail">
               <h2 class="portfolio__item__info">Random Quote Machine</h2>
@@ -152,7 +157,7 @@
             </a>
           </div><!-- END portfolio__item -->
           <div class="portfolio__item">
-            <a href="wikipedia-viewer-app.html">
+            <a href="wikipedia-viewer-app.html" data-name="app">
               <img src="images/wiki.jpg" class="portfolio__item__thumbnail">
               <h2 class="portfolio__item__info">Wikipedia Viewer</h2>
               <div class="portfolio__item__hover">
@@ -161,7 +166,7 @@
               </div>
             </a>
           </div><!-- END portfolio__item -->
-          <div class="portfolio__item">
+          <div class="portfolio__item" data-name="illustration">
             <a href="camera-css-illustration.html">
               <img src="images/camera.jpg" class="portfolio__item__thumbnail">
               <h2 class="portfolio__item__info">Vintage camera</h2>
@@ -171,7 +176,7 @@
               </div>
             </a>
           </div><!-- END portfolio__item -->
-          <div class="portfolio__item">
+          <div class="portfolio__item" data-name="illustration">
             <a href="owl-css-illustration.html">
               <img src="images/owl.jpg" class="portfolio__item__thumbnail">
               <h2 class="portfolio__item__info">Cute Owl</h2>
