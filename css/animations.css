@@ -50,10 +50,10 @@
 
 /* Portfolio */
 .portfolio__item__hide {
-  animation: itemHide .5s linear forwards;
+  animation: itemHide 1.3s forwards cubic-bezier(.25,.1,.25,1);
 }
 .portfolio__item__show {
-  animation: itemShow .5s linear forwards;
+  animation: itemShow 1.3s forwards cubic-bezier(.25,.1,.25,1);
 }
 /********** Animations ************/
 
@@ -129,25 +129,38 @@
 /* Portfolio animations */
 @keyframes itemHide {
   0% {
-    transform: none;
+    width: 450px;
+    transform: translate(0, 0) scale(1, 1);
+    height: 320px;
+    margin: 0.5em;
     opacity: 1;
+    z-index: 2;
   }
   100% {
-    transform: translateY(20%);
-    opacity: 0;
     width: 0;
+    transform: translateX(-640px) scale(1, 1);
     height: 0;
     margin: 0;
+    opacity: 0.5;
+    z-index: 1;
   }
 }
 @keyframes itemShow {
   0% {
-    transform: translateY(20%);
-    opacity: 0;
+    width: 0;
+    transform: translateX(640px) scale(1, 1);
+    height: 0;
+    margin: 0;
+    opacity: 0.5;
+    z-index: 1;
   }
   100% {
-    transform: none;
+    width: 450px;
+    transform: translate(0, 0) scale(1, 1);
+    height: 320px;
+    margin: 0.5em;
     opacity: 1;
+    z-index: 2;
   }
 }
 /*** About me animations ***/

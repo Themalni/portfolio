@@ -413,10 +413,13 @@ a {
   border-bottom: 2px solid #fff;
 }
 .portfolio__items-container {
+  max-width: 932px;
+  min-height: 672px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .portfolio__item {
   margin: 0.5em;
@@ -426,6 +429,7 @@ a {
   opacity: 1;
   position: relative;
   overflow: hidden;
+  /*transition: all 1.2s cubic-bezier(.25,.13,0,1);*/
 }
 .portfolio__item__info {
   margin: 0.2em 0 0;
