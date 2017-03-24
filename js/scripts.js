@@ -130,21 +130,47 @@ function onReady() { // Handler when the DOM is fully loaded
     });
   }
 
+/* Portfolio buttons */
   function selectButton(){
     var portfolioButtons = document.querySelectorAll(".portfolio__nav__btn");
     var buttonsArray = [].slice.call(portfolioButtons);
 
-    addClickListener(buttonsArray, sortProjectItems);
-
+    addClickListener(buttonsArray, portfolioItems);
   }
-  function sortProjectItems(e){
-    if(e.target.dataset.btnName == "websites-btn"){
-      console.log("websites");
-    }else if(e.target.dataset.btnName == "apps-btn"){
-      console.log("apps");
-    }else if(e.target.dataset.btnName == "illustrations-btn"){
-      console.log("illus");
-    }
+
+/* Portfolio items to sort */
+  function portfolioItems(e){
+    var button = e.target.dataset.btnName;
+    var portfolioItems = document.querySelectorAll(".portfolio__item");
+    var portfolioItemsArray = [].slice.call(portfolioItems);
+
+    portfolioItemsArray.forEach(function(element){
+
+      function showElement(){
+        element.classList.remove("portfolio__item__hide");
+        element.classList.add("portfolio__item__show");
+      }
+      function hideElement(){
+        element.classList.remove("portfolio__item__show");
+        element.classList.add("portfolio__item__hide");
+      }
+      function portfolioItemSort(elementName){
+        if(element.dataset.name != elementName){
+          hideElement();
+        }else{
+          showElement();
+        }
+      }
+      if(button == "websites-btn"){
+        portfolioItemSort("website");
+      }else if(button == "apps-btn"){
+        portfolioItemSort("app");
+      }else if(button == "illustrations-btn"){
+        portfolioItemSort("illustration");
+      }else if (button == "all-btn"){
+        showElement();
+      }
+    });
   }
 
   /* Scroll to a section */

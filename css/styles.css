@@ -423,6 +423,7 @@ a {
   width: 450px;
   height: 320px;
   background-color: #7078a9;
+  opacity: 1;
   position: relative;
   overflow: hidden;
 }

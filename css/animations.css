@@ -49,10 +49,12 @@
 }
 
 /* Portfolio */
-/*.portfolio__item:hover .portfolio__item__hover:before {
-  animation: showBorder 1s linear forwards;
-  animation-delay: .5s;
-}*/
+.portfolio__item__hide {
+  animation: itemHide .5s linear forwards;
+}
+.portfolio__item__show {
+  animation: itemShow .5s linear forwards;
+}
 /********** Animations ************/
 
 /*  .header__nav  */
@@ -125,14 +127,27 @@
 }
 
 /* Portfolio animations */
-@keyframes showBorder {
+@keyframes itemHide {
   0% {
-    width: 0;
-    height: 0;
+    transform: none;
+    opacity: 1;
   }
   100% {
-    width: 90%;
-    height: 75%;
+    transform: translateY(20%);
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+}
+@keyframes itemShow {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
   }
 }
 /*** About me animations ***/
