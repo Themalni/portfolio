@@ -97,13 +97,16 @@
     padding: 0.5em 0;
   }
   .portfolio__nav__btn {
-    width: 110px;
-    margin: 0.5em 0.6em;
+    width: 116px;
+    margin: 0.5em 0.5em;
     font-size: 1em;
   }
   .portfolio__nav__btn:before,
   .portfolio__nav__btn:after  {
-    width: 110px;
+    width: 116px;
+  }
+  .portfolio__items-container {
+    min-height: auto;
   }
   .portfolio__item {
     width: 420px;

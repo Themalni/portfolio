@@ -7,33 +7,15 @@
     max-width: 85%;
     font-size: 1.3em;
   }
-  .about-me__flex {
-    margin-top: 8em;
-    padding-bottom: 0;
-    flex-direction: column;
-    background-color: #fff;
+  .about-me__main {
+    margin-top: 2em;
+    flex-wrap: wrap;
   }
-  .about-me__svg {
-    background-color: #fff;
-  }
-  .about-me__circle {
-    display: none;
-  }
-  .about-me__flex__item {
-    margin: 1em auto 6em;
-  }
-  .about-me__flex__item:nth-child(4) {
-    margin-bottom: 2em;
-  }
-  .about-me__flex__item__title {
-    position: absolute;
-    top: -3em;
-    left: 50%;
-    margin-left: 0;
-    transform: translateX(-50%);
-  }
-  .about-me__flex__item:nth-child(3) {
-    top: 0;
+  .about-me__main__item {
+    min-width: 95%;
+    height: 380px;
+    margin: 1em auto;
+
   }
   .about-me__biography__text {
     max-width: 85%;

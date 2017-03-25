@@ -1,6 +1,9 @@
 @media screen and (min-width: 320px)
               and (max-width: 340px)
               and (orientation: portrait){
+  .about__title {
+    padding-top: 1.5em;
+  }
   /*** Navigation ***/
   .nav-menu__text,
   .nav-menu__email {
@@ -95,13 +98,16 @@
     padding: 1em 0;
   }
   .portfolio__nav__btn {
-    width: 110px;
+    width: 116px;
     margin: 0.5em 0.3em;
     font-size: 1em;
   }
   .portfolio__nav__btn:before,
   .portfolio__nav__btn:after  {
-    width: 110px;
+    width: 116px;
+  }
+  .portfolio__items-container {
+    min-height: auto;
   }
   .portfolio__item {
     height: 220px;
