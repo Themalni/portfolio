@@ -30,7 +30,11 @@
     top: 8em;
     font-size: 1.5em;
   }
+  .header__btn {
+    bottom: 5em;
+  }
   .main-container {
+    top: 0;
     overflow-x: hidden;
   }
   .about__title,
@@ -85,12 +89,26 @@
     padding-left: 1em;
     padding-right: 1em;
   }
+  .portfolio__nav__container {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 0.5em 0;
+  }
+  .portfolio__nav__btn {
+    width: 110px;
+    margin: 0.5em 0.6em;
+    font-size: 1em;
+  }
+  .portfolio__nav__btn:before,
+  .portfolio__nav__btn:after  {
+    width: 110px;
+  }
   .portfolio__item {
     width: 420px;
     height: 300px;
   }
   .portfolio__item__hover__title {
-    margin-top: -0.5em;
+    margin-top: 1.5em;
     font-size: 2em;
   }
   .portfolio__item__hover__description {
@@ -137,6 +155,7 @@
     left: 0.78em;
   }
   .footer {
+    top: 0;
     height: 170px;
   }
   .footer__info__container {

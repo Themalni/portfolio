@@ -269,7 +269,7 @@ a {
   bottom: -100px;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
+  width: 170px;
   height: 150px;
   background-color: #382266;
   border-radius: 50%;
@@ -316,7 +316,7 @@ a {
 /*** About section ***/
 
 .about {
-  padding: 0 0em 3em;
+  padding: 0 0 3em;
   background-color: #382266;
   display: flex;
   justify-content: center;
@@ -381,8 +381,8 @@ a {
 /*** Portfolio ***/
 
 .portfolio {
-  background-color: #fff;
   padding: 0 2em 3em;
+  background-color: #fff;
   z-index: 4;
 }
 .portfolio__description {
@@ -398,6 +398,7 @@ a {
   margin: 0 4.4em 0.5em;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #7078a9;
 }
 .portfolio__nav__btn {
@@ -454,6 +455,7 @@ a {
   overflow: hidden;
 }
 .portfolio__item {
+  display: block;
   margin: 0.5em;
   width: 450px;
   height: 320px;

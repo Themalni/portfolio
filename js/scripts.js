@@ -145,28 +145,17 @@ function onReady() { // Handler when the DOM is fully loaded
     var portfolioItemsArray = [].slice.call(portfolioItems);
 
     portfolioItemsArray.forEach(function(element){
-
-      function showElement(){
-        element.classList.remove("portfolio__item__hide");
-        element.classList.add("portfolio__item__show");
-        /*element.style.width = "450px";
-        element.style.transform = "translate(0px, 0px) scale(1, 1)";
-        element.style.height = "320px";
-        element.style.margin = ".5em";
-        element.style.opacity = 1;
-        element.style.zIndex = "2";*/
-      }
       function hideElement(){
         element.classList.remove("portfolio__item__show");
         element.classList.add("portfolio__item__hide");
-        /*element.style.width = "0px";
-        element.style.transform = "translate(-450px, 320px) scale(.5, .5)";
-        element.style.height = "0";
-        element.style.margin = "0";
-        element.style.opacity = 0.5;
-        element.style.zIndex = "1";*/
-
+        element.style.display = "none";
       }
+      function showElement(){
+        element.classList.remove("portfolio__item__hide");
+        element.classList.add("portfolio__item__show");
+        element.style.display = "block";
+      }
+
       function portfolioItemSort(elementName){
         if(element.dataset.name != elementName){
           hideElement();

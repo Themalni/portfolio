@@ -2,7 +2,7 @@
               and (max-width: 480px)
               and (orientation: portrait){
   .about__title {
-    padding-top: 1em;  
+    padding-top: 1em;
   }
   .nav-menu__text,
   .nav-menu__email {
@@ -26,22 +26,6 @@
     width: 280px;
     top: 8em;
     font-size: 1.5em;
-  }
-  .header__btn {
-    bottom: 6.5em;
-  }
-  .header__mouse {
-    bottom: 2em;
-  }
-  .header__mouse__roll {
-    bottom: 2em;
-  }
-  .header__mouse__text {
-    bottom: 0.2em;
-  }
-  .mouse__container__svg {
-    top: 17em;
-    height: 220px;
   }
   .main-container {
     top: 0;
@@ -91,6 +75,20 @@
   .portfolio__description {
     max-width: 90%;
   }
+  .portfolio__nav__container {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 1em 0;
+  }
+  .portfolio__nav__btn {
+    width: 110px;
+    margin: 0.5em 0.3em;
+    font-size: 1em;
+  }
+  .portfolio__nav__btn:before,
+  .portfolio__nav__btn:after  {
+    width: 110px;
+  }
   .portfolio {
     padding-left: 1em;
     padding-right: 1em;
@@ -99,7 +97,7 @@
     height: 240px;
   }
   .portfolio__item__hover__title {
-    margin-top: -0.5em;
+    margin-top: 0.5em;
     font-size: 2em;
   }
   .portfolio__item__hover__description {
@@ -107,6 +105,19 @@
   }
   .portfolio__item__hover__base-info {
     font-size: 1em;
+  }
+  .portfolio__item__hover:before {
+    top: 1.5em;
+    left: 1em;
+  }
+  .portfolio__item__hover:after {
+    bottom: 4em;
+    right: 1em;
+  }
+  .portfolio__item:hover .portfolio__item__hover:before,
+  .portfolio__item:hover .portfolio__item__hover:after {
+    width: 80%;
+    height: 55%;
   }
   .contact {
     padding-bottom: 2em;

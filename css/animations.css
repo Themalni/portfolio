@@ -50,10 +50,10 @@
 
 /* Portfolio */
 .portfolio__item__hide {
-  animation: itemHide 1.3s forwards cubic-bezier(.25,.1,.25,1);
+  animation: itemHide 1.1s forwards cubic-bezier(.25,.1,.25,1);
 }
 .portfolio__item__show {
-  animation: itemShow 1.3s forwards cubic-bezier(.25,.1,.25,1);
+  animation: itemShow 1.1s forwards cubic-bezier(.25,.1,.25,1);
 }
 /********** Animations ************/
 
@@ -129,38 +129,38 @@
 /* Portfolio animations */
 @keyframes itemHide {
   0% {
-    width: 450px;
-    transform: translate(0, 0) scale(1, 1);
+
+    transform: translateX(0%) scale(1, 1);
+    /*width: 450px;
     height: 320px;
-    margin: 0.5em;
+    margin: 0.5em;*/
     opacity: 1;
-    z-index: 2;
   }
   100% {
-    width: 0;
-    transform: translateX(-640px) scale(1, 1);
+
+    transform: translateX(-20%) scale(.8, .8);
+    /*width: 0;
     height: 0;
-    margin: 0;
-    opacity: 0.5;
-    z-index: 1;
+    margin: 0;*/
+    opacity: 0.6;
   }
 }
 @keyframes itemShow {
   0% {
-    width: 0;
-    transform: translateX(640px) scale(1, 1);
+
+    transform: translateX(-20%) scale(.8, .8);
+    /*width: 0;
     height: 0;
-    margin: 0;
-    opacity: 0.5;
-    z-index: 1;
+    margin: 0;*/
+    opacity: 0.6;
   }
   100% {
-    width: 450px;
-    transform: translate(0, 0) scale(1, 1);
+
+    transform: translateX(0%) scale(1, 1);
+    /*width: 450px;
     height: 320px;
-    margin: 0.5em;
+    margin: 0.5em;*/
     opacity: 1;
-    z-index: 2;
   }
 }
 /*** About me animations ***/
