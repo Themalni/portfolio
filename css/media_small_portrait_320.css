@@ -27,7 +27,8 @@
     font-size: 1.3em;
   }
   .header__btn {
-    width: 190px;
+    width: 180px;
+    font-size: 1.1em;
     bottom: 7em;
   }
   /*** Main ***/

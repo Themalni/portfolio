@@ -24,8 +24,13 @@
   }
   .header__subtitle {
     width: 280px;
-    top: 8em;
+    top: 9em;
     font-size: 1.5em;
+  }
+  .header__btn {
+    width: 180px;
+    font-size: 1.1em;
+    bottom: 7.5em;
   }
   .main-container {
     top: 0;

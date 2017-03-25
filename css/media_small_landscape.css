@@ -31,7 +31,9 @@
     font-size: 1.5em;
   }
   .header__btn {
-    bottom: 5em;
+    width: 180px;
+    font-size: 1.1em;
+    bottom: 6em;
   }
   .main-container {
     top: 0;
