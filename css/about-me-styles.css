@@ -74,20 +74,18 @@ body {
 }
 .about-me__skills__flex {
   display: flex;
-  margin: 0 3em 5em;
+  height: 300px;
+  margin: 0 3em;
   padding: 0;
-  /*background-color: #fff;*/
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
-  top: 3em;
-  /*box-shadow: 0 0 3px -1px rgba(0,0,0,0.4);*/
+  top: 0;
 }
 .about-me__skills__item {
-  height: 100px;
+  max-width: 80%;
   margin: 0 auto;
-  position: relative;
 }
 .about-me__skills__title {
   width: 100%;
@@ -111,7 +109,6 @@ body {
   width: 100px;
   height: 65px;
   padding-top: 35px;
-  /*border-radius: 50%;*/
   margin: 0.5em 0.7em;
   color: #fff;
   font-size: 1.1em;
@@ -125,63 +122,10 @@ body {
   border-radius: 5px;
   box-shadow: 0 3px 3px -1px rgba(0,0,0,0.4);
 }
-.about-me__list__item:after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 2px);
-  left: 105%;
-  width: 30px;
-  height: 5px;
-  background-color: #fff;
-  box-shadow: 0 3px 3px -1px rgba(0,0,0,0.4);
-  z-index: 0;
-  /*border-radius: 50%;*/
-}
-.about-me__skills__item:nth-child(1)
-.about-me__list__item:nth-child(even) {
-  background-color: #ff789e;
-}
-.about-me__skills__item:nth-child(1) {
-  top: -3em;
-  z-index: 2;
-}
-.about-me__skills__item:nth-child(2) {
-  top: -3.5em;
-  z-index: 1;
-}
-.about-me__skills__item:nth-child(3) {
-  top: -4em;
-}
-.about-me__skills__item:nth-child(2)
-.about-me__list__item:nth-child(odd) {
-  background-color: #ff789e;
-}
-.about-me__skills__item:nth-child(3)
-.about-me__list__item:nth-child(odd) {
-  background-color: #ff789e;
-}
-.about-me__list__item:nth-child(6).about-me__list__item:after {
-  display: none;
-}
-.about-me__skills__item:nth-child(2)
-.about-me__list__item:nth-child(5).about-me__list__item:after {
-  display: none;
-}
-.about-me__skills__item:nth-child(3)
-.about-me__list__item:nth-child(4).about-me__list__item:after {
-  display: none;
-}
-/*.about-me__list__item:before {
-  content: "";
-  position: absolute;
-  top: 0.6em;
-  left: -1.2em;
-  width: 10px;
-  height: 10px;
-  background-color: #8d94ba;
-  border-radius: 50%;
-}*/
 
+
+
+/* Biography */
 .about-me__biography__flex {
   display: flex;
   padding: 0 2em;
