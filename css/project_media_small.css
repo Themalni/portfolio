@@ -23,9 +23,6 @@
     position: relative;
     z-index: 2;
   }
-  .project__header__img {
-    margin: 0.5em auto;
-  }
   .project__buttons-container {
     margin-bottom: 0;
   }
