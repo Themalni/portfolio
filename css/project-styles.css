@@ -48,8 +48,8 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: -1.5em;
-  max-width: 100%;
-  height: auto;
+  /*max-width: 50%;
+  height: auto;*/
   transition: all .3s linear;
 }
 .project__main-container {
