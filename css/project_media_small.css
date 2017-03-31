@@ -23,10 +23,12 @@
     position: relative;
     z-index: 2;
   }
-  .project__buttons-container {
-    margin-bottom: 0.5em;
+  .project__header__img {
+    margin: 0.5em auto;
   }
-
+  .project__buttons-container {
+    margin-bottom: 0;
+  }
   .project__header__btn {
     width: 130px;
     margin: 0.5em;
