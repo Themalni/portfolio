@@ -21,6 +21,8 @@
     margin-bottom: 2.5em;
     font-size: 1.3em;
     border: none;
+    position: relative;
+    z-index: 2;
   }
   .project__header__img {
     margin-top: -3em;
