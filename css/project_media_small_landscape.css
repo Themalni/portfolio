@@ -17,10 +17,6 @@
   .nav-menu .fa-2x {
     font-size: 1.5em;
   }
-  .project__header {
-    padding-left: 3em;
-    padding-right: 3em;
-  }
   .project__description {
     margin-bottom: 1em;
   }
@@ -29,8 +25,6 @@
     margin-right: 3em;
   }
   .project__header__img {
-    display: block;
-    margin: 0 auto;
     margin-top: -1em;
   }
 }
