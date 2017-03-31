@@ -45,6 +45,8 @@ body {
   border-bottom: 2px solid #fff;
 }
 .project__header__img {
+  display: block;
+  margin: 0 auto;
   margin-top: -1.5em;
   max-width: 100%;
   height: auto;
