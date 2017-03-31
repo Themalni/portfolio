@@ -19,6 +19,7 @@
   }
   .project__description {
     margin-bottom: 1em;
+    border-bottom: 2px solid #fff;
   }
   .project__flex {
     margin-left: 3em;
@@ -27,7 +28,7 @@
   .project__header__img {
     margin-top: -4em;
   }
-  .project__main-container {
-    bottom: 3em;
+  .project__buttons-container {
+    margin-top: -2em;
   }
 }
