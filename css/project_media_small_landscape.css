@@ -25,6 +25,9 @@
     margin-right: 3em;
   }
   .project__header__img {
-    margin-top: -2em;
+    margin-top: -4em;
+  }
+  .project__main-container {
+    top: -2em;
   }
 }
