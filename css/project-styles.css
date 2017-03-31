@@ -37,7 +37,8 @@ body {
 }
 .project__description {
   display: inline-block;
-  padding: 0 0.2em 0.4em;
+  margin-bottom: 0;
+  padding: 0 0.2em;
   color: #fff;
   font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
@@ -47,19 +48,11 @@ body {
 .project__header__img {
   display: block;
   margin: 0 auto;
-  margin-top: -1.5em;
-  /*max-width: 50%;
-  height: auto;*/
   transition: all .3s linear;
-}
-.project__main-container {
-  background-color: #fff;
-  padding-bottom: 4em;
-  position: relative;
 }
 .project__buttons-container {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   text-align: center;
 }
 .project__header__btn {
@@ -90,6 +83,11 @@ body {
   box-shadow: 0 3px 5px -3px #333,
               inset 0 -50px 0 0 rgba(255,255,255,0.3);
   color: #fff;
+}
+.project__main-container {
+  background-color: #fff;
+  padding-bottom: 4em;
+  position: relative;
 }
 .project__flex {
   margin: 4em 8em 2em;

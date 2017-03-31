@@ -18,20 +18,17 @@
   }
   .project__description {
     max-width: 85%;
-    margin-bottom: 2.5em;
     font-size: 1.3em;
     border: none;
     position: relative;
     z-index: 2;
   }
-  .project__header__img {
-    margin-top: -4.5em;
-  }
   .project__buttons-container {
-    margin-top: -2em;
+    margin-bottom: 0.5em;
   }
+
   .project__header__btn {
-    width: 140px;
+    width: 130px;
     margin: 0.5em;
     font-size: 1em;
   }

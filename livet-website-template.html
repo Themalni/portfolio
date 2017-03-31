@@ -77,7 +77,13 @@
     <header class="project__header">
       <h2 class="project__title project__title--white">Livet<span class="contact__title__dot title__dot--white"></span></h2>
       <h3 class="project__description">Bootstrap based custom website template</h3>
-      <img src="images/livet_preview.jpg" class="project__header__img" alt="header image">
+      <img  src="images/livet_1400.jpg"
+            srcset="images/livet_800.jpg 800w,
+                    images/livet_1200.jpg 1100w,
+                    images/livet_1400.jpg 1400w"
+            sizes="(max-width: 320px) 90vw, 100vw"
+            class="project__header__img"
+            alt="header image"/>
       <div class="project__buttons-container">
         <a href="http://www.livet.everyinchdesign.com" target="_blank" class="project__header__btn">Live Demo</a>
         <a href="#portfolio" class="project__header__btn">GitHub</a>
