@@ -74,57 +74,50 @@ body {
 }
 .about-me__skills__flex {
   display: flex;
-  height: 300px;
   margin: 0 3em;
   padding: 0;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
   position: relative;
   top: 0;
 }
 .about-me__skills__item {
-  max-width: 80%;
-  margin: 0 auto;
+  flex: 4;
+  margin: 1em;
+  height: 340px;
+  background-color: #fff;
+  box-shadow: 0 0 3px -1px rgba(0,0,0,0.4),
+              0 13px 13px -10px rgba(0,0,0,0.4);
+  border-radius: 3px;
 }
-.about-me__skills__title {
+.about-me__skills__header {
   width: 100%;
-  margin: 0;
-  padding: 10px 0;
-  background-color: #ff789e;
-  color: #fff;
-  font-size: 1.7em;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-  z-index: 3;
-}
-.about-me__list {
-
-}
-.about-me__list__item {
-  box-sizing: content-box;
-  display: inline-block;
-  width: 100px;
-  height: 65px;
-  padding-top: 35px;
-  margin: 0.5em 0.7em;
-  color: #fff;
-  font-size: 1.1em;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  line-height: 1.7em;
+  height: 100px;
+  background: linear-gradient(to bottom, #7078a9 0%, #ff789e 100%);
   position: relative;
-  background-color: #8d94ba;
-  text-align: center;
-  border: 5px solid #fff;
-  border-radius: 5px;
-  box-shadow: 0 3px 3px -1px rgba(0,0,0,0.4);
 }
-
-
-
+.about-me__skills__header:before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-me__skills__logo {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-me__skills__item:nth-child(3) .about-me__skills__logo {
+  width: 35px;
+}
 /* Biography */
 .about-me__biography__flex {
   display: flex;
@@ -136,24 +129,25 @@ body {
   flex: 4;
   height: 360px;
   background-color: #fff;
-  box-shadow: 0 0 3px -1px rgba(0,0,0,0.4);
-  border-radius: 1px;
+  box-shadow: 0 0 3px -1px rgba(0,0,0,0.4),
+              0 13px 13px -10px rgba(0,0,0,0.4);
+  border-radius: 3px;
   transition: all 1s linear;
   overflow: hidden;
 }
-.about-me__item__header {
+.about-me__biography__header {
   width: 100%;
   height: 94px;
-  background-color: #8d94ba;
+  background: linear-gradient(to bottom, #7078a9 0%, #9ba4cb 100%);
   position: relative;
 }
-.about-me__title__description {
+.about-me__biography__description {
   position: absolute;
   bottom: -0.9em;
   right: 0em;
   display: inline-block;
   padding: 1px 10px;
-  background-color: /*rgba(255,255,255,1)*/#ff789e;
+  background-color: #ff789e;
   color: #fff;
   font-size: 1em;
   font-family: 'Source Sans Pro', sans-serif;
@@ -214,5 +208,6 @@ body {
   font-weight: 400;
   text-align: center;
   background-color: #fff;
-  box-shadow: 0 0 3px -1px rgba(0,0,0,0.4);
+  box-shadow: 0 0 3px -1px rgba(0,0,0,0.4),
+              0 13px 13px -10px rgba(0,0,0,0.4);
 }
