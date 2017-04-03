@@ -121,11 +121,22 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.about-me__skills__item:nth-child(3) .about-me__skills__logo {
-  width: 39px;
+.about-me__skills__item:nth-child(3) .about-me__skills__logo,
+.about-me__skills__item:nth-child(5) .about-me__skills__logo,
+.about-me__skills__item:nth-child(7) .about-me__skills__logo,
+.about-me__skills__item:nth-child(8) .about-me__skills__logo {
+  width: 40px;
 }
 .about-me__skills__item:nth-child(4) .about-me__skills__logo {
   width: 55px;
+}
+.about-me__skills__item:nth-child(6) .about-me__skills__logo {
+  width: 45px;
+  left: 51%;
+}
+.about-me__skills__item:nth-child(9) .about-me__skills__logo,
+.about-me__skills__item:nth-child(10) .about-me__skills__logo {
+  width: 45px;
 }
 .about-me__skills__middle {
   width: 100%;
@@ -159,7 +170,7 @@ body {
 .about-me__skills__middle__description:before,
 .about-me__skills__middle__description:after {
   content: "";
-  width: 200px;
+  width: 10px;
   border-bottom: 2px solid #ff789e;
   position: absolute;
   top: 50%;
