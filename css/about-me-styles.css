@@ -74,11 +74,13 @@ body {
 }
 .about-me__skills__flex {
   display: flex;
+  height: 410px;
   padding: 0 2em;
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
   top: 0;
+  overflow-y: hidden;
 }
 .about-me__skills__item {
   flex: 4;
@@ -191,6 +193,23 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
+.about-me__skills__btn {
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  margin: 1em auto 4em;
+  padding: 10px;
+  background-color: #fff;
+  color: #382266;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  border: none;
+  border-bottom: 8px solid #ff789e;
+  border-radius: 3px;
+  box-shadow: 0 0 3px -1px rgba(0,0,0,0.4),
+              0 13px 13px -10px rgba(0,0,0,0.4);
+}
 /* Biography */
 .about-me__biography__flex {
   display: flex;
@@ -283,4 +302,5 @@ body {
   background-color: #fff;
   box-shadow: 0 0 3px -1px rgba(0,0,0,0.4),
               0 13px 13px -10px rgba(0,0,0,0.4);
+  border-radius: 3px;
 }

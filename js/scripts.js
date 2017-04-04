@@ -7,6 +7,7 @@ function onReady() { // Handler when the DOM is fully loaded
   var navMenuText = document.querySelector(".nav-menu__text");
   var navMenuEmail = document.querySelector(".nav-menu__email");
   var navMenuSocialBtn = document.querySelector(".nav-menu__social-btn");
+  var skillsBtn = document.querySelector(".about-me__skills__btn");
   var readMoreArray = "";
   navMenu.inert = true;
 
@@ -72,6 +73,25 @@ function onReady() { // Handler when the DOM is fully loaded
     }
   }
 
+  /* show more skills */
+
+  function showSkills(){
+    var skillsFlex = document.querySelector(".about-me__skills__flex");
+    var height = skillsFlex.offsetHeight;
+    for(var i = height; i < 1230; i++){
+      skillsFlex.style.transition = "all 1s ease-out";
+      skillsFlex.style.height = height + 410 + "px";
+      if(height > 800){
+        skillsBtn.innerHTML = "Show less";
+      }
+    }
+    if(height > 1000){
+      skillsFlex.style.transition = "all 1s ease-out";
+      skillsFlex.style.height = 410 + "px";
+      skillsBtn.innerHTML = "Show more";
+    }
+  }
+  
   /* Check body */
   function checkBody(){
     var nav = document.querySelector(".nav");
@@ -95,7 +115,7 @@ function onReady() { // Handler when the DOM is fully loaded
       readMoreArray.forEach(function(element){
         element.addEventListener("click", aboutText, false);
       });
-
+      skillsBtn.addEventListener("click", showSkills);
     }
   }
   /*function addClickListener(elements, callback) {
@@ -190,6 +210,16 @@ function onReady() { // Handler when the DOM is fully loaded
         scrollTop: $($.attr(this, "href")).offset().top
       }, 800);
       return false;
+    });
+
+    /* scroll to skills */
+    $(skillsBtn).click(function(){
+      if($(skillsBtn).text() === "Show less"){
+        $("html, body").animate({
+          scrollTop: 620
+        }, 600);
+        return false;
+      }
     });
   }
 
