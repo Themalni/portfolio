@@ -106,6 +106,8 @@ function onReady() { // Handler when the DOM is fully loaded
           if(height > secondIncrease){
             if(window.innerWidth <= 400){
               skillsFlex.style.height = height + increaseHeight + 400 + "px";
+            }else if(window.innerWidth <= 768){
+              skillsFlex.style.height = height + increaseHeight - 400 + "px";
             }else{
               skillsFlex.style.height = height + increaseHeight + "px";
             }
@@ -127,7 +129,7 @@ function onReady() { // Handler when the DOM is fully loaded
       if(window.innerWidth <= 400){
         skillsFlexHeight(4050, 1210, 1210, 2420, 2450, 1220);
       }else if(window.innerWidth <= 768){
-        skillsFlexHeight();
+        skillsFlexHeight(2050, 800, 800, 1615, 1640, 830);
       }else{
         skillsFlexHeight(1230, 400, 400, 800, 1000, 410);
       }
@@ -197,7 +199,6 @@ function onReady() { // Handler when the DOM is fully loaded
   function selectButton(){
     var portfolioButtons = document.querySelectorAll(".portfolio__nav__btn");
     var buttonsArray = [].slice.call(portfolioButtons);
-
     addClickListener(buttonsArray, portfolioItems);
   }
 
@@ -273,12 +274,13 @@ function onReady() { // Handler when the DOM is fully loaded
         }
       }else if(skillsFlex.width() <= 400 && $(skillsBtn).text() === "Show less"){
         bodyAnimate(620);
+      }else if(skillsFlex.width() <= 768 && $(skillsBtn).text() === "Show less"){
+        bodyAnimate(600);
       }
 
     });
   }
 
-  // Make all initial processes in one place
   function init() {
     addScrollEffects();
     navHamburger.addEventListener("click", showMenu);

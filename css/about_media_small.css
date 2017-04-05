@@ -11,6 +11,10 @@
 .about-me__skills__flex {
   height: 1220px;
 }
+.about-me__skills__item {
+  min-width: 240px;
+  max-width: 260px;
+}
 .about-me__skills__btn {
   margin-top: 0.5em;
 }
