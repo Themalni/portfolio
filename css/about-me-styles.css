@@ -140,6 +140,11 @@ body {
 .about-me__skills__item:nth-child(10) .about-me__skills__logo {
   width: 45px;
 }
+/* skills item opacity */
+.about-me__skills__item:nth-child(n+5) {
+  opacity: 0;
+}
+
 .about-me__skills__middle {
   width: 100%;
   height: 80px;

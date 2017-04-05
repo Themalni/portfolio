@@ -55,6 +55,8 @@
 .portfolio__item__show {
   animation: itemShow 1.1s forwards cubic-bezier(.25,.1,.25,1);
 }
+
+
 /********** Animations ************/
 
 /*  .header__nav  */
@@ -126,40 +128,34 @@
   }
 }
 
-/* Portfolio animations */
-@keyframes itemHide {
+/*  opacity  */
+@keyframes fadeOut {
   0% {
-
-    transform: translateX(0%) scale(1, 1);
-    /*width: 450px;
-    height: 320px;
-    margin: 0.5em;*/
     opacity: 1;
   }
   100% {
+    opacity: 0;
+  }
+}
 
+/* Portfolio animations */
+@keyframes itemHide {
+  0% {
+    transform: translateX(0%) scale(1, 1);
+    opacity: 1;
+  }
+  100% {
     transform: translateX(-20%) scale(.8, .8);
-    /*width: 0;
-    height: 0;
-    margin: 0;*/
     opacity: 0.6;
   }
 }
 @keyframes itemShow {
   0% {
-
     transform: translateX(-20%) scale(.8, .8);
-    /*width: 0;
-    height: 0;
-    margin: 0;*/
     opacity: 0.6;
   }
   100% {
-
     transform: translateX(0%) scale(1, 1);
-    /*width: 450px;
-    height: 320px;
-    margin: 0.5em;*/
     opacity: 1;
   }
 }
@@ -168,7 +164,12 @@
 .about-me__container {
   animation: showAbout 0.5s forwards linear;
 }
-
+.about-me__skills__show {
+  animation: fadeIn .5s forwards linear;
+}
+.about-me__skills__hide {
+  animation: fadeOut 1.5s forwards linear;
+}
 @keyframes showAbout {
   0% {
     visibility: hidden;
