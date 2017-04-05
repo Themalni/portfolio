@@ -7,6 +7,14 @@
     max-width: 85%;
     font-size: 1.3em;
   }
+  /* skills */
+.about-me__skills__flex {
+  height: 1220px;
+}
+.about-me__skills__btn {
+  margin-top: 0.5em;
+}
+  /* biography */
   .about-me__biography__flex {
     margin-top: 2em;
     flex-wrap: wrap;

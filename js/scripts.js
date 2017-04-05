@@ -93,28 +93,43 @@ function onReady() { // Handler when the DOM is fully loaded
 
     /* show one row of skills items at a time */
     function revealMoreItems(){
-      /* show more items */
-      for(var i = height; i < 1230; i++){
-        skillsFlex.style.transition = "all 1s ease-out";
-        skillsFlex.style.height = height + 400 + "px";
 
-        if(height > 400){
-          skillsItemsAnimate(secondSkillsRow);
+      function skillsFlexHeight(maxHeight, increaseHeight, firstIncrease, secondIncrease,  actualHeight, originalHeight){
+        /* show more items */
+        for(var i = height; i < maxHeight; i++){
+          skillsFlex.style.transition = "all 1s ease-out";
+
+          if(height > firstIncrease){
+            skillsItemsAnimate(secondSkillsRow);
+            skillsFlex.style.height = height + increaseHeight + "px";
+          }
+          if(height > secondIncrease){
+            if(window.innerWidth <= 400){
+              skillsFlex.style.height = height + increaseHeight + 400 + "px";
+            }else{
+              skillsFlex.style.height = height + increaseHeight + "px";
+            }
+            skillsBtn.innerHTML = "Show less";
+            skillsItemsAnimate(thirdSkillsRow);
+          }
         }
-        if(height > 800){
-          skillsBtn.innerHTML = "Show less";
-          skillsItemsAnimate(thirdSkillsRow);
+        /* hide all items but the first four */
+        if(height > actualHeight){
+          skillsFlex.style.transition = "all 1s ease-out";
+          skillsFlex.style.height = originalHeight + "px";
+          skillsBtn.innerHTML = "Show more";
+          twoBottomRows.forEach(function(element){
+            element.classList.remove("about-me__skills__show");
+            element.classList.add("about-me__skills__hide");
+          });
         }
       }
-      /* hide all items but the first four */
-      if(height > 1000){
-        skillsFlex.style.transition = "all 1s ease-out";
-        skillsFlex.style.height = 410 + "px";
-        skillsBtn.innerHTML = "Show more";
-        twoBottomRows.forEach(function(element){
-          element.classList.remove("about-me__skills__show");
-          element.classList.add("about-me__skills__hide");
-        });
+      if(window.innerWidth <= 400){
+        skillsFlexHeight(4050, 1210, 1210, 2420, 2450, 1220);
+      }else if(window.innerWidth <= 768){
+        skillsFlexHeight();
+      }else{
+        skillsFlexHeight(1230, 400, 400, 800, 1000, 410);
       }
     }
     revealMoreItems();
@@ -232,7 +247,6 @@ function onReady() { // Handler when the DOM is fully loaded
       }, 800);
       return false;
     });
-
     $(".nav__logo__link, .header__btn").click(function(){
       $("html, body").animate({
         scrollTop: $($.attr(this, "href")).offset().top
@@ -242,22 +256,25 @@ function onReady() { // Handler when the DOM is fully loaded
 
     /* scroll to skills */
     $(skillsBtn).click(function(){
-      if($(".about-me__skills__flex").height() > 400 && $(".about-me__skills__flex").height() < 800){
+      var skillsFlex = $(".about-me__skills__flex");
+      function bodyAnimate(height){
         $("html, body").animate({
-          scrollTop: 1030
-        }, 1500);
-        return false;
-      }else if($(".about-me__skills__flex").height() > 800 && $(".about-me__skills__flex").height() < 1200){
-        $("html, body").animate({
-          scrollTop: 1430
-        }, 1500);
-        return false;
-      }else if($(skillsBtn).text() === "Show less"){
-        $("html, body").animate({
-          scrollTop: 620
+          scrollTop: height
         }, 1500);
         return false;
       }
+      if(skillsFlex.width() > 768){
+        if(skillsFlex.height() > 400 && skillsFlex.height() < 800){
+          bodyAnimate(1030);
+        }else if(skillsFlex.height() > 800 && skillsFlex.height() < 1200){
+          bodyAnimate(1430);
+        }else if($(skillsBtn).text() === "Show less"){
+          bodyAnimate(620);
+        }
+      }else if(skillsFlex.width() <= 400 && $(skillsBtn).text() === "Show less"){
+        bodyAnimate(620);
+      }
+
     });
   }
 
