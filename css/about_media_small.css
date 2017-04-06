@@ -4,7 +4,7 @@
     font-size: 2.2em;
   }
   .about-me__description {
-    max-width: 85%;
+    width: 100%;
     font-size: 1.3em;
   }
   /* skills */
@@ -25,12 +25,12 @@
     padding-left: 0.5em;
     padding-right: 0.5em;
     margin-top: 2em;
-    flex-wrap: wrap;
+    flex-flow: column;
   }
   .about-me__biography__item {
     min-width: 280px;
     max-width: 300px;
-    max-height: 390px;
+    height: 390px;
     margin: 1em auto;
   }
   .about-me__biography__text {

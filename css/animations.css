@@ -170,6 +170,17 @@
 .about-me__skills__hide {
   animation: fadeOut 1.5s forwards linear;
 }
+.about-me__more.about__me__more__slide {
+  animation: slide 1s linear;
+}
+@keyframes slide {
+  0%, 100% {
+    right: 0;
+  }
+  50% {
+    right: -100%;
+  }
+}
 @keyframes showAbout {
   0% {
     visibility: hidden;

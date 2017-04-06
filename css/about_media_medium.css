@@ -20,12 +20,12 @@
   .about-me__biography__flex {
     padding-left: 5em;
     padding-right: 5em;
-    flex-direction: column;
+    flex-flow: column;
   }
   .about-me__biography__item {
     min-width: 340px;
     max-width: 380px;
-    max-height: 330px;
+    height: 336px;
     margin: 1em auto;
   }
   .about-me__biography__text {

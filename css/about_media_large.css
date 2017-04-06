@@ -27,13 +27,11 @@
     padding-right: 0.5em;
     margin-top: 2em;
     justify-content: center;
+    flex-flow: row;
   }
   .about-me__biography__item {
     max-width: 300px;
-    /*min-width: 280px;
-    max-width: 300px;
-    max-height: 390px;
-    margin: 1em auto;*/
+    height: 390px;
     margin: 0.5em;
   }
   .about-me__biography__text {
