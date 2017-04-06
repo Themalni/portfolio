@@ -223,7 +223,7 @@ body {
   position: relative;
   margin: 1em;
   flex: 4;
-  height: 360px;
+  max-height: 360px;
   background-color: #fff;
   box-shadow: 0 0 3px -1px rgba(0,0,0,0.4),
               0 13px 13px -10px rgba(0,0,0,0.4);

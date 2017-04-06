@@ -104,7 +104,7 @@ function onReady() { // Handler when the DOM is fully loaded
             skillsFlex.style.height = height + increaseHeight + "px";
           }
           if(height > secondIncrease){
-            if(window.innerWidth <= 400){
+            if(window.innerWidth <= 500){
               skillsFlex.style.height = height + increaseHeight + 400 + "px";
             }else if(window.innerWidth <= 768){
               skillsFlex.style.height = height + increaseHeight - 400 + "px";
@@ -126,7 +126,7 @@ function onReady() { // Handler when the DOM is fully loaded
           });
         }
       }
-      if(window.innerWidth <= 400){
+      if(window.innerWidth <= 500){
         skillsFlexHeight(4050, 1210, 1210, 2420, 2450, 1220);
       }else if(window.innerWidth <= 768){
         skillsFlexHeight(2050, 800, 800, 1615, 1640, 830);
@@ -272,7 +272,7 @@ function onReady() { // Handler when the DOM is fully loaded
         }else if($(skillsBtn).text() === "Show less"){
           bodyAnimate(620);
         }
-      }else if(skillsFlex.width() <= 400 && $(skillsBtn).text() === "Show less"){
+      }else if(skillsFlex.width() <= 500 && $(skillsBtn).text() === "Show less"){
         bodyAnimate(620);
       }else if(skillsFlex.width() <= 768 && $(skillsBtn).text() === "Show less"){
         bodyAnimate(600);
