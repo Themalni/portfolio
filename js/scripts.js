@@ -70,7 +70,7 @@ function onReady() { // Handler when the DOM is fully loaded
         textUnfold(itemName, "750px", "336px");
       }else if(window.innerWidth > 800 && window.innerWidth < 1080){
         textUnfold(itemName, "900px", "390px");
-      }else if(window.innerWidth < 1080){
+      }else if(window.innerWidth > 1080){
         textUnfold(itemName, "820px", "360px");
       }
     }
@@ -141,7 +141,7 @@ function onReady() { // Handler when the DOM is fully loaded
       }else if(window.innerWidth <= 768){
         skillsFlexHeight(2050, 800, 800, 1615, 1640, 830);
       }else{
-        skillsFlexHeight(1230, 400, 400, 800, 1000, 410);
+        skillsFlexHeight(1240, 410, 410, 820, 1000, 420);
       }
     }
     revealMoreItems();
