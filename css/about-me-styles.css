@@ -24,11 +24,11 @@ body {
 }
 .about-me__header {
   margin-top: -2em;
-  background-image: url(../images/back_new.jpg);
-  background-size: cover;
-  background-position: top center;
+  background-image: url(../images/about_header.svg);
+  background-size: 700px;
+  background-position: center 11em;
   background-repeat: no-repeat;
-  background-color: #8d94ba;
+  background-color: #4b6498;
   height: 600px;
   position: relative;
 }
@@ -61,7 +61,7 @@ body {
   text-align: right;
 }
 .about-me__description {
-  max-width: 65%;
+  width: 65%;
   font-size: 1.3em;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;

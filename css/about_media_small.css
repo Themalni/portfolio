@@ -1,11 +1,17 @@
 @media screen and (min-width: 320px)
               and (max-width: 500px){
+  .about-me__header {
+    background-size: 340px;
+    background-position: center 13em;
+    height: 410px;
+  }
   .about-me__title {
     font-size: 2.2em;
   }
   .about-me__description {
-    width: 100%;
+    width: 85%;
     font-size: 1.3em;
+    top: 3.5em;
   }
   /* skills */
   .about-me__skills__flex {
