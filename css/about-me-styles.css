@@ -241,6 +241,17 @@ body {
   background: linear-gradient(to bottom, #7078a9 0%, #9ba4cb 100%);
   position: relative;
 }
+.about-me__biography__header__icon {
+  width: 70px;
+  height: auto;
+  position: absolute;
+  bottom: 0.8em;
+  left: 1em;
+  opacity: 0.2;
+}
+/*.about-me__biography__item:nth-child(1) .about-me__biography__header__icon {
+  width: 70px;
+}*/
 .about-me__biography__description {
   position: absolute;
   bottom: -0.9em;

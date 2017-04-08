@@ -19,7 +19,7 @@
   }
   .project__description {
     margin-bottom: 1em;
-    border-bottom: 1px solid #fff;
+    border-bottom: none;
   }
   .project__flex {
     margin-left: 3em;

@@ -1,15 +1,15 @@
 @media screen and (min-width: 320px)
               and (max-width: 500px){
   .about-me__header {
-    background-size: 340px;
-    background-position: center 13em;
-    height: 410px;
+    background-size: 110%;
+    background-position: center bottom;
+    height: 460px;
   }
   .about-me__title {
     font-size: 2.2em;
   }
   .about-me__description {
-    width: 85%;
+    width: 80%;
     font-size: 1.3em;
     top: 3.5em;
   }
