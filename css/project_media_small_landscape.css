@@ -21,6 +21,9 @@
     margin-bottom: 0em;
     border-bottom: 0;
   }
+  .project__header__img {
+    margin-top: -2em;
+  }
   .project__flex {
     margin-left: 3em;
     margin-right: 3em;
