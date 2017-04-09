@@ -1,5 +1,5 @@
 @media screen and (min-width: 320px)
-              and (max-width: 768px)
+              and (max-width: 1024px)
               and (orientation: landscape) {
   .nav-menu__text {
     display: none;
@@ -18,8 +18,8 @@
     font-size: 1.5em;
   }
   .project__description {
-    margin-bottom: 1em;
-    border-bottom: none;
+    margin-bottom: 0em;
+    border-bottom: 0;
   }
   .project__flex {
     margin-left: 3em;
