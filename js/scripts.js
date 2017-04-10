@@ -84,7 +84,6 @@ function onReady() { // Handler when the DOM is fully loaded
   }
 
   /* show more skills */
-
   function showSkills(){
     var skillsFlex = document.querySelector(".about-me__skills__flex");
     var skillsItems = document.querySelectorAll(".about-me__skills__item");
@@ -137,7 +136,7 @@ function onReady() { // Handler when the DOM is fully loaded
         }
       }
       if(window.innerWidth <= 500){
-        skillsFlexHeight(4050, 1210, 1210, 2420, 2450, 1220);
+        skillsFlexHeight(4070, 1240, 1235, 2470, 2490, 1240);
       }else if(window.innerWidth <= 768){
         skillsFlexHeight(2050, 800, 800, 1615, 1640, 830);
       }else{
@@ -283,7 +282,7 @@ function onReady() { // Handler when the DOM is fully loaded
           bodyAnimate(620);
         }
       }else if(skillsFlex.width() <= 500 && $(skillsBtn).text() === "Show less"){
-        bodyAnimate(620);
+        bodyAnimate(1250);
       }else if(skillsFlex.width() <= 768 && $(skillsBtn).text() === "Show less"){
         bodyAnimate(600);
       }
