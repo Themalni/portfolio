@@ -1,6 +1,5 @@
 @media screen and (min-width: 320px)
-              and (max-width: 340px)
-              and (orientation: portrait){
+              and (max-width: 340px){
   .about__title {
     padding-top: 1.5em;
   }
@@ -51,9 +50,15 @@
   .about__title {
     order: 1;
   }
-  .about__img {
+  .about__img__container {
+    background-color: #ff789e;
+    max-width: 100%;
     margin-left: 0.5em;
     margin-right: 0.5em;
+    order: 2;
+  }
+  .about__img {
+    margin: 0 auto;
     width: auto;
     height: 280px;
     order: 2;

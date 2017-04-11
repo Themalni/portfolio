@@ -1,6 +1,5 @@
 @media screen and (min-width: 340px)
-              and (max-width: 480px)
-              and (orientation: portrait){
+              and (max-width: 480px){
   .about__title {
     padding-top: 1.5em;
   }
@@ -48,21 +47,27 @@
   .about__title {
     order: 1;
   }
-  .about__img {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    width: auto;
-    height: 315px;
+  .about__img__container {
+    background-color: #ff789e;
+    max-width: 100%;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     order: 2;
+  }
+  .about__img {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
     border-radius: 0;
   }
   .about__img__mobile {
     display: none;
   }
   .about__text {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    min-width: 280px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    min-width: 200px;
     order: 3;
     padding: 1em 1.5em 0;
     border-left: none;
