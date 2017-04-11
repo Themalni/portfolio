@@ -44,7 +44,7 @@
   .contact__title {
     font-size: 2em;
   }
-  .about {
+  .about__info__container {
     flex-direction: column;
   }
   .about__title {

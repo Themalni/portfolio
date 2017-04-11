@@ -41,7 +41,7 @@
   .contact__title {
     font-size: 2.2em;
   }
-  .about {
+  .about__info__container {
     flex-direction: column;
   }
   .about__title {
@@ -81,6 +81,9 @@
   }
   .about__text__description:last-of-type {
      font-size: 1.1em;
+   }
+   .about__btn {
+     margin-bottom: 1.5em;
    }
   .portfolio__description {
     max-width: 90%;

@@ -1,5 +1,5 @@
-@media screen and (min-width: 320px)
-              and (max-width: 768px){
+@media screen and (min-width: 480px)
+              and (max-width: 1024px){
   .nav-menu__text {
     display: none;
   }
@@ -43,8 +43,11 @@
   .contact__title {
     font-size: 2.2em;
   }
-  .about {
+  .about__info__container  {
+    max-width: 90%;
+    margin: 0 auto;
     flex-direction: column;
+    padding: 0 1.5em 1.5em;
   }
   .about__title {
     order: 1;
@@ -54,11 +57,12 @@
   }
   .about__img__mobile {
     display: inline-block;
-    max-width: 220px;
+    max-width: 40%;
     margin-left: 0.3em;
-    margin-bottom: 0.3em;
     height: auto;
-    border-left: 15px solid #ff789e;
+    border: 20px solid #ff789e;
+    border-top: 0;
+    border-right: 0;
     float: right;
   }
   .about__text {
@@ -83,6 +87,10 @@
     font-size: 1.1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
+  }
+  .about__btn {
+    margin-left: 0.5em;
+    margin-bottom: 1.5em;
   }
   .portfolio__description {
     max-width: 90%;
