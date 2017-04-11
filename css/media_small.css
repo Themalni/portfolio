@@ -50,8 +50,8 @@
   .about__img__container {
     background-color: #ff789e;
     max-width: 100%;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
     order: 2;
   }
   .about__img {
@@ -65,8 +65,8 @@
     display: none;
   }
   .about__text {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
     min-width: 200px;
     order: 3;
     padding: 1em 1.5em 0;
