@@ -155,7 +155,9 @@
     font-size: 1.6em;
   }
   .contact__social-btn__container {
-    margin-left: 1em;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-47.5%);
     width: 340px;
   }
   .contact__social-btn {
