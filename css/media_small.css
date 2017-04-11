@@ -43,6 +43,8 @@
   }
   .about__info__container {
     flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
   }
   .about__title {
     order: 1;
