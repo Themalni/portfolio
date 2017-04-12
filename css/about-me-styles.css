@@ -247,7 +247,7 @@ body {
   position: absolute;
   bottom: 0.8em;
   left: 1em;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 .about-me__biography__item:nth-child(1) .about-me__biography__header__icon {
   bottom: 0.6em;

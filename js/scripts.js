@@ -71,7 +71,7 @@ function onReady() { // Handler when the DOM is fully loaded
       }else if(window.innerWidth > 800 && window.innerWidth < 1080){
         textUnfold(itemName, "900px", "390px");
       }else if(window.innerWidth > 1080){
-        textUnfold(itemName, "820px", "360px");
+        textUnfold(itemName, "890px", "390px");
       }
     }
     if(readMoreData == "item-one-more"){
@@ -115,10 +115,10 @@ function onReady() { // Handler when the DOM is fully loaded
           if(height > secondIncrease){
             if(window.innerWidth <= 500){
               skillsFlex.style.height = height + increaseHeight + 420 + "px";
-            }else if(window.innerWidth <= 768){
+            }else if(window.innerWidth < 1024){
               skillsFlex.style.height = height + increaseHeight - 400 + "px";
-            }else if(window.innerWidth <= 1080){
-              skillsFlex.style.height = height + increaseHeight + 400 + "px";
+            }else if(window.innerWidth <= 1150){
+              skillsFlex.style.height = height + increaseHeight + 10 + "px";
             }else{
               skillsFlex.style.height = height + increaseHeight + "px";
             }
@@ -139,11 +139,10 @@ function onReady() { // Handler when the DOM is fully loaded
       }
       if(window.innerWidth <= 500){
         skillsFlexHeight(4070, 1240, 1235, 2470, 2490, 1240);
-      }else if(window.innerWidth <= 768){
+      }else if(window.innerWidth < 1024){
         skillsFlexHeight(2070, 820, 820, 1640, 1660, 830);
-      }else if(window.innerWidth <= 1080){
-        console.log(1080);
-        skillsFlexHeight(2640, 410, 410, 820, 1000, 420);
+      }else if(window.innerWidth <= 1150){
+        skillsFlexHeight(1240, 430, 430, 860, 880, 440);
       }else{
         skillsFlexHeight(1240, 410, 410, 820, 1000, 420);
       }

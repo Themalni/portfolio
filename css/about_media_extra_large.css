@@ -1,5 +1,5 @@
-@media screen and (min-width: 800px)
-              and (max-width: 1024px){
+@media screen and (min-width: 1024px)
+              and (max-width: 1150px){
   .about-me__title {
     font-size: 2.2em;
   }
@@ -9,15 +9,15 @@
   }
   /* skills */
   .about-me__skills__flex {
-    max-width: 800px;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    height: 840px;
+    height: 440px;
   }
   .about-me__skills__item {
     margin: 1em 0.5em;
-    min-width: 240px;
-    max-width: 260px;
+    min-width: 220px;
+    max-width: 235px;
+    height: 390px;
   }
   .about-me__skills__btn {
     margin-top: 0.5em;
