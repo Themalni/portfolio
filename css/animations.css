@@ -4,10 +4,6 @@
 .footer {
   animation: fadeIn 0.5s 1s 1 forwards ease-in;
 }
-/* Loader */
-.loader:before {
-  animation: loading .8s infinite linear;
-}
 
 /* Navigation */
 .nav-menu__items__animation {
@@ -45,9 +41,6 @@
 .header__btn {
   animation: fadeIn 0.5s 1s 1 forwards ease-in;
 }
-.header__bottom {
-  animation: slideInBottom 1s 0.5s 1 forwards ease-in;
-}
 .header__mouse__roll {
   animation: roll 2s infinite normal forwards;
 }
@@ -62,16 +55,6 @@
 
 
 /********** Animations ************/
-
-/* .loader */
-@keyframes loading {
-  0% {
-    transform: none;
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*  .header__nav  */
 @keyframes slideInNav {
@@ -103,20 +86,6 @@
   }
 }
 
-/*  .header__bottom  */
-@keyframes slideInBottom {
-  0% {
-    transform: translateX(-50%) translateY(100%);
-    bottom: -45px;
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-50%) translateY(0%);
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
 /*  .nav-menu  */
 @keyframes slideInMenuItems {
   0% {
@@ -138,7 +107,6 @@
   }
   100% {
     opacity: 1;
-    visibility: visible;
   }
 }
 

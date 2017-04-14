@@ -15,12 +15,16 @@ function onReady() { // Handler when the DOM is fully loaded
     // Creating array from NodeList:
     var menuItemsArray = [].slice.call(navMenuListItems);
     // Concat all elements for animation together:
-    var elementsForAnimation = [navMenuSeparator, navMenuText, navMenuEmail, navMenuSocialBtn].concat(menuItemsArray);
+    var elementsForAnimation = [
+      navMenuSeparator,
+      navMenuText,
+      navMenuEmail,
+      navMenuSocialBtn
+    ].concat(menuItemsArray);
     // Loop through elements
     elementsForAnimation.forEach(function(element) {
       element.classList.toggle("nav-menu__items__animation");
     });
-
     navMenuCross.classList.toggle("nav-menu__cross__animation");
   }
 
@@ -201,7 +205,6 @@ function onReady() { // Handler when the DOM is fully loaded
 
   }*/
 
-
   function addClickListener(elements, callback) {
     elements.forEach(function(element) {
       element.addEventListener("click", callback);
@@ -261,7 +264,7 @@ function onReady() { // Handler when the DOM is fully loaded
       }, 800);
       return false;
     });
-    $(".nav__logo__link, .header__btn").click(function(){
+    $(".nav__logo__link, .header__btn, .footer-menu__link").click(function(){
       $("html, body").animate({
         scrollTop: $($.attr(this, "href")).offset().top
       }, 800);
@@ -290,7 +293,6 @@ function onReady() { // Handler when the DOM is fully loaded
       }else if(skillsFlex.width() <= 768 && $(skillsBtn).text() === "Show less"){
         bodyAnimate(1200);
       }
-
     });
   }
 
@@ -301,9 +303,7 @@ function onReady() { // Handler when the DOM is fully loaded
     checkBody();
     selectButton();
   }
-
   init();
-
 }
 
 // Vanilla JS analogue $(document).ready
@@ -312,6 +312,7 @@ function onReady() { // Handler when the DOM is fully loaded
       document.readyState === "complete" ||
       (document.readyState !== "loading" && !document.documentElement.doScroll)
   ) {
+
     onReady();
   } else {
     document.addEventListener("DOMContentLoaded", onReady);
