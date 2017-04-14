@@ -300,18 +300,30 @@ body {
               -260px 1px 0 1px #fff;
   cursor: pointer;
 }
-.about-me__email {
-  display: block;
-  width: 300px;
+.about-me__email__container {
+  width: 360px;
+  height: 50px;
   margin: 0 auto;
-  padding: 7px 10px;
-  color: #ff789e;
-  font-size: 1.6em;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  text-align: center;
   background-color: #fff;
   box-shadow: 0 0 3px -1px rgba(0,0,0,0.4),
               0 13px 13px -10px rgba(0,0,0,0.4);
   border-radius: 3px;
+  position: relative;
+}
+.about-me__email__icon {
+  width: 30px;
+  height: auto;
+  background-color: #8d94ba;
+  padding: 15px 10px;
+}
+.about-me__email {
+  color: #ff789e;
+  font-size: 1.4em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 67px;
+  transform: translateY(-50%);
+  transition: all .3s linear;
 }

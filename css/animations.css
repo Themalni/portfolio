@@ -6,7 +6,7 @@
 }
 /* Loader */
 .loader:before {
-  animation: loading 1s infinite linear;
+  animation: loading .8s infinite linear;
 }
 
 /* Navigation */
