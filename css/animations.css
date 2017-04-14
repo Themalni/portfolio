@@ -4,6 +4,10 @@
 .footer {
   animation: fadeIn 0.5s 1s 1 forwards ease-in;
 }
+/* Loader */
+.loader:before {
+  animation: loading 1s infinite linear;
+}
 
 /* Navigation */
 .nav-menu__items__animation {
@@ -58,6 +62,16 @@
 
 
 /********** Animations ************/
+
+/* .loader */
+@keyframes loading {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*  .header__nav  */
 @keyframes slideInNav {
