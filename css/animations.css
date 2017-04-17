@@ -6,6 +6,9 @@
 }
 
 /* Navigation */
+.nav {
+  animation: slideInNav 1s 0.5s 1 forwards ease-in;
+}
 .nav-menu__items__animation {
   animation: slideInMenuItems 0.3s 1 forwards ease-in;
 }
@@ -34,6 +37,7 @@
   animation: fadeIn 0.5s 1 forwards linear;
   animation-delay: 0.5s;
 }
+
 /* Header */
 .header,
 .header__title,
@@ -53,10 +57,29 @@
   animation: itemShow 1.1s forwards cubic-bezier(.25,.1,.25,1);
 }
 
+/*** About me page ***/
+
+.about-me__container {
+  animation: showAbout 0.5s forwards linear;
+}
+.about-me__skills__show {
+  animation: fadeIn .5s forwards linear;
+}
+.about-me__skills__hide {
+  animation: fadeOut 1.5s forwards linear;
+}
+.about-me__more.about__me__more__slide {
+  animation: slide 1s linear;
+}
+/*** Project Page ***/
+
+.project__container {
+  animation: showNextProject 0.5s forwards linear;
+}
 
 /********** Animations ************/
 
-/*  .header__nav  */
+/*  .nav  */
 @keyframes slideInNav {
   0% {
     transform: translateY(-100%);
@@ -100,7 +123,7 @@
   }
 }
 
-/*  opacity  */
+/*  add opacity  */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -110,7 +133,7 @@
   }
 }
 
-/*  opacity  */
+/*  remove opacity  */
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -120,7 +143,7 @@
   }
 }
 
-/* Portfolio animations */
+/* .portfolio__item */
 @keyframes itemHide {
   0% {
     transform: translateX(0%) scale(1, 1);
@@ -141,20 +164,8 @@
     opacity: 1;
   }
 }
-/*** About me animations ***/
 
-.about-me__container {
-  animation: showAbout 0.5s forwards linear;
-}
-.about-me__skills__show {
-  animation: fadeIn .5s forwards linear;
-}
-.about-me__skills__hide {
-  animation: fadeOut 1.5s forwards linear;
-}
-.about-me__more.about__me__more__slide {
-  animation: slide 1s linear;
-}
+/* about-me */
 @keyframes slide {
   0%, 100% {
     right: 0;
@@ -176,14 +187,7 @@
   }
 }
 
-/*** Project Page ***/
-
-.project__container {
-  animation: showNextProject 0.5s forwards linear;
-}
-
-/*** Project page animations ***/
-
+/* Project page */
 @keyframes showNextProject {
   0% {
     visibility: visible;
@@ -194,6 +198,5 @@
     visibility: visible;
     opacity: 1;
     transform: scale(1);
-
   }
 }

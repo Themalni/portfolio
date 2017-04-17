@@ -5,6 +5,20 @@ body {
   background-repeat: repeat;
   overflow-x: hidden;
 }
+
+/* Titles */
+.about-me__title {
+  width: 100%;
+  margin: 0;
+  padding: 1em 0 0.5em;
+  color: #ff789e;
+  font-size: 2.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 3;
+}
 .about-me__title--white {
   color: #fff;
 }
@@ -18,36 +32,41 @@ body {
 .about-me__title__dot--white {
   background-color: #fff;
 }
+
+/*** Container ***/
 .about-me__container {
   padding-top: 4em;
   animation: showAbout 0.8s forwards linear;
 }
+
+/*** Header ***/
 .about-me__header {
-  margin-top: -2em;
+  margin-top: -4em;
   background-image: url(../images/about_header.svg);
   background-size: 700px;
-  background-position: center 11em;
+  background-position: center 13em;
   background-repeat: no-repeat;
   background-color: #4b6498;
-  height: 600px;
+  height: 636px;
   position: relative;
 }
 .about-me__header .about-me__title {
   position: absolute;
-  top: 0em;
+  top: 1.5em;
 }
-.about-me__title {
-  width: 100%;
-  margin: 0;
-  padding: 1em 0 0.5em;
-  color: #ff789e;
-  font-size: 2.5em;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+.about-me__description {
+  width: 65%;
+  font-size: 1.3em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: #fff;
   text-align: center;
-  text-transform: uppercase;
-  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 6.5em;
 }
+
 /***  Main ***/
 .about-me__main {
   margin: 3em auto;
@@ -60,18 +79,8 @@ body {
   color: #fff;
   text-align: right;
 }
-.about-me__description {
-  width: 65%;
-  font-size: 1.3em;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  color: #fff;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 5em;
-}
+
+/* Skills */
 .about-me__skills__flex {
   display: flex;
   max-width: 1300px;
@@ -216,6 +225,7 @@ body {
   box-shadow: 0 0 3px -1px rgba(0,0,0,0.4),
               0 13px 13px -10px rgba(0,0,0,0.4);
 }
+
 /* Biography */
 .about-me__biography__flex {
   display: flex;
@@ -314,7 +324,7 @@ body {
   width: 30px;
   height: auto;
   background-color: #8d94ba;
-  padding: 15px 10px;
+  padding: 17px 10px 15px;
 }
 .about-me__email {
   color: #ff789e;
