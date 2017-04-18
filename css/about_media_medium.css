@@ -4,7 +4,6 @@
     background-size: 530px;
     background-position: center 13em;
     height: 520px;
-
   }
   .about-me__title {
     font-size: 2.2em;
@@ -12,6 +11,10 @@
   .about-me__description {
     width: 85%;
     font-size: 1.3em;
+  }
+  /* main */
+  .about-me__main {
+    margin-top: 5em;
   }
   .about-me__skills__flex {
     padding-left: 0.5em;
@@ -40,12 +43,11 @@
   .about-me__first-letter {
     font-size: 1.7em;
   }
+  /* email */
   .about-me__email {
     margin-bottom: 1.5em;
   }
-  .about-me__main {
-    margin-top: 5em;
-  }
+  /* footer */
   .footer {
     height: 170px;
   }
@@ -54,11 +56,9 @@
     display: flex;
     flex-direction: column;
   }
-  .footer__copyright {
+  .footer__copyright,
+  .footer-menu__list  {
     flex: 4
-  }
-  .footer-menu__list {
-    flex: 4;
   }
   .footer__social-btn {
     flex: 5;

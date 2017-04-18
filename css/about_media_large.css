@@ -41,6 +41,7 @@
   .about-me__first-letter {
     font-size: 1.7em;
   }
+  /* footer */
   .footer {
     height: 170px;
   }
@@ -49,11 +50,9 @@
     display: flex;
     flex-direction: column;
   }
-  .footer__copyright {
-    flex: 4
-  }
+  .footer__copyright,
   .footer-menu__list {
-    flex: 4;
+    flex: 4
   }
   .footer__social-btn {
     flex: 5;
