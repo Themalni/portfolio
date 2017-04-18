@@ -11,6 +11,7 @@ function onReady() { // Handler when the DOM is fully loaded
   var readMoreArray = "";
   navMenu.inert = true;
 
+/* Animate nav elements */
   function animateElements() {
     // Creating array from NodeList:
     var menuItemsArray = [].slice.call(navMenuListItems);
@@ -191,30 +192,6 @@ function onReady() { // Handler when the DOM is fully loaded
       resizeHeader();
     }
   }
-  /*function addClickListener(elements, callback) {
-    elements.forEach(function(element) {
-      element.addEventListener("click", callback);
-    });
-  }
-
-  function checkBody(){
-    var nav = document.querySelector(".nav");
-    var header = document.querySelector(".header");
-    var mainContainer= document.querySelector(".main-container");
-    var aboutMeContainer = document.querySelector(".about-me__container");
-    var projectContainer = document.querySelector(".project__container");
-    var readMore = document.querySelector(".about-me__more");
-
-    var settings = {
-      "body-index": [nav, header, mainContainer],
-      "body-project": [nav, projectContainer],
-      "body-about": [nav, aboutMeContainer, readMore]
-    };
-
-    addClickListener(settings[document.body.id], hideMenu);
-    addClickListener(settings[document.body.id], showAboutText);
-
-  }*/
 
   function addClickListener(elements, callback) {
     elements.forEach(function(element) {
@@ -307,7 +284,7 @@ function onReady() { // Handler when the DOM is fully loaded
     });
   }
 
-  function init() {
+  function init(){
     addScrollEffects();
     navHamburger.addEventListener("click", showMenu);
     navMenuCross.addEventListener("click", hideMenu);
@@ -318,14 +295,11 @@ function onReady() { // Handler when the DOM is fully loaded
 }
 
 // Vanilla JS analogue $(document).ready
-(function() {
-  if (
-      document.readyState === "complete" ||
-      (document.readyState !== "loading" && !document.documentElement.doScroll)
-  ) {
-
+(function(){
+  if(document.readyState === "complete" ||
+    (document.readyState !== "loading" && !document.documentElement.doScroll)){
     onReady();
-  } else {
+  }else{
     document.addEventListener("DOMContentLoaded", onReady);
   }
 })();
