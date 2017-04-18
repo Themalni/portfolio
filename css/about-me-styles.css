@@ -325,6 +325,8 @@ body {
   height: auto;
   background-color: #8d94ba;
   padding: 17px 10px 15px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .about-me__email {
   color: #ff789e;

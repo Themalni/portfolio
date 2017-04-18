@@ -47,6 +47,16 @@ function onReady() { // Handler when the DOM is fully loaded
     navMenu.inert = true;
   }
 
+  /* Resize header image on About-me page */
+  function resizeHeader(){
+    var headerBackground = document.querySelector(".about-me__header");
+    var pageWidth = window.innerWidth;
+
+    if(pageWidth > 400 && pageWidth < 500){
+      headerBackground.style.backgroundSize = "85%";
+    }
+  }
+
   /* show more biography text */
   function aboutText(e){
     var itemOne = document.querySelector("#item__one");
@@ -178,6 +188,7 @@ function onReady() { // Handler when the DOM is fully loaded
         element.addEventListener("click", aboutText, false);
       });
       skillsBtn.addEventListener("click", showSkills);
+      resizeHeader();
     }
   }
   /*function addClickListener(elements, callback) {

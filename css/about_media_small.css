@@ -3,15 +3,16 @@
   .about-me__header {
     background-size: 110%;
     background-position: center bottom;
-    height: 460px;
+    height: 500px;
   }
   .about-me__title {
     font-size: 2.2em;
+    top: 2em;
   }
   .about-me__description {
     width: 80%;
     font-size: 1.3em;
-    top: 3.5em;
+    top: 6.5em;
   }
   /* skills */
   .about-me__skills__flex {
@@ -45,6 +46,20 @@
   .about-me__first-letter {
     font-size: 1.7em;
   }
+  /* email */
+  .about-me__email__container {
+    width: 310px;
+    height: 40px;
+  }
+  .about-me__email__icon {
+    width: 25px;
+    padding: 12px 8px;
+  }
+  .about-me__email {
+    font-size: 1.3em;
+  }
+
+  /* Footer */
   .footer {
     height: 170px;
   }
@@ -53,11 +68,9 @@
     display: flex;
     flex-direction: column;
   }
-  .footer__copyright {
-    flex: 4
-  }
+  .footer__copyright,
   .footer-menu__list {
-    flex: 4;
+    flex: 4
   }
   .footer__social-btn {
     flex: 5;
