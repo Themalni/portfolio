@@ -1,17 +1,24 @@
 @media screen and (min-width: 340px)
               and (max-width: 480px){
-  .about__title {
-    padding-top: 1.5em;
+  .nav-menu__list {
+    margin-left: -1em;
   }
   .nav-menu__text,
   .nav-menu__email {
+    margin-left: 1.5em;
     font-size: 1em;
   }
+  .nav-menu__separator {
+    width: 82%;
+  }
   .nav-menu__social-btn {
-    margin-left: 1.6em;
+    margin-left: 1em;
   }
   .nav-menu .fa-2x {
     font-size: 1.9em;
+  }
+  .about__title {
+    padding-top: 1.5em;
   }
   .header {
     height: 490px;

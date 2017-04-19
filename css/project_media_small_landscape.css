@@ -4,22 +4,8 @@
   .nav-menu__text {
     display: none;
   }
-  .nav-menu__separator {
-    margin: 1em auto 0.5em;
-  }
-  .nav-menu__email {
-    font-size: 1em;
-    margin-left: 1.5em;
-  }
-  .nav-menu__social-btn {
-    margin-left: 1.2em;
-  }
-  .nav-menu .fa-2x {
-    font-size: 1.5em;
-  }
   .project__description {
-    margin-bottom: 0em;
-    border-bottom: 0;
+    margin-bottom: 0;
   }
   .project__header__img {
     margin-top: -2em;

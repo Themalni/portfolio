@@ -3,18 +3,21 @@
   .nav-menu__text {
     display: none;
   }
-  .nav-menu__separator {
-    margin: 1em auto 0.5em;
+  .nav-menu__list {
+    margin-left: -1em;
   }
   .nav-menu__email {
-    font-size: 1em;
     margin-left: 1.5em;
+    font-size: 1em;
+  }
+  .nav-menu__separator {
+    width: 82%;
   }
   .nav-menu__social-btn {
-    margin-left: 1.2em;
+    margin-left: 1em;
   }
   .nav-menu .fa-2x {
-    font-size: 1.5em;
+    font-size: 1.9em;
   }
   .header {
     height: 450px;
