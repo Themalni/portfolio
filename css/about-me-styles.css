@@ -93,6 +93,7 @@ body {
   overflow-y: hidden;
 }
 .about-me__skills__item {
+  display: inline-block;
   float: left;
   min-width: 200px;
   max-width: 240px;
