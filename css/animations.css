@@ -2,6 +2,7 @@
 .header,
 .main-container,
 .footer {
+  -webkit-animation: fadeIn 0.5s 1s 1 forwards ease-in;
   animation: fadeIn 0.5s 1s 1 forwards ease-in;
 }
 
@@ -43,9 +44,11 @@
 .header__title,
 .header__subtitle,
 .header__btn {
+  -webkit-animation: fadeIn 0.5s 1s 1 forwards ease-in;
   animation: fadeIn 0.5s 1s 1 forwards ease-in;
 }
 .header__mouse__roll {
+  -webkit-animation: roll 2s infinite normal forwards;
   animation: roll 2s infinite normal forwards;
 }
 
