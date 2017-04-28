@@ -92,19 +92,28 @@ body {
 }
 .project__flex {
   margin: 4em 8em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .project__flex__item {
   padding: 1em 1.5em;
   border-bottom: 2px solid #ff789e;
 }
 .project__flex__item:nth-child(1) {
-  flex: 6;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
 }
 .project__flex__item:nth-child(2) {
-  flex: 4;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
 .project__flex__title {
   margin: 0 0 0.3em;

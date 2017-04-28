@@ -27,8 +27,13 @@
     padding-left: 0.5em;
     padding-right: 0.5em;
     margin-top: 2em;
-    justify-content: center;
-    flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
   }
   .about-me__biography__item {
     max-width: 300px;
@@ -47,14 +52,23 @@
   }
   .footer__info__container {
     margin: 1.5em 1em 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__copyright,
   .footer-menu__list  {
-    flex: 4
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4
   }
   .footer__social-btn {
-    flex: 5;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
   }
 }
