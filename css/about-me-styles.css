@@ -114,11 +114,13 @@ body {
   overflow-x: hidden;
 }
 .about-me__skills__item:nth-child(even) .about-me__skills__header {
+  background-color: #7078a9;
   background: linear-gradient(to top, #7078a9 0%, #ff5988 100%);
 }
 .about-me__skills__header {
   width: 100%;
   height: 120px;
+  background-color: #ff5988;
   background: linear-gradient(to bottom, #7078a9 0%, #ff5988 100%);
   position: relative;
 }
@@ -267,6 +269,7 @@ body {
 .about-me__biography__header {
   width: 100%;
   height: 94px;
+  background-color: #9ba4cb;
   background: linear-gradient(to bottom, #7078a9 0%, #9ba4cb 100%);
   position: relative;
 }

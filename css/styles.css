@@ -120,6 +120,7 @@ a {
 .nav-menu {
   width: 0;
   height: 100%;
+  background-color: #60689f;
   background: linear-gradient(to top, #60689f, #8d94ba);
   position: fixed;
   top: 0;
@@ -515,6 +516,7 @@ a {
   width: 100%;
   height: 100%;
   padding-top: 2.5em;
+  background-color: #ff4d7f;
   background: linear-gradient(to top, #ff99b6 0%, #ff4d7f 100%);
   position: absolute;
   left: 0;
