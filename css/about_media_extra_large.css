@@ -23,7 +23,9 @@
     float: left;
     background-color: teal;
   }
- 
+ .about-me__skills__text {
+   background-color: #fff;
+  }
   .about-me__skills__btn {
     margin-top: 0.5em;
   }
