@@ -296,7 +296,9 @@ a {
   height: auto;
   position: absolute;
   bottom: 7.5em;
-  left: calc(50% - 17.5px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 4;
 }
 .header__mouse__text {
