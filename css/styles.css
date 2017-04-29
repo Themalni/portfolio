@@ -326,6 +326,8 @@ a {
   background-color: #382266;
 }
 .about__info__container {
+  display: block;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
