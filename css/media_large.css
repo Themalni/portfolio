@@ -20,6 +20,9 @@
     padding: 0 2em 0;
     border-left: 15px solid #8d94ba;
   }
+  .about__img__mobile {
+    display: none;
+  }
   .about__img {
     display: block;
     max-width: 382px;
