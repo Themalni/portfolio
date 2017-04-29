@@ -6,19 +6,21 @@
   .about-me__description {
     max-width: 85%;
     font-size: 1.3em;
-    color: yellow;
   }
   /* skills */
   .about-me__skills__flex {
+    max-width: 1000px;
     padding-left: 0.5em;
     padding-right: 0.5em;
     height: 440px;
   }
   .about-me__skills__item {
+    display: block;
     margin: 1em 0.5em;
     min-width: 220px;
     max-width: 235px;
     height: 390px;
+    float: left;
   }
   .about-me__skills__btn {
     margin-top: 0.5em;
