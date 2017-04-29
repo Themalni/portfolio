@@ -13,6 +13,7 @@
     padding-left: 0.5em;
     padding-right: 0.5em;
     height: 440px;
+    overflow-y: visible;
   }
   .about-me__skills__item {
     display: block;
