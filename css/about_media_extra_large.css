@@ -9,15 +9,23 @@
   }
   /* skills */
   .about-me__skills__flex {
+    max-width: 1000px;
     padding-left: 0.5em;
     padding-right: 0.5em;
     height: 440px;
+    overflow-y: visible;
   }
   .about-me__skills__item {
+    display: block;
     margin: 1em 0.5em;
     min-width: 220px;
     max-width: 235px;
     height: 390px;
+    float: left;
+    background-color: teal;
+  }
+ .about-me__skills__text {
+   background-color: #fff;
   }
   .about-me__skills__btn {
     margin-top: 0.5em;
@@ -46,6 +54,13 @@
   .about-me__first-letter {
     font-size: 1.7em;
   }
+  .about-me__more {
+    box-shadow: -95px 1px 1px 1px #fff,
+              -180px 1px 1px 1px #fff,
+              -225px 1px 1px 1px #fff,
+              -260px 1px 1px 1px #fff;
+  }
+                  
   /* footer */
   .footer {
     height: 170px;

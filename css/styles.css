@@ -296,7 +296,9 @@ a {
   height: auto;
   position: absolute;
   bottom: 7.5em;
-  left: calc(50% - 17.5px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 4;
 }
 .header__mouse__text {
@@ -466,7 +468,9 @@ a {
 .portfolio__items-container {
   max-width: 932px;
   min-height: 672px;
+  height: 1340px;
   margin: 0 auto;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,6 +489,7 @@ a {
   background-color: #7078a9;
   position: relative;
   overflow: hidden;
+  float: left;
 }
 .portfolio__item__info {
   margin: 0.2em 0 0;
