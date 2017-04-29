@@ -22,6 +22,9 @@
     height: 390px;
     float: left;
   }
+ .about-me__skills__item:nth-child(n+5) {
+  opacity: 1;
+}
   .about-me__skills__btn {
     margin-top: 0.5em;
   }
