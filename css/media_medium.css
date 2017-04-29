@@ -1,5 +1,5 @@
 @media screen and (min-width: 480px)
-              and (max-width: 1024px){
+              and (max-width: 1023px){
   .nav-menu__text {
     display: none;
   }
