@@ -6,6 +6,7 @@
   .about-me__description {
     max-width: 85%;
     font-size: 1.3em;
+    color: yellow;
   }
   /* skills */
   .about-me__skills__flex {
