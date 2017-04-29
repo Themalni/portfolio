@@ -49,6 +49,13 @@
   .about-me__first-letter {
     font-size: 1.7em;
   }
+  .about-me__more {
+    box-shadow: -95px 1px 1px 1px #fff,
+              -180px 1px 1px 1px #fff,
+              -225px 1px 1px 1px #fff,
+              -260px 1px 1px 1px #fff;
+  }
+                  
   /* footer */
   .footer {
     height: 170px;
