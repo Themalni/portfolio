@@ -487,6 +487,7 @@ a {
   background-color: #7078a9;
   position: relative;
   overflow: hidden;
+  float:left;
 }
 .portfolio__item__info {
   margin: 0.2em 0 0;
