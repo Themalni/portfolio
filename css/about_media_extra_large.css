@@ -20,9 +20,8 @@
     margin: 1em 0.5em;
     min-width: 220px;
     max-width: 235px;
-    height: 490px;
+    height: 390px;
     float: left;
-    background-color: teal;
   }
  .about-me__skills__text {
    background-color: #fff;
