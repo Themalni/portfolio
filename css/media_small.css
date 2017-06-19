@@ -126,6 +126,7 @@
   }
   .portfolio__items-container {
     min-height: auto;
+    height: auto;
   }
   .portfolio__item {
     height: 240px;
