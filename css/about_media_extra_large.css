@@ -9,7 +9,7 @@
   }
   /* skills */
   .about-me__skills__flex {
-    max-width: 1000px;
+    max-width: 1100px;
     padding-left: 0.5em;
     padding-right: 0.5em;
     height: 440px;
@@ -25,9 +25,6 @@
   }
  .about-me__skills__text {
    background-color: #fff;
-  }
-  .about-me__skills__btn {
-    margin-top: 0.5em;
   }
   /* biography */
   .about-me__biography__flex {
