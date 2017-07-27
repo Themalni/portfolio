@@ -124,7 +124,8 @@
     width: 116px;
   }
   .portfolio__items-container {
-/*     min-height: auto; */
+    min-height: auto;
+    height: auto;
   }
   .portfolio__item {
     width: 420px;
