@@ -467,8 +467,6 @@ a {
 }
 .portfolio__items-container {
   max-width: 932px;
-  min-height: 672px;
-  height: 1340px;
   margin: 0 auto;
   background-color: #fff;
   display: -webkit-box;
