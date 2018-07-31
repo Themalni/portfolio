@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=10; IE=11; IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta name="author" content="Dina Blaszczak">
+  <meta name="author" content="">
 
-  <title>Dina Blaszczak | Fun Facts App</title>
+  <title>Dina Blaszczak | Image Hover Effects</title>
 
   <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon"/><!-- Favicon -->
   <link rel="icon" href="images/icon.ico" type="image/x-icon"/><!-- Favicon -->
@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
 
 </head>
-<body>
+<body id="body-project">
     <!-- Navigation -->
     <nav class="nav">
       <a href="index.html#header" class="nav__logo__link"><img class="nav__logo" src="images/logo.svg" alt="logo"></a>
@@ -74,19 +74,20 @@
   <div class="project__container">
     <!-- Header -->
     <header class="project__header">
-      <h2 class="project__title project__title--white">Fun facts about coding<span class="contact__title__dot title__dot--white"></span></h2>
-      <h3 class="project__description">Little app to display coding related facts</h3>
-      <img  src="images/fun_facts_1400.jpg"
-            srcset="images/fun_facts_800.jpg 800w,
-                    images/fun_facts_1200.jpg 1100w,
-                    images/fun_facts_1400.jpg 1400w"
-            sizes="(max-width: 320px) 90vw,
-                   (max-width: 640px) 100vw, 60vw"
-            class="project__header__img"
-            alt="header image"/>
+      <h2 class="project__title project__title--white">Image Hover Effects<span class="contact__title__dot title__dot--white"></span></h2>
+      <h3 class="project__description">Collection of inspiration for hover effects.</h3>
+      <img  src="images/hover_1400.jpg"
+          srcset="images/hover_800.jpg 800w,
+                  images/hover_1200.jpg 1200w,
+                  images/hover_1400.jpg 1400w"
+          sizes="(max-width: 320px) 90vw,
+                 (max-width: 700px) 90vw,
+                 (max-width: 1024px) 75vw, 50vw"
+          class="project__header__img"
+          alt="header image"/>
       <div class="project__buttons-container">
-        <a href="https://themalni.github.io/fun-facts-about-coding/" target="_blank" class="project__header__btn">Live Demo</a>
-        <a href="https://github.com/Themalni/fun-facts-about-coding" target="_blank" class="project__header__btn">GitHub</a>
+        <a href="https://themalni.github.io/hover-effects" target="_blank" class="project__header__btn">Live Demo</a>
+        <a href="https://github.com/Themalni/hover-effects" target="_blank" class="project__header__btn">GitHub</a>
       </div>
     </header>
     <!-- Main -->
@@ -95,13 +96,14 @@
         <!-- Project Description -->
         <div class="project__flex__item">
           <h2 class="project__flex__title">Project description</h2>
-          <p class="project__flex__text">This app is a fun way to share some coding related information with those who only start their coding journey.</p>
+          <p class="project__flex__text">Image hover effects is a collection of ideas for a gallery of images with text.</p>
+          <p class="project__flex__text">It consists of four demos including eight hover effects demonstrating different possibilities of CSS transitions.</p>
         </div>
         <div class="project__flex__item">
           <h2 class="project__flex__title">Role</h2>
-          <p class="project__flex__text">Design and development of the app.</p>
+          <p class="project__flex__text">Design and development of the project.</p>
           <h2 class="project__flex__title">Challenge:</h2>
-          <p class="project__flex__text">Making facts being displayed one after another using CSS animations and JavaScript array.</p>
+          <p class="project__flex__text">Work with AngularJS.</p>
           <h2 class="project__flex__title">Skills</h2>
           <p class="project__flex__text">
             <span class="project__flex__skill">Design</span>
@@ -110,11 +112,11 @@
             <span class="project__flex__skill project__flex__skill--pink">HTML</span>
             <span class="project__flex__skill project__flex__skill--pink">CSS</span>
             <span class="project__flex__skill project__flex__skill--pink">JavaScript</span>
+            <span class="project__flex__skill project__flex__skill--pink">AngularJS</span>
           </p>
         </div>
       </div>
-      <a href="vue-career-page.html" class="project__main__btn project__main__btn--previous"><span class="project__main__btn__arrow">&larr;</span>Previous</a>
-      <a href="character-limiter-app.html" class="project__main__btn project__main__btn--next">Next<span class="project__main__btn__arrow">&rarr;</span></a>
+      <a href="vue-career-page.html" class="project__main__btn project__main__btn--next">Next<span class="project__main__btn__arrow">&rarr;</span></a>
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -158,6 +160,6 @@
     ga('send', 'pageview');
 
   </script>
-
+  
 </body>
 </html>

@@ -156,6 +156,10 @@ body {
   width: 45px;
   left: 51%;
 }
+.about-me__skills__item:nth-child(7) .about-me__skills__logo {
+  width: 45px;
+  left: 51%;
+}
 .about-me__skills__item:nth-child(9) .about-me__skills__logo,
 .about-me__skills__item:nth-child(10) .about-me__skills__logo {
   width: 45px;
