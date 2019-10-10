@@ -185,8 +185,12 @@ body {
   font-size: 2em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+  line-height: 2.3;
 }
-.about-me__skills__middle__description {
+
+/* Not needed for now */
+
+/* .about-me__skills__middle__description {
   display: inline-block;
   margin: 0;
   margin-top: 0em;
@@ -196,8 +200,8 @@ body {
   font-weight: 400;
   font-style: italic;
   position: relative;
-}
-.about-me__skills__middle__description:before,
+} */
+/* .about-me__skills__middle__description:before,
 .about-me__skills__middle__description:after {
   content: "";
   width: 10px;
@@ -212,7 +216,7 @@ body {
 .about-me__skills__middle__description:after {
   left: 100%;
   margin-left: 0.6em;
-}
+} */
 .about-me__skills__text {
   margin: 1.2em auto 0.8em;
   max-width: 85%;
