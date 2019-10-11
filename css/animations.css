@@ -11,7 +11,7 @@
   -webkit-animation: slideInNav 1s 0.5s 1 forwards ease-in;
           animation: slideInNav 1s 0.5s 1 forwards ease-in;
 }
-.nav-menu__items__animation {
+/* .nav-menu__items__animation {
   -webkit-animation: slideInMenuItems 0.3s 1 forwards ease-in;
           animation: slideInMenuItems 0.3s 1 forwards ease-in;
 }
@@ -42,13 +42,13 @@
 .nav-menu__social-btn {
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
-}
-.nav-menu__cross__animation {
+} */
+/* .nav-menu__cross__animation {
   -webkit-animation: fadeIn 0.5s 1 forwards linear;
           animation: fadeIn 0.5s 1 forwards linear;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
-}
+} */
 
 /* Header */
 .header,
