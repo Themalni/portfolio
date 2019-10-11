@@ -1,5 +1,4 @@
-@media screen and (min-width: 320px)
-              and (max-width: 340px){
+@media screen and (max-width: 340px) {
   .about__title {
     padding-top: 1.5em;
   }
@@ -134,8 +133,8 @@
   .portfolio__items-container {
     min-height: auto;
   }
-  .portfolio__item {
-    height: 220px;
+  .portfolio__item__info {
+    font-size: 1.2em;
   }
   .portfolio__item__hover__title {
     margin-top: 0em;

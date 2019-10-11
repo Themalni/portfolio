@@ -483,14 +483,13 @@ a {
   display: block;
   margin: 0.5em;
   width: 450px;
-  height: 320px;
   background-color: #7078a9;
   position: relative;
   overflow: hidden;
   float: left;
 }
 .portfolio__item__info {
-  margin: 0.2em 0 0;
+  margin: 0.2em 0 0.5em;
   color: #fff;
   font-size: 1.4em;
   font-family: 'Open Sans', sans-serif;
