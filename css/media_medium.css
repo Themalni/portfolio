@@ -129,7 +129,7 @@
   }
   .portfolio__item {
     width: 420px;
-    height: 300px;
+    /* height: 300px; */
   }
   .portfolio__item__hover__title {
     margin-top: 1.5em;
